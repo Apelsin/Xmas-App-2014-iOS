@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Home-->
+        <scene sceneID="oXk-dX-ttq">
+            <objects>
+                <viewController title="Home" id="XSh-oE-w2b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLF-1M-qDW"/>
+                        <viewControllerLayoutGuide type="bottom" id="GrR-kJ-iur"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nbP-kT-mVo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
+                                <rect key="frame" x="0.0" y="32" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-uO-FA2">
+                                        <rect key="frame" x="8" y="243" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Event
+Schedule</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QuS-8L-vhc" kind="push" id="4iG-D9-SLd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
+                                        <rect key="frame" x="60" y="124" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Vote">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
+                                        <rect key="frame" x="216" y="243" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Park Map">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Yxq-pY-gpo" kind="push" id="K0I-zS-o2J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
+                                        <rect key="frame" x="112" y="243" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Visitor Info">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq">
+                                        <rect key="frame" x="164" y="124" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sponsors">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ZEl-d1-Wfl" kind="push" id="HPh-q0-h0q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q">
+                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Get
+Involved</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zdu-lg-O8X" kind="push" id="jJI-xz-kwe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="MlY-7v-EKp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m7K-BF-gLQ" secondAttribute="trailing" id="aPW-iH-Vuo"/>
+                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" constant="-32" id="rBq-DR-BSJ"/>
+                            <constraint firstItem="m7K-BF-gLQ" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="rwy-nJ-L0i"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="ddb-KJ-8zY"/>
+                    <navigationItem key="navigationItem" title="Home" id="rnp-8a-NOp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Root View Controller" id="Yd7-OD-80s"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-211"/>
+        </scene>
+        <!--Tab Bar Controller - Home Menu-->
+        <scene sceneID="t7I-WF-hSy">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="n6e-oN-gAd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Home Menu" id="oDi-QP-zns"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XSh-oE-w2b" kind="relationship" relationship="viewControllers" id="b4U-Qa-neH"/>
+                        <segue destination="up5-pd-fhL" kind="relationship" relationship="viewControllers" id="s9F-fR-N8e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoE-oI-BFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="-211"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="etl-Nt-Fi2">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="HL8-Oj-dfP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Cu-fy-6Yl">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="n6e-oN-gAd" kind="relationship" relationship="rootViewController" id="EVe-rs-bf8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7p-05-Q5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="-211"/>
+        </scene>
+        <!--View Controller - About-->
+        <scene sceneID="W7M-H2-10e">
+            <objects>
+                <viewController id="up5-pd-fhL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFO-jP-MKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dx7-87-hSI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nbh-tO-yZa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="About" id="dz1-0P-I0M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqE-X0-I0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="377"/>
+        </scene>
+        <!--View Controller - Get Involved-->
+        <scene sceneID="Nxw-gx-oH8">
+            <objects>
+                <viewController title="Get Involved" id="zdu-lg-O8X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mCb-7V-1TC"/>
+                        <viewControllerLayoutGuide type="bottom" id="qF9-nh-OL0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I5K-iX-l3c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m4X-7t-El3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp7-MM-OeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="-787"/>
+        </scene>
+        <!--View Controller - Sponsors-->
+        <scene sceneID="TVn-KD-2cE">
+            <objects>
+                <viewController title="Sponsors" id="ZEl-d1-Wfl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Cp-VQ-a2B"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3v-I9-caD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KER-59-NTq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o4J-6O-Mf1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1i-yj-Fkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="-211"/>
+        </scene>
+        <!--Event Schedule View Controller-->
+        <scene sceneID="ldI-E0-owm">
+            <objects>
+                <viewController id="QuS-8L-vhc" customClass="EventScheduleViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="Bq5-Bp-dRe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="t1H-oa-puz"/>
+                    <connections>
+                        <outlet property="myWebView" destination="Bq5-Bp-dRe" id="x0D-Pd-fWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJm-kO-aFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="447"/>
+        </scene>
+        <!--Image View Controller - Image-->
+        <scene sceneID="7lh-lk-Ddc">
+            <objects>
+                <viewController id="Yxq-pY-gpo" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E0t-Sa-Te6"/>
+                        <viewControllerLayoutGuide type="bottom" id="eaR-qw-XKe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8SZ-aZ-4xM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="54G-pP-ueU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map Brochure 2014.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L5R-4o-YK3">
+                                        <rect key="frame" x="0.0" y="0.0" width="741" height="417"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="Yxq-pY-gpo" id="51Q-dU-cz4"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="54G-pP-ueU" secondAttribute="trailing" id="67O-MK-w1X"/>
+                            <constraint firstItem="54G-pP-ueU" firstAttribute="top" secondItem="8SZ-aZ-4xM" secondAttribute="top" id="DID-MG-XHT"/>
+                            <constraint firstAttribute="bottom" secondItem="54G-pP-ueU" secondAttribute="bottom" id="fkD-7V-Wkg"/>
+                            <constraint firstItem="54G-pP-ueU" firstAttribute="leading" secondItem="8SZ-aZ-4xM" secondAttribute="leading" id="o0f-jc-Byu"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V6G-en-4p2" appends="YES" id="OfG-pF-5LL"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image" id="a5d-BX-EXR"/>
+                    <connections>
+                        <outlet property="imageView" destination="L5R-4o-YK3" id="oY1-3d-Cil"/>
+                        <outlet property="scrollView" destination="54G-pP-ueU" id="IfJ-xz-3Mg"/>
+                        <outlet property="tapGesture" destination="V6G-en-4p2" id="keq-CS-3Iu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFc-3M-BRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="V6G-en-4p2">
+                    <connections>
+                        <action selector="tapRecognized:" destination="Yxq-pY-gpo" id="4Ku-ud-ofo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1785" y="-787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Map Brochure 2014.jpg" width="4800" height="2700"/>
+        <image name="Ornament Red" width="96" height="120"/>
+    </resources>
+    <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

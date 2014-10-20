@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */; };
+		2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */; };
+		2E038E3419F4A45200BA5C9E /* ParentViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */; };
+		2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */; };
+		2E22CE4F19F5084700889F3F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ImageViewController.m */; };
 		2FB9DE3319E9F176004876CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3219E9F176004876CF /* Foundation.framework */; };
 		2FB9DE3519E9F176004876CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3419E9F176004876CF /* CoreGraphics.framework */; };
 		2FB9DE3719E9F176004876CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3619E9F176004876CF /* UIKit.framework */; };
 		2FB9DE3D19E9F176004876CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE3B19E9F176004876CF /* InfoPlist.strings */; };
 		2FB9DE3F19E9F176004876CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE3E19E9F176004876CF /* main.m */; };
 		2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4219E9F176004876CF /* AppDelegate.m */; };
-		2FB9DE4619E9F176004876CF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4419E9F176004876CF /* Main_iPhone.storyboard */; };
-		2FB9DE4919E9F176004876CF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4719E9F176004876CF /* Main_iPad.storyboard */; };
 		2FB9DE4C19E9F176004876CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4B19E9F176004876CF /* ViewController.m */; };
 		2FB9DE4E19E9F176004876CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4D19E9F176004876CF /* Images.xcassets */; };
 		2FB9DE5519E9F176004876CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE5419E9F176004876CF /* XCTest.framework */; };
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventScheduleViewController.h; sourceTree = "<group>"; };
+		2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventScheduleViewController.m; sourceTree = "<group>"; };
+		2E038E3219F4A45200BA5C9E /* ParentViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewSegue.h; sourceTree = "<group>"; };
+		2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewSegue.m; sourceTree = "<group>"; };
+		2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Map Brochure 2014.jpg"; sourceTree = "<group>"; };
+		2E22CE4D19F5084700889F3F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		2E22CE4E19F5084700889F3F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		2FB9DE2F19E9F176004876CF /* Xmas-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xmas-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB9DE3219E9F176004876CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2FB9DE3419E9F176004876CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +56,6 @@
 		2FB9DE4019E9F176004876CF /* Xmas-app-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xmas-app-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		2FB9DE4119E9F176004876CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FB9DE4219E9F176004876CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FB9DE4519E9F176004876CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2FB9DE4819E9F176004876CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		2FB9DE4A19E9F176004876CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2FB9DE4B19E9F176004876CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2FB9DE4D19E9F176004876CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -81,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E22CE4A19F5014200889F3F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2FB9DE2619E9F176004876CF = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +131,20 @@
 		2FB9DE3819E9F176004876CF /* Xmas-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2E22CE4D19F5084700889F3F /* ImageViewController.h */,
+				2E22CE4E19F5084700889F3F /* ImageViewController.m */,
+				2E22CE4A19F5014200889F3F /* Images */,
 				2FB9DE4119E9F176004876CF /* AppDelegate.h */,
 				2FB9DE4219E9F176004876CF /* AppDelegate.m */,
-				2FB9DE4419E9F176004876CF /* Main_iPhone.storyboard */,
-				2FB9DE4719E9F176004876CF /* Main_iPad.storyboard */,
 				2FB9DE4A19E9F176004876CF /* ViewController.h */,
 				2FB9DE4B19E9F176004876CF /* ViewController.m */,
 				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
 				2FB9DE3919E9F176004876CF /* Supporting Files */,
+				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
+				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
+				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
+				2E038E3219F4A45200BA5C9E /* ParentViewSegue.h */,
+				2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */,
 			);
 			path = "Xmas-app-iOS";
 			sourceTree = "<group>";
@@ -231,10 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB9DE4919E9F176004876CF /* Main_iPad.storyboard in Resources */,
+				2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */,
 				2FB9DE4E19E9F176004876CF /* Images.xcassets in Resources */,
-				2FB9DE4619E9F176004876CF /* Main_iPhone.storyboard in Resources */,
 				2FB9DE3D19E9F176004876CF /* InfoPlist.strings in Resources */,
+				2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E22CE4F19F5084700889F3F /* ImageViewController.m in Sources */,
+				2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */,
 				2FB9DE4C19E9F176004876CF /* ViewController.m in Sources */,
 				2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */,
+				2E038E3419F4A45200BA5C9E /* ParentViewSegue.m in Sources */,
 				2FB9DE3F19E9F176004876CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,22 +310,6 @@
 				2FB9DE3C19E9F176004876CF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2FB9DE4419E9F176004876CF /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FB9DE4519E9F176004876CF /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		2FB9DE4719E9F176004876CF /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FB9DE4819E9F176004876CF /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		2FB9DE5D19E9F176004876CF /* InfoPlist.strings */ = {
@@ -470,6 +480,7 @@
 				2FB9DE6619E9F176004876CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FB9DE6719E9F176004876CF /* Build configuration list for PBXNativeTarget "Xmas-app-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +489,7 @@
 				2FB9DE6919E9F176004876CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
