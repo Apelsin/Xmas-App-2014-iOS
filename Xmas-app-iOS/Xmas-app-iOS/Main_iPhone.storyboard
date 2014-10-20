@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
                                 <rect key="frame" x="0.0" y="32" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,7 +143,7 @@ Involved</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="MlY-7v-EKp"/>
                                 </constraints>
@@ -333,6 +337,7 @@ Involved</string>
     <resources>
         <image name="Map Brochure 2014.jpg" width="4800" height="2700"/>
         <image name="Ornament Red" width="96" height="120"/>
+        <image name="Tree No Ornaments Large" width="600" height="807"/>
     </resources>
     <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
