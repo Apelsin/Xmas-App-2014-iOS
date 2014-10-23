@@ -28,8 +28,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *url_string = @"http://christmasinthepark.com/calendar.html";
-    NSURL *url = [NSURL URLWithString:url_string];
+    //NSString *url_string = @"http://christmasinthepark.com/calendar.html";
+    NSString *url_string = [[NSBundle mainBundle] pathForResource:@"event_schedule" ofType:@"html" inDirectory:@"html"];
+    //NSURL *url = [NSURL URLWithString:url_string];
+    NSURL *url = [NSURL fileURLWithPath:url_string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init]; // I don't know what this line does
     [NSURLConnection sendAsynchronousRequest:request queue:queue
@@ -39,6 +41,23 @@
         else if(error != nil)
             NSLog(@"Error: %@", error);
     }];
+}
+
+- (BOOL)webView:(UIWebView *)webView ShouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    
+    NSString *requestString = [[request URL] absoluteString];
+    NSArray *components = [requestString componentsSeparatedByString:@":"];
+
+    if ([components count] > 1 && [(NSString *)[components objectAtIndex:0] isEqualToString:@"myapp"])
+    {
+        if([(NSString *)[components objectAtIndex:1] isEqualToString:@"myfunction"])
+        {
+            NSLog([components objectAtIndex:2]);
+        }
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

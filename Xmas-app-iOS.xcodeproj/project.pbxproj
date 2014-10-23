@@ -12,6 +12,9 @@
 		2E038E3419F4A45200BA5C9E /* ParentViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */; };
 		2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */; };
 		2E22CE4F19F5084700889F3F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ImageViewController.m */; };
+		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
+		2EC2F63C19F90D890068EB86 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63B19F90D890068EB86 /* css */; };
+		2EC2F63E19F90DB10068EB86 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63D19F90DB10068EB86 /* html */; };
 		2FB9DE3319E9F176004876CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3219E9F176004876CF /* Foundation.framework */; };
 		2FB9DE3519E9F176004876CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3419E9F176004876CF /* CoreGraphics.framework */; };
 		2FB9DE3719E9F176004876CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3619E9F176004876CF /* UIKit.framework */; };
@@ -46,6 +49,9 @@
 		2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Map Brochure 2014.jpg"; sourceTree = "<group>"; };
 		2E22CE4D19F5084700889F3F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		2E22CE4E19F5084700889F3F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		2EC2F63919F90CEB0068EB86 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		2EC2F63B19F90D890068EB86 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
+		2EC2F63D19F90DB10068EB86 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		2FB9DE2F19E9F176004876CF /* Xmas-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xmas-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB9DE3219E9F176004876CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2FB9DE3419E9F176004876CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +158,9 @@
 		2FB9DE3919E9F176004876CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2EC2F63D19F90DB10068EB86 /* html */,
+				2EC2F63B19F90D890068EB86 /* css */,
+				2EC2F63919F90CEB0068EB86 /* js */,
 				2FB9DE3A19E9F176004876CF /* Xmas-app-iOS-Info.plist */,
 				2FB9DE3B19E9F176004876CF /* InfoPlist.strings */,
 				2FB9DE3E19E9F176004876CF /* main.m */,
@@ -255,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */,
+				2EC2F63A19F90CEB0068EB86 /* js in Resources */,
 				2FB9DE4E19E9F176004876CF /* Images.xcassets in Resources */,
+				2EC2F63C19F90D890068EB86 /* css in Resources */,
 				2FB9DE3D19E9F176004876CF /* InfoPlist.strings in Resources */,
+				2EC2F63E19F90DB10068EB86 /* html in Resources */,
 				2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
