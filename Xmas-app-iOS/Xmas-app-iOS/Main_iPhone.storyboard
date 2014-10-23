@@ -165,7 +165,7 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Root View Controller" id="Yd7-OD-80s"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-211"/>
+            <point key="canvasLocation" x="919" y="-787"/>
         </scene>
         <!--Tab Bar Controller - Home Menu-->
         <scene sceneID="t7I-WF-hSy">
@@ -185,7 +185,7 @@ Involved</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoE-oI-BFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="-211"/>
+            <point key="canvasLocation" x="477" y="-787"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="etl-Nt-Fi2">
@@ -200,7 +200,7 @@ Involved</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7p-05-Q5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-211"/>
+            <point key="canvasLocation" x="13" y="-787"/>
         </scene>
         <!--View Controller - About-->
         <scene sceneID="W7M-H2-10e">
@@ -220,7 +220,7 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqE-X0-I0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="377"/>
+            <point key="canvasLocation" x="919" y="-199"/>
         </scene>
         <!--View Controller - Get Involved-->
         <scene sceneID="Nxw-gx-oH8">
@@ -268,6 +268,7 @@ Involved</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" calendarEvent="YES"/>
                     </webView>
                     <navigationItem key="navigationItem" id="t1H-oa-puz"/>
                     <connections>
@@ -276,7 +277,7 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJm-kO-aFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="447"/>
+            <point key="canvasLocation" x="1785" y="-199"/>
         </scene>
         <!--Image View Controller - Image-->
         <scene sceneID="7lh-lk-Ddc">
