@@ -6,7 +6,7 @@ html, body
     font-family: sans-serif;
 }
 
-ul.event-list
+ul#event-list
 {
     list-style-type: none;
     padding: 0;
@@ -14,19 +14,24 @@ ul.event-list
 
 li.event
 {
-    margin: 0.2em;
-    padding: 0.2em;
-    line-height: 1.1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    line-height: 1.5em;
     border: solid 2px;
     border-color: #999;
     border-radius: 0.5em;
     cursor: pointer; /* Mobile */
 }
 
-li.event span.label
+li.event span.line
+{
+    display: block;
+}
+
+li.event span.line span.label
 {
     display: inline-block;
     font-weight: bold;
-    min-width: 5em;
+    min-width: 3.5em;
     text-align: right;
 }

@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 MZ. All rights reserved.
 //
 
+#import <EventKit/EventKit.h>
 #import "EventScheduleViewController.h"
 
 @interface EventScheduleViewController ()
+<UIWebViewDelegate>
+
 @end
 
 @implementation EventScheduleViewController
@@ -27,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    myWebView.delegate = self;
     // Do any additional setup after loading the view.
     //NSString *url_string = @"http://christmasinthepark.com/calendar.html";
     NSString *url_string = [[NSBundle mainBundle] pathForResource:@"event_schedule" ofType:@"html" inDirectory:@"html"];
@@ -43,17 +47,44 @@
     }];
 }
 
-- (BOOL)webView:(UIWebView *)webView ShouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     
     NSString *requestString = [[request URL] absoluteString];
     NSArray *components = [requestString componentsSeparatedByString:@":"];
 
-    if ([components count] > 1 && [(NSString *)[components objectAtIndex:0] isEqualToString:@"myapp"])
+    if ([components count] > 1 && [(NSString *)[components objectAtIndex:0] isEqualToString:@"app"])
     {
-        if([(NSString *)[components objectAtIndex:1] isEqualToString:@"myfunction"])
+        NSString *first = (NSString *)[components objectAtIndex:1];
+        
+        if([first isEqualToString:@"//calendar"])
         {
-            NSLog([components objectAtIndex:2]);
+            // Jeez this is ugly...
+            NSString *title_encoded = [components objectAtIndex:2];
+            NSString *where_encoded = [components objectAtIndex:3];
+            NSString *when_encoded = [components objectAtIndex:4];
+            NSString *title= [title_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            NSString *where = [where_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            NSString *when = [when_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            
+            
+            // TO-DO: presentEventEditViewControllerWithEventStore
+            EKEventStore *store = [[EKEventStore alloc] init];
+            [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+                if(!granted)
+                    return;
+                EKEvent *event = [EKEvent eventWithEventStore:store];
+                event.title = title;
+                event.startDate = [NSDate date];
+                event.endDate = event.startDate;
+                event.allDay = NO;
+                event.location = where;
+                [event setCalendar:[store defaultCalendarForNewEvents]];
+                NSError *err = nil;
+                [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
+                NSString *savedEventId = event.eventIdentifier;
+            }];
+            
         }
         return NO;
     }

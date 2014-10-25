@@ -2,7 +2,7 @@ function ready()
 {
     function execute(url)
     {
-        var iframe = document.createElement("iframe");
+        iframe = document.createElement("iframe");
         iframe.setAttribute("src", url);
         document.documentElement.appendChild(iframe);
         iframe.parentNode.removeChild(iframe);
@@ -16,7 +16,7 @@ function ready()
     // for fault tolerance!
     function remove_data_detectors()
     {
-        tags = $('li.event a');
+        tags = $('ul#event-list li.event span.line a');
         count = tags.length;
         if(count)
         {
@@ -27,15 +27,19 @@ function ready()
                 j_element = $(element);
                 event = j_element.closest('li');
                 j_element.replaceWith(span);
+                
                 // Maybe apply data detector to
                 // entire event text?
                 //event.wrapInner('<a>');
                 //event.children().attr('href', href);
-                
-                function click(event)
+
+                function click(e)
                 {
-                    alert(event);
-                    // Call Obj-C method here (execute)
+                    title = $('.title .text', e.currentTarget).text();
+                    where = $('.where .text', e.currentTarget).text();
+                    when = $('.when .text', e.currentTarget).text();
+                    arguments = [title, where, when].join(':');
+                    execute('app://calendar:' + arguments);
                 }
                 // $.click handled here
                 event.click(click);
