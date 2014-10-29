@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2CE04306-79FD-41F5-9D5A-9EA62D72A508</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Xmas-app-iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1A8BACFF-2C3A-4EB6-BFB4-4538F6D2D11E</key>
+		<string>https://github.com/sreenidhipm/Xmas-app-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Xmas-app-iOS/Xmas-app-iOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1A8BACFF-2C3A-4EB6-BFB4-4538F6D2D11E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sreenidhipm/Xmas-app-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1A8BACFF-2C3A-4EB6-BFB4-4538F6D2D11E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1A8BACFF-2C3A-4EB6-BFB4-4538F6D2D11E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xmas-app-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
