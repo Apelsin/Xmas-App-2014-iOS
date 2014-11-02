@@ -10,6 +10,8 @@
 
 @implementation SpecialWebViewController
 
+@synthesize webView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,7 +25,11 @@
 {
     [self asyncVisitURL:[NSURL URLWithString:urlString]];
 }
-
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    webView.delegate = self;
+}
 - (void)visitLocal:(NSString *)localPath
 {
     NSString *dirname = [localPath stringByDeletingLastPathComponent];
@@ -41,7 +47,7 @@
     [NSURLConnection sendAsynchronousRequest:request queue:queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                if([data length] > 0 && error == nil)
-                               [self.myWebView loadRequest:request];
+                               [self.webView loadRequest:request];
                                else if(error != nil)
                                NSLog(@"Error: %@", error);
                            }];

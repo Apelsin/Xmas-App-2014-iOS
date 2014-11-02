@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */; };
 		2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */; };
-		2E038E3419F4A45200BA5C9E /* ParentViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */; };
-		2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */; };
-		2E22CE4F19F5084700889F3F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ImageViewController.m */; };
+		2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ParkMapViewController.m */; };
+		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
 		2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */; };
 		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
 		2EC2F63C19F90D890068EB86 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63B19F90D890068EB86 /* css */; };
@@ -48,11 +47,9 @@
 		2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventScheduleViewController.h; sourceTree = "<group>"; };
 		2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventScheduleViewController.m; sourceTree = "<group>"; };
-		2E038E3219F4A45200BA5C9E /* ParentViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewSegue.h; sourceTree = "<group>"; };
-		2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewSegue.m; sourceTree = "<group>"; };
-		2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Map Brochure 2014.jpg"; sourceTree = "<group>"; };
-		2E22CE4D19F5084700889F3F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		2E22CE4E19F5084700889F3F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		2E22CE4D19F5084700889F3F /* ParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkMapViewController.h; sourceTree = "<group>"; };
+		2E22CE4E19F5084700889F3F /* ParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkMapViewController.m; sourceTree = "<group>"; };
+		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebViewController.h; sourceTree = "<group>"; };
 		2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebViewController.m; sourceTree = "<group>"; };
 		2EC2F63919F90CEB0068EB86 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
@@ -109,14 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E22CE4A19F5014200889F3F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				2E22CE4B19F5015200889F3F /* Map Brochure 2014.jpg */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		2EF337CE1A06052A00DCE831 /* ALAlertBanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,9 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				2EF337CE1A06052A00DCE831 /* ALAlertBanner */,
-				2E22CE4D19F5084700889F3F /* ImageViewController.h */,
-				2E22CE4E19F5084700889F3F /* ImageViewController.m */,
-				2E22CE4A19F5014200889F3F /* Images */,
 				2FB9DE4119E9F176004876CF /* AppDelegate.h */,
 				2FB9DE4219E9F176004876CF /* AppDelegate.m */,
 				2FB9DE4A19E9F176004876CF /* ViewController.h */,
@@ -174,12 +160,12 @@
 				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
 				2FB9DE3919E9F176004876CF /* Supporting Files */,
 				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
+				2E22CE4D19F5084700889F3F /* ParkMapViewController.h */,
+				2E22CE4E19F5084700889F3F /* ParkMapViewController.m */,
 				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
 				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
 				2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */,
 				2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */,
-				2E038E3219F4A45200BA5C9E /* ParentViewSegue.h */,
-				2E038E3319F4A45200BA5C9E /* ParentViewSegue.m */,
 			);
 			path = "Xmas-app-iOS";
 			sourceTree = "<group>";
@@ -187,6 +173,7 @@
 		2FB9DE3919E9F176004876CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E6E99991A06270D00C53B60 /* img */,
 				2EC2F63D19F90DB10068EB86 /* html */,
 				2EC2F63B19F90D890068EB86 /* css */,
 				2EC2F63919F90CEB0068EB86 /* js */,
@@ -294,11 +281,11 @@
 			files = (
 				2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */,
 				2EC2F63A19F90CEB0068EB86 /* js in Resources */,
+				2E6E999A1A06270D00C53B60 /* img in Resources */,
 				2FB9DE4E19E9F176004876CF /* Images.xcassets in Resources */,
 				2EC2F63C19F90D890068EB86 /* css in Resources */,
 				2FB9DE3D19E9F176004876CF /* InfoPlist.strings in Resources */,
 				2EC2F63E19F90DB10068EB86 /* html in Resources */,
-				2E22CE4C19F5015200889F3F /* Map Brochure 2014.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,11 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E22CE4F19F5084700889F3F /* ImageViewController.m in Sources */,
+				2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */,
 				2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */,
 				2FB9DE4C19E9F176004876CF /* ViewController.m in Sources */,
 				2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */,
-				2E038E3419F4A45200BA5C9E /* ParentViewSegue.m in Sources */,
 				2EF337CC1A06050F00DCE831 /* ALAlertBanner.m in Sources */,
 				2EF337CD1A06050F00DCE831 /* ALAlertBannerManager.m in Sources */,
 				2FB9DE3F19E9F176004876CF /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import <EventKit/EventKit.h>
+#import "AppDelegate.h"
 #import "ALAlertBanner/ALAlertBanner.h"
 #import "EventScheduleViewController.h"
 
@@ -15,8 +16,6 @@
 @end
 
 @implementation EventScheduleViewController
-
-@synthesize myWebView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,13 +29,11 @@
 // initWithNibName doesn't get called...
 - (void)awakeFromNib
 {
-    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    myWebView.delegate = self;
     // Do any additional setup after loading the view.
     [self visitLocal:@"/html/event_schedule.html"];
 }
@@ -56,13 +53,15 @@
 {
     NSError *error = nil;
     ALAlertBanner *banner = nil;
+    AppDelegate *appDelegate = nil;
     switch (action) {
         case EKEventEditViewActionCanceled:
         break;
         case EKEventEditViewActionSaved:
             [controller.eventStore saveEvent:controller.event span:EKSpanThisEvent error:&error];
-            [ALAlertBanner forceHideAllAlertBannersInView:self.view];
-            banner = [ALAlertBanner alertBannerForView:self.view style:ALAlertBannerStyleSuccess position:ALAlertBannerPositionTop title:@"Calendar event added" subtitle:controller.event.title];
+            appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+            [ALAlertBanner forceHideAllAlertBannersInView:appDelegate.window];
+            banner = [ALAlertBanner alertBannerForView:appDelegate.window style:ALAlertBannerStyleSuccess position:ALAlertBannerPositionUnderNavBar title:@"Calendar event added" subtitle:controller.event.title];
             [banner show];
         break;
         case EKEventEditViewActionDeleted:

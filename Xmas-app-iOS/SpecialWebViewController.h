@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SpecialWebViewController : UIViewController <UIWebViewDelegate>
-@property (strong, nonatomic) IBOutlet UIWebView *myWebView;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+
 - (void)visit:(NSString *)urlString;
 - (void)visitLocal:(NSString *)localPath;
 - (void)asyncVisitURL:(NSURL *) url;

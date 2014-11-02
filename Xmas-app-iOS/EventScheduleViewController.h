@@ -11,7 +11,7 @@
 #import "SpecialWebViewController.h"
 
 @interface EventScheduleViewController : SpecialWebViewController <UIWebViewDelegate, EKEventEditViewDelegate>
-//@property (strong, nonatomic) IBOutlet UIWebView *myWebView;
+
 @property EKEvent *selectedEvent;
 
 @end

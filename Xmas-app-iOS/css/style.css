@@ -35,3 +35,13 @@ li.event span.line span.label
     min-width: 3.5em;
     text-align: right;
 }
+
+
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+    div#park-map
+    {
+        background: url('../img/Map Brochure 2014@2x.jpg');
+        height: 100%;
+    }
+}
