@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Home-->
+        <!--Home-->
         <scene sceneID="oXk-dX-ttq">
             <objects>
                 <viewController title="Home" id="XSh-oE-w2b" sceneMemberID="viewController">
@@ -18,15 +19,12 @@
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
                                 <rect key="frame" x="0.0" y="32" width="320" height="367"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-uO-FA2">
                                         <rect key="frame" x="8" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -48,7 +46,6 @@ Schedule</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
                                         <rect key="frame" x="60" y="124" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -65,7 +62,6 @@ Schedule</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
                                         <rect key="frame" x="216" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -85,7 +81,6 @@ Schedule</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
                                         <rect key="frame" x="112" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -102,7 +97,6 @@ Schedule</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq">
                                         <rect key="frame" x="164" y="124" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -122,7 +116,6 @@ Schedule</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q">
                                         <rect key="frame" x="112" y="5" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -160,14 +153,13 @@ Involved</string>
                     <tabBarItem key="tabBarItem" title="Home" id="ddb-KJ-8zY"/>
                     <navigationItem key="navigationItem" title="Home" id="rnp-8a-NOp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="320" height="480"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Root View Controller" id="Yd7-OD-80s"/>
             </objects>
             <point key="canvasLocation" x="919" y="-787"/>
         </scene>
-        <!--Tab Bar Controller - Home Menu-->
+        <!--Home Menu-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="n6e-oN-gAd" sceneMemberID="viewController">
@@ -202,7 +194,7 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="13" y="-787"/>
         </scene>
-        <!--View Controller - About-->
+        <!--About-->
         <scene sceneID="W7M-H2-10e">
             <objects>
                 <viewController id="up5-pd-fhL" sceneMemberID="viewController">
@@ -222,7 +214,7 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="919" y="-199"/>
         </scene>
-        <!--View Controller - Get Involved-->
+        <!--Get Involved-->
         <scene sceneID="Nxw-gx-oH8">
             <objects>
                 <viewController title="Get Involved" id="zdu-lg-O8X" sceneMemberID="viewController">
@@ -241,10 +233,10 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="1414" y="-787"/>
         </scene>
-        <!--View Controller - Sponsors-->
+        <!--Sponsors-->
         <scene sceneID="TVn-KD-2cE">
             <objects>
-                <viewController title="Sponsors" id="ZEl-d1-Wfl" sceneMemberID="viewController">
+                <viewController title="Sponsors" id="ZEl-d1-Wfl" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Cp-VQ-a2B"/>
                         <viewControllerLayoutGuide type="bottom" id="h3v-I9-caD"/>
@@ -252,9 +244,19 @@ Involved</string>
                     <view key="view" contentMode="scaleToFill" id="KER-59-NTq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vo8-aj-NOA">
+                                <rect key="frame" x="0.0" y="20" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="o4J-6O-Mf1"/>
+                    <connections>
+                        <outlet property="sponsorWebview" destination="Vo8-aj-NOA" id="YQq-0A-QQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1i-yj-Fkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,7 +282,7 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="1785" y="-199"/>
         </scene>
-        <!--Park Map View Controller - Park Map-->
+        <!--Park Map-->
         <scene sceneID="7lh-lk-Ddc">
             <objects>
                 <viewController id="Yxq-pY-gpo" customClass="ParkMapViewController" sceneMemberID="viewController">
@@ -309,10 +311,10 @@ Involved</string>
         <image name="Ornament Red" width="96" height="120"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
     </resources>
-    <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

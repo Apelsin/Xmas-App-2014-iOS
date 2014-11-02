@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *sponsorsFullURL = @"http://christmasinthepark.com/sponsors.html";
+    NSURL *sponsorsURL = [NSURL URLWithString:sponsorsFullURL];
+    NSURLRequest *requestSponsors = [NSURLRequest requestWithURL:sponsorsURL];
+    [_sponsorWebview loadRequest:requestSponsors];
 }
 
 - (void)didReceiveMemoryWarning
