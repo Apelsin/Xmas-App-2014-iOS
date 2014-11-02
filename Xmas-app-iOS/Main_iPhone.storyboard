@@ -265,11 +265,12 @@ Involved</string>
             <objects>
                 <viewController id="QuS-8L-vhc" customClass="EventScheduleViewController" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="Bq5-Bp-dRe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" calendarEvent="YES"/>
                     </webView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="t1H-oa-puz"/>
                     <connections>
                         <outlet property="myWebView" destination="Bq5-Bp-dRe" id="x0D-Pd-fWV"/>

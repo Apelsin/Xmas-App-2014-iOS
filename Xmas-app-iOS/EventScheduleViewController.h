@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 MZ. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <EventKitUI/EventKitUI.h>
 
-@interface EventScheduleViewController : UIViewController <UIWebViewDelegate>
-@property (strong, nonatomic) IBOutlet UIWebView *myWebView;
+#import "SpecialWebViewController.h"
+
+@interface EventScheduleViewController : SpecialWebViewController <UIWebViewDelegate, EKEventEditViewDelegate>
+//@property (strong, nonatomic) IBOutlet UIWebView *myWebView;
+@property EKEvent *selectedEvent;
 
 @end
