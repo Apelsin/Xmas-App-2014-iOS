@@ -10,6 +10,13 @@
 		2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */; };
 		2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */; };
 		2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ParkMapViewController.m */; };
+		2E2BA33C1A0F167600C91421 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */; };
+		2E2BA33F1A0F177000C91421 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */; };
+		2E2BA3421A0F1C8B00C91421 /* FlatPageWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */; };
+		2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */; };
+		2E2BA34C1A0F29B700C91421 /* FlatPageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */; };
+		2E2BA3521A0F322000C91421 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3511A0F322000C91421 /* CustomNavigationController.m */; };
+		2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3541A0F432900C91421 /* BackgroundPattern.m */; };
 		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
 		2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */; };
 		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
@@ -24,7 +31,6 @@
 		2FB9DE3D19E9F176004876CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE3B19E9F176004876CF /* InfoPlist.strings */; };
 		2FB9DE3F19E9F176004876CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE3E19E9F176004876CF /* main.m */; };
 		2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4219E9F176004876CF /* AppDelegate.m */; };
-		2FB9DE4C19E9F176004876CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4B19E9F176004876CF /* ViewController.m */; };
 		2FB9DE4E19E9F176004876CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE4D19E9F176004876CF /* Images.xcassets */; };
 		2FB9DE5519E9F176004876CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE5419E9F176004876CF /* XCTest.framework */; };
 		2FB9DE5619E9F176004876CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3219E9F176004876CF /* Foundation.framework */; };
@@ -49,6 +55,22 @@
 		2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventScheduleViewController.m; sourceTree = "<group>"; };
 		2E22CE4D19F5084700889F3F /* ParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkMapViewController.h; sourceTree = "<group>"; };
 		2E22CE4E19F5084700889F3F /* ParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkMapViewController.m; sourceTree = "<group>"; };
+		2E2BA33A1A0F167600C91421 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatPageWebViewController.h; sourceTree = "<group>"; };
+		2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatPageWebViewController.m; sourceTree = "<group>"; };
+		2E2BA3431A0F21A300C91421 /* HandledSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandledSegueViewController.h; sourceTree = "<group>"; };
+		2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandledSegueViewController.m; sourceTree = "<group>"; };
+		2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueHandlerDelegate.h; sourceTree = "<group>"; };
+		2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatPageButton.h; sourceTree = "<group>"; };
+		2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatPageButton.m; sourceTree = "<group>"; };
+		2E2BA34F1A0F320100C91421 /* FlatPageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatPageDelegate.h; sourceTree = "<group>"; };
+		2E2BA3501A0F322000C91421 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		2E2BA3511A0F322000C91421 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundPattern.h; sourceTree = "<group>"; };
+		2E2BA3541A0F432900C91421 /* BackgroundPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundPattern.m; sourceTree = "<group>"; };
 		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebViewController.h; sourceTree = "<group>"; };
 		2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebViewController.m; sourceTree = "<group>"; };
@@ -71,8 +93,6 @@
 		2FB9DE4019E9F176004876CF /* Xmas-app-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xmas-app-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		2FB9DE4119E9F176004876CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FB9DE4219E9F176004876CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FB9DE4A19E9F176004876CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FB9DE4B19E9F176004876CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2FB9DE4D19E9F176004876CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FB9DE5319E9F176004876CF /* Xmas-app-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xmas-app-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB9DE5419E9F176004876CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -152,20 +172,34 @@
 		2FB9DE3819E9F176004876CF /* Xmas-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2E2BA3501A0F322000C91421 /* CustomNavigationController.h */,
+				2E2BA3511A0F322000C91421 /* CustomNavigationController.m */,
+				2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */,
+				2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */,
 				2EF337CE1A06052A00DCE831 /* ALAlertBanner */,
 				2FB9DE4119E9F176004876CF /* AppDelegate.h */,
 				2FB9DE4219E9F176004876CF /* AppDelegate.m */,
-				2FB9DE4A19E9F176004876CF /* ViewController.h */,
-				2FB9DE4B19E9F176004876CF /* ViewController.m */,
 				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
 				2FB9DE3919E9F176004876CF /* Supporting Files */,
 				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
+				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
+				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
+				2E2BA33A1A0F167600C91421 /* MainMenuViewController.h */,
+				2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */,
 				2E22CE4D19F5084700889F3F /* ParkMapViewController.h */,
 				2E22CE4E19F5084700889F3F /* ParkMapViewController.m */,
-				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
-				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
 				2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */,
 				2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */,
+				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
+				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
+				2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */,
+				2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */,
+				2E2BA3431A0F21A300C91421 /* HandledSegueViewController.h */,
+				2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */,
+				2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */,
+				2E2BA34F1A0F320100C91421 /* FlatPageDelegate.h */,
+				2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */,
+				2E2BA3541A0F432900C91421 /* BackgroundPattern.m */,
 			);
 			path = "Xmas-app-iOS";
 			sourceTree = "<group>";
@@ -250,6 +284,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MZ;
 				TargetAttributes = {
+					2FB9DE2E19E9F176004876CF = {
+						DevelopmentTeam = YWH6X7RKCE;
+					};
 					2FB9DE5219E9F176004876CF = {
 						TestTargetID = 2FB9DE2E19E9F176004876CF;
 					};
@@ -305,13 +342,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */,
+				2E2BA3521A0F322000C91421 /* CustomNavigationController.m in Sources */,
+				2E2BA33F1A0F177000C91421 /* CustomTabBarController.m in Sources */,
+				2E2BA34C1A0F29B700C91421 /* FlatPageButton.m in Sources */,
 				2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */,
-				2FB9DE4C19E9F176004876CF /* ViewController.m in Sources */,
+				2E2BA33C1A0F167600C91421 /* MainMenuViewController.m in Sources */,
 				2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */,
+				2E2BA3421A0F1C8B00C91421 /* FlatPageWebViewController.m in Sources */,
 				2EF337CC1A06050F00DCE831 /* ALAlertBanner.m in Sources */,
 				2EF337CD1A06050F00DCE831 /* ALAlertBannerManager.m in Sources */,
 				2FB9DE3F19E9F176004876CF /* main.m in Sources */,
 				2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */,
+				2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */,
+				2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +473,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,10 +489,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

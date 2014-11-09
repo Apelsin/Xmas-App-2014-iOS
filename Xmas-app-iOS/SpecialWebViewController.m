@@ -11,6 +11,8 @@
 @implementation SpecialWebViewController
 
 @synthesize webView;
+@synthesize InitialLocalPath;
+@synthesize InitialURLString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +31,10 @@
 {
     [super viewDidLoad];
     webView.delegate = self;
+    if(self.InitialLocalPath)
+        [self visitLocal:self.InitialLocalPath];
+    else if(self.InitialURLString)
+        [self visit:self.InitialURLString];
 }
 - (void)visitLocal:(NSString *)localPath
 {

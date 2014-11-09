@@ -10,7 +10,8 @@
 
 @interface SpecialWebViewController : UIViewController <UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
-
+@property NSString *InitialLocalPath;
+@property NSString *InitialURLString;
 - (void)visit:(NSString *)urlString;
 - (void)visitLocal:(NSString *)localPath;
 - (void)asyncVisitURL:(NSURL *) url;

@@ -11,8 +11,6 @@
 #import "SpecialWebViewController.h"
 
 @interface ParkMapViewController :  SpecialWebViewController
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
-- (IBAction)tapRecognized:(id)sender;
 @property ALAlertBanner *infoBanner;
 
 @end

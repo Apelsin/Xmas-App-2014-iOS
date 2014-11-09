@@ -23,12 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self visitLocal:@"/html/Map-Brochure-2014.html"];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
     self.infoBanner = [ALAlertBanner alertBannerForView:appDelegate.window  style:ALAlertBannerStyleNotify position:ALAlertBannerPositionUnderNavBar title:@"Swipe to pan and pinch to zoom."];
     [self.infoBanner show];
-    }
+}
 
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -40,10 +38,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)tapRecognized:(id)sender {
-	
-}
-
 
 @end
