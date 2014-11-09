@@ -3,6 +3,8 @@ html, body
     width: 100%;
     height: 100%;
     margin: 0;
+    background: url('../img/dark_wood_brown.png');
+    background-attachmnent: scroll;
 }
 
 ul#event-list
@@ -13,18 +15,20 @@ ul#event-list
 
 li.event
 {
-    margin: 0.5em;
-    padding: 0.5em;
     line-height: 1.5em;
     border: solid 2px;
     border-color: #999;
     border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    background: rgba(255, 255, 255, 0.8);
     cursor: pointer; /* Mobile */
 }
 
 li.event span.line
 {
     display: block;
+
 }
 
 li.event span.line span.label

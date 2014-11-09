@@ -13,6 +13,7 @@
 @synthesize webView;
 @synthesize InitialLocalPath;
 @synthesize InitialURLString;
+@synthesize BackgroundPatternName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,9 +42,8 @@
         NSLog( @"Exception: %@", exception.name);
         NSLog( @"Reason: %@", exception.reason );
     }
-    @finally {
-    }
-    
+    if(self.BackgroundPatternName)
+        [BackgroundPattern setViewBackgroundPatternFromNamedPattern:self.view withPatternName:self.BackgroundPatternName];
 }
 
 - (void)visitLocal:(NSString *)localPath

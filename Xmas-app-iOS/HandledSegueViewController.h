@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BackgroundPattern.h"
 
-@interface HandledSegueViewController : UIViewController <BackgroundPatternDelegate>
+@interface HandledSegueViewController : UIViewController
 @end

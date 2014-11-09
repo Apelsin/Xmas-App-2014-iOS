@@ -33,8 +33,13 @@ function ready()
                     title = $('.title .text', e.currentTarget).text();
                     where = $('.where .text', e.currentTarget).text();
                     when = $('.when .text', e.currentTarget).text();
-                    arguments = [title, where, when].join(':');
-                    execute('app://calendar:' + arguments);
+                    
+                    // Is it really wise to add this here?
+                    when += " 2014";
+                    when_parsed = moment(when, "MMM DD [at] hA YYYY"); // Moment.js
+                    
+                    arguments = {title: title, where: where, when: when_parsed}
+                    execute('app://calendar:' + JSON.stringify(arguments));
                 }
                 // $.click handled here
                 event.click(click);

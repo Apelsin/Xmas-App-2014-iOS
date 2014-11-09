@@ -14,7 +14,6 @@
 @end
 
 @implementation HandledSegueViewController
-@synthesize BackgroundPatternName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +28,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if(self.BackgroundPatternName)
-        [BackgroundPattern setViewBackgroundPatternFromNamedPattern:self.view withPatternName:self.BackgroundPatternName];
 }
 
 - (void)didReceiveMemoryWarning

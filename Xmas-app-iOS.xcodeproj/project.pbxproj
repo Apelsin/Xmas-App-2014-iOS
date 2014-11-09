@@ -10,13 +10,16 @@
 		2E038DE719F4745A00BA5C9E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */; };
 		2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */; };
 		2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22CE4E19F5084700889F3F /* ParkMapViewController.m */; };
-		2E2BA33C1A0F167600C91421 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */; };
+		2E2BA33C1A0F167600C91421 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA33B1A0F167600C91421 /* MenuViewController.m */; };
 		2E2BA33F1A0F177000C91421 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */; };
 		2E2BA3421A0F1C8B00C91421 /* FlatPageWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */; };
 		2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */; };
 		2E2BA34C1A0F29B700C91421 /* FlatPageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */; };
 		2E2BA3521A0F322000C91421 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3511A0F322000C91421 /* CustomNavigationController.m */; };
 		2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3541A0F432900C91421 /* BackgroundPattern.m */; };
+		2E2BA3641A0FFD4A00C91421 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */; };
+		2E2BA3651A0FFD4A00C91421 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */; };
+		2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */; };
 		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
 		2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */; };
 		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
@@ -55,8 +58,8 @@
 		2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventScheduleViewController.m; sourceTree = "<group>"; };
 		2E22CE4D19F5084700889F3F /* ParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkMapViewController.h; sourceTree = "<group>"; };
 		2E22CE4E19F5084700889F3F /* ParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkMapViewController.m; sourceTree = "<group>"; };
-		2E2BA33A1A0F167600C91421 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		2E2BA33A1A0F167600C91421 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2E2BA33B1A0F167600C91421 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 		2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatPageWebViewController.h; sourceTree = "<group>"; };
@@ -71,6 +74,13 @@
 		2E2BA3511A0F322000C91421 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 		2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundPattern.h; sourceTree = "<group>"; };
 		2E2BA3541A0F432900C91421 /* BackgroundPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundPattern.m; sourceTree = "<group>"; };
+		2E2BA35D1A0FFD4A00C91421 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = CJSON/CJSONDeserializer.h; sourceTree = "<group>"; };
+		2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = CJSON/CJSONDeserializer.m; sourceTree = "<group>"; };
+		2E2BA35F1A0FFD4A00C91421 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = CJSON/CJSONSerializer.h; sourceTree = "<group>"; };
+		2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = CJSON/CJSONSerializer.m; sourceTree = "<group>"; };
+		2E2BA3611A0FFD4A00C91421 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = CJSON/JSONRepresentation.h; sourceTree = "<group>"; };
+		2E2BA3621A0FFD4A00C91421 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = CJSON/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = CJSON/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebViewController.h; sourceTree = "<group>"; };
 		2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebViewController.m; sourceTree = "<group>"; };
@@ -126,6 +136,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2BA35C1A0FFD3B00C91421 /* CJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2E2BA35D1A0FFD4A00C91421 /* CJSONDeserializer.h */,
+				2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */,
+				2E2BA35F1A0FFD4A00C91421 /* CJSONSerializer.h */,
+				2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */,
+				2E2BA3611A0FFD4A00C91421 /* JSONRepresentation.h */,
+				2E2BA3621A0FFD4A00C91421 /* NSDictionary_JSONExtensions.h */,
+				2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */,
+			);
+			name = CJSON;
+			sourceTree = "<group>";
+		};
 		2EF337CE1A06052A00DCE831 /* ALAlertBanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +196,7 @@
 		2FB9DE3819E9F176004876CF /* Xmas-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2E2BA35C1A0FFD3B00C91421 /* CJSON */,
 				2E2BA3501A0F322000C91421 /* CustomNavigationController.h */,
 				2E2BA3511A0F322000C91421 /* CustomNavigationController.m */,
 				2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */,
@@ -184,8 +209,8 @@
 				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
 				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
 				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
-				2E2BA33A1A0F167600C91421 /* MainMenuViewController.h */,
-				2E2BA33B1A0F167600C91421 /* MainMenuViewController.m */,
+				2E2BA33A1A0F167600C91421 /* MenuViewController.h */,
+				2E2BA33B1A0F167600C91421 /* MenuViewController.m */,
 				2E22CE4D19F5084700889F3F /* ParkMapViewController.h */,
 				2E22CE4E19F5084700889F3F /* ParkMapViewController.m */,
 				2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */,
@@ -344,15 +369,18 @@
 				2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */,
 				2E2BA3521A0F322000C91421 /* CustomNavigationController.m in Sources */,
 				2E2BA33F1A0F177000C91421 /* CustomTabBarController.m in Sources */,
+				2E2BA3651A0FFD4A00C91421 /* CJSONSerializer.m in Sources */,
 				2E2BA34C1A0F29B700C91421 /* FlatPageButton.m in Sources */,
 				2E038E3119F4983100BA5C9E /* EventScheduleViewController.m in Sources */,
-				2E2BA33C1A0F167600C91421 /* MainMenuViewController.m in Sources */,
+				2E2BA33C1A0F167600C91421 /* MenuViewController.m in Sources */,
 				2FB9DE4319E9F176004876CF /* AppDelegate.m in Sources */,
 				2E2BA3421A0F1C8B00C91421 /* FlatPageWebViewController.m in Sources */,
 				2EF337CC1A06050F00DCE831 /* ALAlertBanner.m in Sources */,
+				2E2BA3641A0FFD4A00C91421 /* CJSONDeserializer.m in Sources */,
 				2EF337CD1A06050F00DCE831 /* ALAlertBannerManager.m in Sources */,
 				2FB9DE3F19E9F176004876CF /* main.m in Sources */,
 				2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */,
+				2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */,
 				2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */,
 				2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */,
 			);

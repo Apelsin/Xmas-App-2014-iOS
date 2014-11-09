@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HandledSegueViewController.h"
+#import "BackgroundPattern.h"
 
-@interface SpecialWebViewController : UIViewController <UIWebViewDelegate>
+@interface SpecialWebViewController : UIViewController <UIWebViewDelegate, BackgroundPatternDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property NSString *InitialLocalPath;
 @property NSString *InitialURLString;

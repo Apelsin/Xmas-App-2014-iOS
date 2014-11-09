@@ -9,11 +9,13 @@
 #import <EventKit/EventKit.h>
 #import "AppDelegate.h"
 #import "ALAlertBanner/ALAlertBanner.h"
+#import "CJSON/NSDictionary_JSONExtensions.h"
 #import "EventScheduleViewController.h"
 
 @interface EventScheduleViewController ()
 @property ALAlertBanner *infoBanner;
 @property EKEvent *selectedEvent;
+@property NSDateFormatter *ISO8601DateFormatter;
 @end
 
 @implementation EventScheduleViewController
@@ -30,6 +32,8 @@
 // initWithNibName doesn't get called...
 - (void)awakeFromNib
 {
+    self.ISO8601DateFormatter = [NSDateFormatter new];
+    [self.ISO8601DateFormatter setDateFormat:@"yyyy-MM-d'T'HH:mm:ss.SSSZ"];
 }
 
 - (void)viewDidLoad
@@ -73,7 +77,7 @@
             [controller.eventStore saveEvent:controller.event span:EKSpanThisEvent error:&error];
             appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
             [ALAlertBanner forceHideAllAlertBannersInView:appDelegate.window];
-            banner = [ALAlertBanner alertBannerForView:appDelegate.window style:ALAlertBannerStyleSuccess position:ALAlertBannerPositionUnderNavBar title:@"Calendar event added" subtitle:controller.event.title];
+            banner = [ALAlertBanner alertBannerForView:appDelegate.window style:ALAlertBannerStyleSuccess position:ALAlertBannerPositionUnderNavBar title:@"Calendar event added." subtitle:controller.event.title];
             [banner show];
         break;
         case EKEventEditViewActionDeleted:
@@ -94,24 +98,28 @@
         
         if([first isEqualToString:@"//calendar"])
         {
+            NSRange sub_range = NSMakeRange(2, components.count - 2);
+            NSArray *sub_remainder = [components subarrayWithRange:sub_range];
+            NSString *remainder_encoded = [sub_remainder componentsJoinedByString:@":"];
+            NSString *remainder = [remainder_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            NSError *arg_parse_error = NULL;
+            NSDictionary *arg_dict = [NSDictionary dictionaryWithJSONString:remainder error:&arg_parse_error];
+            
             EKEventStore *store = [[EKEventStore alloc] init];
             [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
                 if(!granted)
                     return;
-                // Jeez this is ugly...
-                NSString *title_encoded = [components objectAtIndex:2];
-                NSString *where_encoded = [components objectAtIndex:3];
-                NSString *when_encoded = [components objectAtIndex:4];
-                NSString *title= [title_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-                NSString *where = [where_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-                NSString *when = [when_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+                NSString *title = [arg_dict valueForKey:@"title"];
+                NSString *where = [arg_dict valueForKey:@"where"];
+                NSString *when = [arg_dict valueForKey:@"when"];
+                NSDate *date = [self.ISO8601DateFormatter dateFromString:when];
                 
                 self.selectedEvent = [EKEvent eventWithEventStore:store];
                 self.selectedEvent.calendar = store.defaultCalendarForNewEvents;
                 self.selectedEvent.title = title;
                 self.selectedEvent.location = where;
-                self.selectedEvent.startDate = [NSDate date];
-                self.selectedEvent.endDate = [NSDate date];
+                self.selectedEvent.startDate = date;
+                self.selectedEvent.endDate = date;
                 
                 [self presentEventEditViewControllerWithEventStore:store];
             }];

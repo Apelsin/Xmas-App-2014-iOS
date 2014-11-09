@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 MZ. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "MenuViewController.h"
 
-@interface MainMenuViewController ()
+@interface MenuViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation MenuViewController
 @synthesize BackgroundPatternName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

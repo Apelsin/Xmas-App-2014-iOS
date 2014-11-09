@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Main Menu View Controller - Home-->
+        <!--Menu View Controller - Home-->
         <scene sceneID="oXk-dX-ttq">
             <objects>
-                <viewController title="Home" id="XSh-oE-w2b" customClass="MainMenuViewController" sceneMemberID="viewController">
+                <viewController title="Home" id="XSh-oE-w2b" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SLF-1M-qDW"/>
                         <viewControllerLayoutGuide type="bottom" id="GrR-kJ-iur"/>
@@ -269,6 +269,7 @@ Involved</string>
                     <navigationItem key="navigationItem" title="Event Schedule" id="t1H-oa-puz"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event_schedule.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="Bq5-Bp-dRe" id="0ae-Pb-j3p"/>
@@ -278,10 +279,10 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="1785" y="-199"/>
         </scene>
-        <!--Handled Segue View Controller - Visitor Info-->
+        <!--Menu View Controller - Visitor Info-->
         <scene sceneID="eUZ-Nn-tk7">
             <objects>
-                <viewController id="u86-mN-2sZ" customClass="HandledSegueViewController" sceneMemberID="viewController">
+                <viewController id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8tw-9V-TXX"/>
                         <viewControllerLayoutGuide type="bottom" id="MZT-ps-3En"/>
@@ -469,7 +470,7 @@ Involved</string>
             <objects>
                 <viewController id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -495,6 +496,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="drg-Rm-LXH"/>
+        <segue reference="iYb-Vo-Mto"/>
     </inferredMetricsTieBreakers>
 </document>
