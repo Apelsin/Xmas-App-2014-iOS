@@ -9,6 +9,10 @@
 #import "ParkMapViewController.h"
 #import "AppDelegate.h"
 
+@interface ParkMapViewController ()
+    @property ALAlertBanner *infoBanner;
+@end
+
 @implementation ParkMapViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

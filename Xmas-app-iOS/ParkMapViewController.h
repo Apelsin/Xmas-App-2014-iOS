@@ -11,6 +11,4 @@
 #import "SpecialWebViewController.h"
 
 @interface ParkMapViewController :  SpecialWebViewController
-@property ALAlertBanner *infoBanner;
-
 @end

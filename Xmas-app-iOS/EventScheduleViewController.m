@@ -12,7 +12,8 @@
 #import "EventScheduleViewController.h"
 
 @interface EventScheduleViewController ()
-
+@property ALAlertBanner *infoBanner;
+@property EKEvent *selectedEvent;
 @end
 
 @implementation EventScheduleViewController
@@ -35,8 +36,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [ALAlertBanner forceHideAllAlertBannersInView:appDelegate.window];
+    self.infoBanner = [ALAlertBanner
+              alertBannerForView:appDelegate.window
+              style:ALAlertBannerStyleNotify
+              position:ALAlertBannerPositionUnderNavBar
+              title:@"Touch an event to add it to your calendar."];
+    [self.infoBanner show];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self.infoBanner hide];
+}
 
 - (void)presentEventEditViewControllerWithEventStore:(EKEventStore*)eventStore {
     EKEventEditViewController *eventEditVC = [[EKEventEditViewController alloc] init];
