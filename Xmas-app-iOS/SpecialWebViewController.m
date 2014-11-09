@@ -31,10 +31,19 @@
 {
     [super viewDidLoad];
     webView.delegate = self;
-    if(self.InitialLocalPath)
-        [self visitLocal:self.InitialLocalPath];
-    else if(self.InitialURLString)
-        [self visit:self.InitialURLString];
+    @try {
+        if(self.InitialLocalPath)
+            [self visitLocal:self.InitialLocalPath];
+        else if(self.InitialURLString)
+            [self visit:self.InitialURLString];
+    }
+    @catch (NSException *exception) {
+        NSLog( @"Exception: %@", exception.name);
+        NSLog( @"Reason: %@", exception.reason );
+    }
+    @finally {
+    }
+    
 }
 - (void)visitLocal:(NSString *)localPath
 {
@@ -53,10 +62,16 @@
     [NSURLConnection sendAsynchronousRequest:request queue:queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                if([data length] > 0 && error == nil)
-                               [self.webView loadRequest:request];
+                                   [self.webView loadRequest:request];
                                else if(error != nil)
-                               NSLog(@"Error: %@", error);
+                                   NSLog(@"Error: %@", error);
                            }];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)wv
+{
+    if([self.title isEqual: @"_auto"])
+        self.title = [wv stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
 - (BOOL)handleAppRequest:(NSURLRequest *)request withComponents:(NSArray *)components

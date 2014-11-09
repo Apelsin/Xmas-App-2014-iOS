@@ -1,0 +1,46 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul#event-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+li.event
+{
+    margin: 0.5em;
+    padding: 0.5em;
+    line-height: 1.5em;
+    border: solid 2px;
+    border-color: #999;
+    border-radius: 0.5em;
+    cursor: pointer; /* Mobile */
+}
+
+li.event span.line
+{
+    display: block;
+}
+
+li.event span.line span.label
+{
+    display: inline-block;
+    font-weight: bold;
+    min-width: 3.5em;
+    text-align: right;
+}
+
+
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+    div#park-map
+    {
+        background: url('../img/Map Brochure 2014@2x.jpg');
+        height: 100%;
+    }
+}

@@ -294,28 +294,8 @@ Involved</string>
                                 <rect key="frame" x="0.0" y="32" width="320" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wo-9b-9pg" customClass="FlatPageButton">
-                                        <rect key="frame" x="60" y="124" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Green">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Parking &amp; Directions">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="24" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" identifier="B" id="drg-Rm-LXH"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-5m-F1A" customClass="FlatPageButton">
-                                        <rect key="frame" x="164" y="124" width="96" height="120"/>
+                                        <rect key="frame" x="216" y="5" width="96" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -330,12 +310,16 @@ Involved</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/stores.html"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="C" id="XI6-Zz-GPF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJ8-ki-UaR" customClass="FlatPageButton">
-                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
+                                        <rect key="frame" x="8" y="5" width="96" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -351,15 +335,39 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Parking &amp; Directions"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/event_schedule.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/faq.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="A" id="UBZ-4n-fqN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-Xa-J4P" customClass="FlatPageButton">
-                                        <rect key="frame" x="8" y="507" width="96" height="120"/>
+                                        <rect key="frame" x="164" y="133" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Green">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Eats &amp; Treats">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/eats_treats.html"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="LH5-2N-pIp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-t2-tup" customClass="FlatPageButton">
+                                        <rect key="frame" x="60" y="133" width="96" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -374,40 +382,37 @@ Involved</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/partners.html"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="e5R-fY-ZIo"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-t2-tup" customClass="FlatPageButton">
-                                        <rect key="frame" x="216" y="507" width="96" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wo-9b-9pg" customClass="FlatPageButton">
+                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Park Map">
+                                                <fragment content="Parking &amp; Directions">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSFont" size="24" name="SavoyeLetPlain"/>
                                                         <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49f-fc-tez" customClass="FlatPageButton">
-                                        <rect key="frame" x="112" y="507" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Green">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Visitor Info">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/parking_directions.html"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" identifier="B" id="drg-Rm-LXH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -463,8 +468,8 @@ Involved</string>
         <scene sceneID="hAs-eL-UIi">
             <objects>
                 <viewController id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <webView key="view" contentMode="scaleToFill" id="wDq-Hl-6cP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -490,6 +495,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iYb-Vo-Mto"/>
+        <segue reference="drg-Rm-LXH"/>
     </inferredMetricsTieBreakers>
 </document>

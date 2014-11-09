@@ -28,11 +28,6 @@ function ready()
                 event = j_element.closest('li');
                 j_element.replaceWith(span);
                 
-                // Maybe apply data detector to
-                // entire event text?
-                //event.wrapInner('<a>');
-                //event.children().attr('href', href);
-
                 function click(e)
                 {
                     title = $('.title .text', e.currentTarget).text();
@@ -53,18 +48,10 @@ function ready()
             if(window.last_detector_count == 0)
                 setTimeout(remove_data_detectors, 100);
         }
-        //alert("foo");
     }
     
     window.last_detector_count = 0;
     remove_data_detectors();
-    
-    function handler(event)
-    {
-        //event.preventDefault();
-        //return false;
-    }
-    $('li.event').click(handler);
 }
 
 $(ready);
