@@ -103,7 +103,7 @@ Schedule</string>
                                             <segue destination="u86-mN-2sZ" kind="push" id="0BK-uU-aB8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq" customClass="FlatPageButton">
                                         <rect key="frame" x="164" y="124" width="96" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
@@ -119,8 +119,12 @@ Schedule</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Sponsors"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="URLString" value="http://christmasinthepark.com/sponsors.html"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="ZEl-d1-Wfl" kind="push" id="HPh-q0-h0q"/>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="iYb-Vo-Mto"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q">
@@ -252,25 +256,6 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="1414" y="-787"/>
         </scene>
-        <!--View Controller - Sponsors-->
-        <scene sceneID="TVn-KD-2cE">
-            <objects>
-                <viewController title="Sponsors" id="ZEl-d1-Wfl" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Cp-VQ-a2B"/>
-                        <viewControllerLayoutGuide type="bottom" id="h3v-I9-caD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KER-59-NTq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="o4J-6O-Mf1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j1i-yj-Fkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1414" y="-199"/>
-        </scene>
         <!--Event Schedule View Controller - Event Schedule-->
         <scene sceneID="ldI-E0-owm">
             <objects>
@@ -315,7 +300,7 @@ Involved</string>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Parking &amp; Directions">
+                                                <fragment content="Parking &amp; Directions">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="24" name="SavoyeLetPlain"/>
@@ -478,8 +463,8 @@ Involved</string>
         <scene sceneID="hAs-eL-UIi">
             <objects>
                 <viewController id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                    <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="wDq-Hl-6cP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -505,6 +490,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XI6-Zz-GPF"/>
+        <segue reference="iYb-Vo-Mto"/>
     </inferredMetricsTieBreakers>
 </document>

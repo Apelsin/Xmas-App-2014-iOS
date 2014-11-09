@@ -42,6 +42,7 @@
         id<FlatPageDelegate> info = (id<FlatPageDelegate>)sender;
         self.title = info.Title;
         self.InitialLocalPath = info.Path;
+        self.InitialURLString = info.URLString;
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);

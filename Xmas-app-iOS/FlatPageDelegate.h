@@ -11,4 +11,5 @@
 @protocol FlatPageDelegate <NSObject>
 @property NSString *Title;
 @property NSString *Path;
+@property NSString *URLString;
 @end

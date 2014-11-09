@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HandledSegueViewController.h"
 
 @interface SpecialWebViewController : UIViewController <UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;

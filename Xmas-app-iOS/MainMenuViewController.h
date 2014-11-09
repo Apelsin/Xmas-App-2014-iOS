@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BackgroundPattern.h"
-@interface MainMenuViewController : UIViewController <BackgroundPatternDelegate>
+#import "HandledSegueViewController.h"
+
+@interface MainMenuViewController : HandledSegueViewController
 
 @end

@@ -12,6 +12,7 @@
 
 @synthesize Title;
 @synthesize Path;
+@synthesize URLString;
 
 - (id)initWithFrame:(CGRect)frame
 {
