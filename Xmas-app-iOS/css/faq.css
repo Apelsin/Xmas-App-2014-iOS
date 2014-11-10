@@ -1,5 +1,107 @@
+html, body
+{
+    margin: 0;
+    background-image: url('../img/dark_wood_brown.png');
+    color: #FFFF77;
+}
+
+.test
+{
+    min-width: 5em;
+    min-height: 5em;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link
+{
+    color: #FF7777;
+}
+
+a:visited
+{
+    color: #773333;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+    padding: 0.5em;
+}
+
+#contents
+{
+    background-color: rgba(0,0,0,0.5);
+}
+
 img#faq-footer
 {
     width: 100%;
     max-width: 423px;
+}
+
+ol#table-of-contents
+{
+    position: relative;
+    display: table;
+    padding: 0;
+}
+
+ol#table-of-contents li
+{
+    position: relative;
+    display: block;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: 0.5em;
+}
+
+ol#table-of-contents li>a
+{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 6em;
+    z-index: 5;
+    vertical-align: middle;
+}
+
+ol#table-of-contents li>a a
+{
+    padding: 1em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.blur-toc
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/dark_wood_brown.png');
+    background-position: inherit;
+    overflow: hidden;
+}
+
+ol#table-of-contents li>*
+{
+}
+
+ol#table-of-contents li a
+{
+    color: #FFFF77;
+}
+
+ol#table-of-contents>:nth-child(even)>a
+{
+    background-color: rgba(255, 32, 32, 0.1);
+}
+
+ol#table-of-contents>:nth-child(odd)>a
+{
+    background-color: rgba(0, 255, 64, 0.1);
 }

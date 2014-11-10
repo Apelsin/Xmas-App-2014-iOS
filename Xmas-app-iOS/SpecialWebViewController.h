@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property NSString *InitialLocalPath;
 @property NSString *InitialURLString;
+@property BOOL AutoTitle;
 - (void)visit:(NSString *)urlString;
 - (void)visitLocal:(NSString *)localPath;
 - (void)asyncVisitURL:(NSURL *) url;

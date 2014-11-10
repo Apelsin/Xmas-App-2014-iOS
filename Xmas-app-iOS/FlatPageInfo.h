@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FlatPageDelegate <NSObject>
+@protocol FlatPageDelegate
 @property NSString *Title;
 @property NSString *Path;
 @property NSString *URLString;
+@end
+
+@interface FlatPageInfo: NSObject <FlatPageDelegate>
 @end

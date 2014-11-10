@@ -8,7 +8,7 @@
 
 #import "SpecialWebViewController.h"
 #import "SegueHandlerDelegate.h"
+#import "HandledSegueViewController.h"
 
 @interface FlatPageWebViewController : SpecialWebViewController <UIWebViewDelegate, SegueHandlerDelegate>
-
 @end

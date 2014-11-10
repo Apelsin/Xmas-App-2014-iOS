@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FlatPageDelegate.h"
+#import "FlatPageInfo.h"
 
 @interface FlatPageButton : UIButton <FlatPageDelegate>
 @end

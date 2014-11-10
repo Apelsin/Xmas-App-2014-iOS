@@ -182,11 +182,11 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="919" y="-787"/>
         </scene>
-        <!--Custom Tab Bar Controller - Home Menu-->
+        <!--Custom Tab Bar Controller - Christmas in the Park 2014-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Home Menu" id="oDi-QP-zns"/>
+                    <navigationItem key="navigationItem" title="Christmas in the Park 2014" id="oDi-QP-zns"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -260,7 +260,7 @@ Involved</string>
         <scene sceneID="ldI-E0-owm">
             <objects>
                 <viewController id="QuS-8L-vhc" customClass="EventScheduleViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="Bq5-Bp-dRe">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="Bq5-Bp-dRe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,6 +270,7 @@ Involved</string>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event_schedule.html"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="Bq5-Bp-dRe" id="0ae-Pb-j3p"/>
@@ -282,7 +283,7 @@ Involved</string>
         <!--Menu View Controller - Visitor Info-->
         <scene sceneID="eUZ-Nn-tk7">
             <objects>
-                <viewController id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController title="Visitor Info" id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8tw-9V-TXX"/>
                         <viewControllerLayoutGuide type="bottom" id="MZT-ps-3En"/>
@@ -312,7 +313,6 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/stores.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -336,8 +336,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/faq.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/faq.html#table-of-contents"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="A" id="UBZ-4n-fqN"/>
@@ -360,7 +359,6 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/eats_treats.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -384,7 +382,6 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/partners.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -408,7 +405,6 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="_auto"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/parking_directions.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -455,6 +451,7 @@ Involved</string>
                     <navigationItem key="navigationItem" title="Park Map" id="a5d-BX-EXR"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/Map-Brochure-2014.html"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="ucd-gD-G6C" id="nXZ-AW-DB1"/>
@@ -465,23 +462,50 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="1785" y="-787"/>
         </scene>
-        <!--Flat Page Web View Controller-->
+        <!--Flat Page Web View Controller - Flat Page View-->
         <scene sceneID="hAs-eL-UIi">
             <objects>
-                <viewController id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController title="Flat Page View" id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="wDq-Hl-6cP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
                     <navigationItem key="navigationItem" id="hc1-9b-6l3"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="wDq-Hl-6cP" id="VH5-lg-HlK"/>
+                        <segue destination="3rp-OQ-Bng" kind="push" identifier="FlatPage_SubPage" id="9Wg-YB-Y5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyY-Sr-fa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698" y="-316"/>
+            <point key="canvasLocation" x="2591" y="-316"/>
+        </scene>
+        <!--Flat Page Web View Controller - Flat Page Sub Page View-->
+        <scene sceneID="MDC-Ya-dLN">
+            <objects>
+                <viewController title="Flat Page Sub Page View" id="3rp-OQ-Bng" customClass="FlatPageWebViewController" sceneMemberID="viewController">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="GI5-JL-xQT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="v1A-sx-Gkj"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="webView" destination="GI5-JL-xQT" id="gNM-L6-eDZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzu-Lg-8y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960" y="-316"/>
         </scene>
     </scenes>
     <resources>
@@ -496,6 +520,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iYb-Vo-Mto"/>
+        <segue reference="e5R-fY-ZIo"/>
     </inferredMetricsTieBreakers>
 </document>
