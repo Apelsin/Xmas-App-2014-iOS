@@ -1,28 +1,45 @@
 function ready()
 {
+    // Select each listing in the table of contents
     list_elements = $('ol#table-of-contents li')
-    a_tags = $('a', list_elements);
-    function ea(index, element)
+    // Get all the a tags inside those listings
+    list_elements__a_tags = $('a', list_elements);
+    function prepare__list_element__a_tag(index, element)
     {
         function click(e)
         {
-            href = e.currentTarget.href;
-            //anchor = href.substring(href.lastIndexOf("#"));
-            //anchor_elem = $(anchor);
-            arguments = { URLString: href, Title: ''};
+            // Blank navigation title because it's
+            // generally too long to fit in the native view
+            arguments = { URLString: e.currentTarget.href, Title: ''};
+            // Tell the app to seque to the next view controller
             execute('app://nav/push:' + JSON.stringify(arguments));
+            // Prevent navigating in this view
             return false;
         }
+        // jQuery of element
         j = $(element);
+        // Set click event handler
         j.on('click', click);
-        $('<div class="blurme blur-toc"></div>').insertAfter(j);
+        // Insert blur underlay and clip container
+        $('<div class="fill blur-toc"><div class="fill blurme"></div></div>').insertAfter(j);
+        // Wrap the contents of the a tag in another
+        // a tag for vertical-align property to work
         j.wrapInner('<a>');
     }
-    a_tags.each(ea);
-    $('.blurme', list_elements).blurjs({
-                                    source: 'html',
-                                    radius: 7,
-                                    });
+    // Prepare all of the a tags
+    list_elements__a_tags.each(prepare__list_element__a_tag);
+    
+    blur_me = $('.blurme', list_elements);
+    function fix_bg(index, element)
+    {
+        j = $(element);
+        j_pos = j.offset();
+        value = (-j_pos.left) + "px " + (-j_pos.top) + "px";
+        console.log(value);
+        j.css('background-position', value);
+    }
+    blur_me.each(fix_bg);
+    blur_me.blurjs({ radius: 12 });
 }
 
 function hashChanged()
@@ -55,4 +72,4 @@ function hashChanged()
     }
 }
 
-$(ready);
+$(window).load(ready);

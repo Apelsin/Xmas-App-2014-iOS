@@ -3,6 +3,18 @@ html, body
     font-family: sans-serif;
 }
 
+.fill
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .blurme
 {
+    margin: -1em;
+    background-image: inherit;
+    background-position: inherit;
 }
