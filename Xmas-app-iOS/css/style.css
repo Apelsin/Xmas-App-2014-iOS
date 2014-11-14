@@ -1,6 +1,23 @@
 html, body
 {
     font-family: sans-serif;
+    color: #222233;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link
+{
+    color: #FF7777;
+}
+
+a:visited
+{
+    color: #773333;
 }
 
 .fill
@@ -12,9 +29,66 @@ html, body
     bottom: 0;
 }
 
-.blurme
+.blur-me
 {
+    /*
+    -webkit-perspective:1000;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: translateZ(0);
+    */
+
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
     margin: -1em;
-    background-image: inherit;
-    background-position: inherit;
+    -webkit-filter: blur(12px);
+}
+
+.blur-container
+{
+    overflow: hidden;
+}
+
+.snowy
+{
+    background-image: url('../img/nice_snow.png');
+    color: #222233;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2)
+{
+    .snowy
+    {
+        background-image: url('../img/nice_snow_@2x.png');
+    }
+}
+
+.gloss
+{
+    border: 1 solid #fff;
+    border-bottom-color: #999;
+}
+
+.gloss:before,
+.gloss:after
+{
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: 1px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#999));
+    background-image: -webkit-linear-gradient(#fff, #999);
+    background-image: -moz-linear-gradient(#fff, #999);
+    background-image: -o-linear-gradient(#fff, #999);
+    background-image: linear-gradient(#fff, #999);
+}
+
+.gloss:after
+{
+    left: auto;
+    right: -1px;
 }

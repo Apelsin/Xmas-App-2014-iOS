@@ -174,7 +174,7 @@ Involved</string>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +269,7 @@ Involved</string>
                     <navigationItem key="navigationItem" title="Event Schedule" id="t1H-oa-puz"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event_schedule.html"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -432,7 +432,7 @@ Involved</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B67-36-DXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,14 +467,14 @@ Involved</string>
             <objects>
                 <viewController title="Flat Page View" id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
                     <navigationItem key="navigationItem" id="hc1-9b-6l3"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="wDq-Hl-6cP" id="VH5-lg-HlK"/>
@@ -490,14 +490,14 @@ Involved</string>
             <objects>
                 <viewController title="Flat Page Sub Page View" id="3rp-OQ-Bng" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="GI5-JL-xQT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
                     <navigationItem key="navigationItem" id="v1A-sx-Gkj"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="NO"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Dark Wood Brown"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="webView" destination="GI5-JL-xQT" id="gNM-L6-eDZ"/>
@@ -520,6 +520,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="e5R-fY-ZIo"/>
+        <segue reference="iYb-Vo-Mto"/>
     </inferredMetricsTieBreakers>
 </document>

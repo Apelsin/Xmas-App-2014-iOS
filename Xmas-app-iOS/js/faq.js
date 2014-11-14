@@ -21,7 +21,7 @@ function ready()
         // Set click event handler
         j.on('click', click);
         // Insert blur underlay and clip container
-        $('<div class="fill blur-toc"><div class="fill blurme"></div></div>').insertAfter(j);
+        $('<div class="fill blur-container"><div class="blur-me"></div></div>').insertAfter(j);
         // Wrap the contents of the a tag in another
         // a tag for vertical-align property to work
         j.wrapInner('<a>');
@@ -29,17 +29,10 @@ function ready()
     // Prepare all of the a tags
     list_elements__a_tags.each(prepare__list_element__a_tag);
     
-    blur_me = $('.blurme', list_elements);
-    function fix_bg(index, element)
-    {
-        j = $(element);
-        j_pos = j.offset();
-        value = (-j_pos.left) + "px " + (-j_pos.top) + "px";
-        console.log(value);
-        j.css('background-position', value);
-    }
-    blur_me.each(fix_bg);
-    blur_me.blurjs({ radius: 12 });
+    blur_me = $('.blur-me', list_elements);
+    blur_me.fixBackground(); // common.js
+    //blur_me.blurjs({source: 'body', radius: 12 });
+    //list_elements.addClass('gloss');
 }
 
 function hashChanged()

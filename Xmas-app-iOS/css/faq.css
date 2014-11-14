@@ -1,39 +1,13 @@
-html, body
+p
 {
-    margin: 0;
-    background-image: url('../img/dark_wood_brown.png');
-    color: #FFFF77;
-}
-
-.test
-{
-    min-width: 5em;
-    min-height: 5em;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-a:link
-{
-    color: #FF7777;
-}
-
-a:visited
-{
-    color: #773333;
-}
-
-p, h1, h2, h3, h4, h5, h6
-{
-    padding: 0.5em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 #contents
 {
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
+    margin: 0.5em;
 }
 
 img#faq-footer
@@ -46,59 +20,64 @@ ol#table-of-contents
 {
     display: block;
     padding: 0;
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 1.375em;
+    line-height: 1.375em;
 }
 
 ol#table-of-contents li
 {
     position: relative;
     display: block;
-    min-height: 5em;
-    margin: 0.5em;
+    height: 5em;
+    margin-top: 1em;
 }
 
 ol#table-of-contents li>a
 {
     position: relative;
-    display: table;
     width: 100%;
-    min-height: inherit;
+    height: inherit;
+    display: table;
     z-index: 10;
 }
 
 ol#table-of-contents li>a a
 {
+    position: relative;
     display: table-cell;
-    padding: 1em;
+    padding: 0.125em;
+    text-align: center;
     vertical-align: middle;
 }
 
-.blur-toc
+ol#table-of-contents li .blur
 {
-    overflow: hidden;
-}
-
-.blur-toc>.blurme
-{
-    background-image: url('../img/dark_wood_brown.png');
-}
-
-ol#table-of-contents li>*
-{
+    
 }
 
 ol#table-of-contents li a
 {
     color: #FFFF77;
+    text-shadow:  0px 0px 7px rgba(0,0,0,0.5), 0px 0px 2px #000, 0px 0px 1px #000;
 }
 
-ol#table-of-contents>:nth-child(even)>a
+ol#table-of-contents>:nth-child(even) .blur-me
 {
-    background-color: rgba(255, 32, 32, 0.1);
+    background-image: url('../img/nice_snow_red.png');
+}
+ol#table-of-contents>:nth-child(odd) .blur-me
+{
+    background-image: url('../img/nice_snow_green.png');
 }
 
-ol#table-of-contents>:nth-child(odd)>a
+@media screen and (-webkit-device-pixel-ratio: 2)
 {
-    background-color: rgba(0, 255, 64, 0.1);
+    ol#table-of-contents>:nth-child(even) .blur-me
+    {
+        background-image: url('../img/nice_snow_red_@2x.png');
+    }
+    ol#table-of-contents>:nth-child(odd) .blur-me
+    {
+        background-image: url('../img/nice_snow_green_@2x.png');
+    }
 }
