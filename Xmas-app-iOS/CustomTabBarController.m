@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // TO-DO: read global tint color correctly (not working for some reason?)
+    [self.tabBar setSelectedImageTintColor:[UIColor redColor]];
 }
 
 - (void)didReceiveMemoryWarning

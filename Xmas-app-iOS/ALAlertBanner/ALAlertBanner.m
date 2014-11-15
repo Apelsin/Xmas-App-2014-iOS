@@ -177,10 +177,10 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     _titleLabel.textAlignment = NSTextAlignmentLeft;
     _titleLabel.numberOfLines = 1;
     _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-    _titleLabel.layer.shadowColor = [UIColor blackColor].CGColor;
-    _titleLabel.layer.shadowOffset = CGSizeMake(0.f, -1.f);
-    _titleLabel.layer.shadowOpacity = 0.3f;
-    _titleLabel.layer.shadowRadius = 0.f;
+    //_titleLabel.layer.shadowColor = [UIColor blackColor].CGColor;
+    //_titleLabel.layer.shadowOffset = CGSizeMake(0.f, -1.f);
+    //_titleLabel.layer.shadowOpacity = 0.3f;
+    //_titleLabel.layer.shadowRadius = 0.f;
     [self addSubview:_titleLabel];
     
     _subtitleLabel = [[UILabel alloc] init];
@@ -190,10 +190,10 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     _subtitleLabel.textAlignment = NSTextAlignmentLeft;
     _subtitleLabel.numberOfLines = 0;
     _subtitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    _subtitleLabel.layer.shadowColor = [UIColor blackColor].CGColor;
-    _subtitleLabel.layer.shadowOffset = CGSizeMake(0.f, -1.f);
-    _subtitleLabel.layer.shadowOpacity = 0.3f;
-    _subtitleLabel.layer.shadowRadius = 0.f;
+    //_subtitleLabel.layer.shadowColor = [UIColor blackColor].CGColor;
+    //_subtitleLabel.layer.shadowOffset = CGSizeMake(0.f, -1.f);
+    //_subtitleLabel.layer.shadowOpacity = 0.3f;
+    //_subtitleLabel.layer.shadowRadius = 0.f;
     [self addSubview:_subtitleLabel];
 }
 // </edit>
