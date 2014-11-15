@@ -9,15 +9,15 @@
             <objects>
                 <viewController title="Home" id="XSh-oE-w2b" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SLF-1M-qDW"/>
-                        <viewControllerLayoutGuide type="bottom" id="GrR-kJ-iur"/>
+                        <viewControllerLayoutGuide type="top" id="5bT-K4-TFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="YTH-UM-mbF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nbP-kT-mVo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
@@ -151,25 +151,15 @@ Involved</string>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="367" id="MlY-7v-EKp"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="1C3-m8-viS"/>
-                            <constraint firstItem="GrR-kJ-iur" firstAttribute="top" secondItem="L1x-Qm-Yql" secondAttribute="bottom" id="D4C-Qx-AMK"/>
-                            <constraint firstAttribute="trailing" secondItem="L1x-Qm-Yql" secondAttribute="trailing" id="MxZ-go-bhZ"/>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="Ovt-1H-ohm"/>
-                            <constraint firstItem="L1x-Qm-Yql" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="ieH-Yq-u1U"/>
-                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" constant="-32" id="rBq-DR-BSJ"/>
-                            <constraint firstItem="L1x-Qm-Yql" firstAttribute="top" secondItem="SLF-1M-qDW" secondAttribute="bottom" id="shU-tU-lKp"/>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="u1W-NC-wFH"/>
+                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" id="687-jA-CF3"/>
+                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="b0e-Z1-yAD"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Home" id="ddb-KJ-8zY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Icon Tab Bar Home" id="ddb-KJ-8zY"/>
                     <navigationItem key="navigationItem" title="Home" id="rnp-8a-NOp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
@@ -185,7 +175,7 @@ Involved</string>
         <!--Custom Tab Bar Controller - Christmas in the Park 2014-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Christmas in the Park 2014" id="oDi-QP-zns"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
@@ -205,10 +195,15 @@ Involved</string>
         <!--Custom Navigation Controller-->
         <scene sceneID="etl-Nt-Fi2">
             <objects>
-                <navigationController definesPresentationContext="YES" id="HL8-Oj-dfP" customClass="CustomNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="HL8-Oj-dfP" customClass="CustomNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Cu-fy-6Yl">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="l1E-uy-jbg">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="n6e-oN-gAd" kind="relationship" relationship="rootViewController" id="EVe-rs-bf8"/>
                     </connections>
@@ -217,21 +212,27 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="13" y="-787"/>
         </scene>
-        <!--View Controller - About-->
+        <!--About View Controller - About-->
         <scene sceneID="W7M-H2-10e">
             <objects>
-                <viewController id="up5-pd-fhL" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WFO-jP-MKG"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dx7-87-hSI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nbh-tO-yZa">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="up5-pd-fhL" customClass="AboutViewController" sceneMemberID="viewController">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="Clg-SV-asV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="About" id="dz1-0P-I0M"/>
+                    <tabBarItem key="tabBarItem" title="About" image="Icon Tab Bar About" id="cfg-eS-pId"/>
+                    <navigationItem key="navigationItem" id="TpD-AY-v9D"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/about.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="webView" destination="Clg-SV-asV" id="Aa3-xf-nfK"/>
+                        <segue destination="jsg-Cu-rPZ" kind="push" identifier="FlatPage_SubPage" id="Gfw-Fp-pPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqE-X0-I0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,8 +243,8 @@ Involved</string>
             <objects>
                 <viewController title="Get Involved" id="zdu-lg-O8X" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mCb-7V-1TC"/>
-                        <viewControllerLayoutGuide type="bottom" id="qF9-nh-OL0"/>
+                        <viewControllerLayoutGuide type="top" id="32g-uM-PqA"/>
+                        <viewControllerLayoutGuide type="bottom" id="B1h-19-W3J"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I5K-iX-l3c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -268,7 +269,7 @@ Involved</string>
                     </webView>
                     <navigationItem key="navigationItem" title="Event Schedule" id="t1H-oa-puz"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event_schedule.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event-schedule.html"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -285,15 +286,15 @@ Involved</string>
             <objects>
                 <viewController title="Visitor Info" id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8tw-9V-TXX"/>
-                        <viewControllerLayoutGuide type="bottom" id="MZT-ps-3En"/>
+                        <viewControllerLayoutGuide type="top" id="8pP-gq-NZ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="C9W-jD-S7Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cch-Xm-ges" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="64" width="320" height="887"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nu-po-Uku">
-                                <rect key="frame" x="0.0" y="32" width="320" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-5m-F1A" customClass="FlatPageButton">
@@ -359,7 +360,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/eats_treats.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/eats-treats.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="LH5-2N-pIp"/>
@@ -414,17 +415,17 @@ Involved</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1000" id="vwe-Y5-ujz"/>
+                                    <constraint firstAttribute="width" constant="320" id="0nQ-AL-UFX"/>
+                                    <constraint firstAttribute="height" constant="1000" id="FzY-01-8PB"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3nu-po-Uku" firstAttribute="leading" secondItem="Cch-Xm-ges" secondAttribute="leading" id="Cfg-oT-IpA"/>
-                            <constraint firstAttribute="centerX" secondItem="3nu-po-Uku" secondAttribute="centerX" id="c4q-JD-bRL"/>
-                            <constraint firstAttribute="bottom" secondItem="3nu-po-Uku" secondAttribute="bottom" constant="-145" id="mSM-eH-C4o"/>
-                            <constraint firstAttribute="trailing" secondItem="3nu-po-Uku" secondAttribute="trailing" id="pOV-0F-Rwe"/>
-                            <constraint firstItem="3nu-po-Uku" firstAttribute="top" secondItem="8tw-9V-TXX" secondAttribute="bottom" constant="32" id="wGt-mX-8LU"/>
+                            <constraint firstAttribute="trailing" secondItem="3nu-po-Uku" secondAttribute="trailing" id="7Jf-cM-Lj6"/>
+                            <constraint firstItem="3nu-po-Uku" firstAttribute="top" secondItem="Cch-Xm-ges" secondAttribute="top" id="JhK-SW-JFg"/>
+                            <constraint firstItem="3nu-po-Uku" firstAttribute="leading" secondItem="Cch-Xm-ges" secondAttribute="leading" id="Pml-aq-QWp"/>
+                            <constraint firstAttribute="bottom" secondItem="3nu-po-Uku" secondAttribute="bottom" id="xfU-yJ-hCh"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -450,7 +451,7 @@ Involved</string>
                     </webView>
                     <navigationItem key="navigationItem" title="Park Map" id="a5d-BX-EXR"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/Map-Brochure-2014.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/park-map.html"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -509,6 +510,8 @@ Involved</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Icon Tab Bar About" width="30" height="30"/>
+        <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
@@ -520,6 +523,6 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iYb-Vo-Mto"/>
+        <segue reference="Gfw-Fp-pPL"/>
     </inferredMetricsTieBreakers>
 </document>

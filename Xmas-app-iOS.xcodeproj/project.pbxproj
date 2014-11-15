@@ -22,6 +22,7 @@
 		2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */; };
 		2E2BA3681A102AE900C91421 /* FlatPageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3671A102AE900C91421 /* FlatPageInfo.m */; };
 		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
+		2E9E08B11A16B9A100C6D332 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E08B01A16B9A100C6D332 /* AboutViewController.m */; };
 		2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */; };
 		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
 		2EC2F63C19F90D890068EB86 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63B19F90D890068EB86 /* css */; };
@@ -84,6 +85,8 @@
 		2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = CJSON/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		2E2BA3671A102AE900C91421 /* FlatPageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatPageInfo.m; sourceTree = "<group>"; };
 		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		2E9E08AF1A16B9A100C6D332 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2E9E08B01A16B9A100C6D332 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebViewController.h; sourceTree = "<group>"; };
 		2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebViewController.m; sourceTree = "<group>"; };
 		2EC2F63919F90CEB0068EB86 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
 				2FB9DE3919E9F176004876CF /* Supporting Files */,
 				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
+				2E9E08AF1A16B9A100C6D332 /* AboutViewController.h */,
+				2E9E08B01A16B9A100C6D332 /* AboutViewController.m */,
 				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
 				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
 				2E2BA34F1A0F320100C91421 /* FlatPageInfo.h */,
@@ -382,6 +387,7 @@
 				2E2BA3641A0FFD4A00C91421 /* CJSONDeserializer.m in Sources */,
 				2EF337CD1A06050F00DCE831 /* ALAlertBannerManager.m in Sources */,
 				2FB9DE3F19E9F176004876CF /* main.m in Sources */,
+				2E9E08B11A16B9A100C6D332 /* AboutViewController.m in Sources */,
 				2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */,
 				2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */,
 				2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */,

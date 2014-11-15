@@ -107,7 +107,7 @@
     if(self._TargetAnchor)
     {
         [self.webView stringByEvaluatingJavaScriptFromString:
-         [NSString stringWithFormat:@"window.location.hash = '#%@'; hashChanged();", self._TargetAnchor]];
+         [NSString stringWithFormat:@"window.location.hash = '#%@'; App.FragmentChanged();", self._TargetAnchor]];
         self._TargetAnchor = nil;
     }
 }
@@ -127,7 +127,18 @@
 {
     NSString *requestString = [[request URL] absoluteString];
     NSArray *components = [requestString componentsSeparatedByString:@":"];
-    return [components count] > 1 && [self handleAppRequest:request withComponents:components];
+    if([components count] > 1)
+    {
+        if(![self handleAppRequest:request withComponents:components])
+            return NO;
+    }
+    // Fall-through
+    if(navigationType == UIWebViewNavigationTypeLinkClicked)
+    {
+        [[UIApplication sharedApplication] openURL:[request URL]];
+        return NO;
+    }
+    return YES;
 }
 
 @end

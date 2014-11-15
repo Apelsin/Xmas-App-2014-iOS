@@ -46,24 +46,3 @@ li.event span.line span.label
     min-width: 3.5em;
     text-align: right;
 }
-
-ul>:nth-child(even) .blur-me
-{
-    background-image: url('../img/nice_snow_red.png');
-}
-ul>:nth-child(odd) .blur-me
-{
-    background-image: url('../img/nice_snow_green.png');
-}
-
-@media screen and (-webkit-device-pixel-ratio: 2)
-{
-    ul#event-list>:nth-child(even) .blur-me
-    {
-        background-image: url('../img/nice_snow_red_@2x.png');
-    }
-    ul#event-list>:nth-child(odd) .blur-me
-    {
-        background-image: url('../img/nice_snow_green_@2x.png');
-    }
-}

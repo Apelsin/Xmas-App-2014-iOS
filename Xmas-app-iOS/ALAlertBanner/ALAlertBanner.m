@@ -165,6 +165,7 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     self.delegate = (ALAlertBannerManager <ALAlertBannerViewDelegate> *)manager;
 }
 
+// <edit>
 - (void)setupSubviews {
     _styleImageView = [[UIImageView alloc] init];
     [self addSubview:_styleImageView];
@@ -195,6 +196,7 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     _subtitleLabel.layer.shadowRadius = 0.f;
     [self addSubview:_subtitleLabel];
 }
+// </edit>
 
 # pragma mark -
 # pragma mark Custom Setters & Getters
@@ -696,21 +698,27 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+    // <edit>
     UIColor *fillColor;
     switch (self.style) {
         case ALAlertBannerStyleSuccess:
             fillColor = [UIColor colorWithRed:(77/255.0) green:(175/255.0) blue:(67/255.0) alpha:1.f];
-            break;
+            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
+            break;;
         case ALAlertBannerStyleFailure:
             fillColor = [UIColor colorWithRed:(173/255.0) green:(48/255.0) blue:(48/255.0) alpha:1.f];
+            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
             break;
         case ALAlertBannerStyleNotify:
-            fillColor = [UIColor colorWithRed:(48/255.0) green:(110/255.0) blue:(173/255.0) alpha:1.f];
+            fillColor = [UIColor colorWithRed:1.f green:1.f blue:1.f alpha:1.f];
+            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithRed:1.0f green:0.2f blue:0.2f alpha:0.9f];
             break;
         case ALAlertBannerStyleWarning:
             fillColor = [UIColor colorWithRed:(211/255.0) green:(209/255.0) blue:(100/255.0) alpha:1.f];
+            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
             break;
     }
+    // </edit>
     
     NSArray *colorsArray = [NSArray arrayWithObjects:(id)[fillColor CGColor], (id)[[fillColor darkerColor] CGColor], nil];
     CGColorSpaceRef colorSpace =  CGColorSpaceCreateDeviceRGB();

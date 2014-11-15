@@ -49,35 +49,3 @@ ol#table-of-contents li>a a
     text-align: center;
     vertical-align: middle;
 }
-
-ol#table-of-contents li .blur
-{
-    
-}
-
-ol#table-of-contents li a
-{
-    color: #FFFF77;
-    text-shadow:  0px 0px 7px rgba(0,0,0,0.5), 0px 0px 2px #000, 0px 0px 1px #000;
-}
-
-ol#table-of-contents>:nth-child(even) .blur-me
-{
-    background-image: url('../img/nice_snow_red.png');
-}
-ol#table-of-contents>:nth-child(odd) .blur-me
-{
-    background-image: url('../img/nice_snow_green.png');
-}
-
-@media screen and (-webkit-device-pixel-ratio: 2)
-{
-    ol#table-of-contents>:nth-child(even) .blur-me
-    {
-        background-image: url('../img/nice_snow_red_@2x.png');
-    }
-    ol#table-of-contents>:nth-child(odd) .blur-me
-    {
-        background-image: url('../img/nice_snow_green_@2x.png');
-    }
-}
