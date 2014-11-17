@@ -10,8 +10,8 @@
 
 @protocol FlatPageDelegate
 @property NSString *Title;
-@property NSString *Path;
-@property NSString *URLString;
+@property NSString *Location;
+@property NSString *Referrer;
 @end
 
 @interface FlatPageInfo: NSObject <FlatPageDelegate>

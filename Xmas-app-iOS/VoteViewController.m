@@ -103,7 +103,7 @@
 {
     NSLog(@"Scanned QR code message: %@", stringValue);
     NSURL *url = [NSURL URLWithString:stringValue];
-    NSArray *allowed_hosts = [[self allowedHosts] componentsSeparatedByString:@";"];
+    NSArray *allowed_hosts = [[self AllowedHosts] componentsSeparatedByString:@";"];
     if([allowed_hosts containsObject:[url host]])
     {
         [[UIApplication sharedApplication] openURL:url];

@@ -11,11 +11,10 @@
 
 @interface SpecialWebViewController : UIViewController <UIWebViewDelegate, BackgroundPatternDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
-@property NSString *InitialLocalPath;
-@property NSString *InitialURLString;
+@property NSString *InitialLocation;
+@property NSString *InitialReferrer;
 @property BOOL AutoTitle;
-- (void)visit:(NSString *)urlString;
-- (void)visitLocal:(NSString *)localPath;
+- (void)visit:(NSString *)uriString;
 - (void)asyncVisitURL:(NSURL *) url;
 
 @end

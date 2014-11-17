@@ -19,8 +19,8 @@ function ready()
             when = $('.when .text', e.currentTarget).text();
             
             // Is it really wise to add this here?
-            when += " 2014";
-            when_parsed = moment(when, "MMM DD [at] hA YYYY"); // Moment.js
+            when += " 2014"; // Big assumption!!!
+            when_parsed = moment(when, "MMM DD [at] hA YYYY"); // moment.js
             
             arguments = {title: title, where: where, when: when_parsed}
             json_string = JSON.stringify(arguments);
