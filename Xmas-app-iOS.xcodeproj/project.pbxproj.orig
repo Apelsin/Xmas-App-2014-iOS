@@ -23,8 +23,6 @@
 		2E2BA3681A102AE900C91421 /* FlatPageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3671A102AE900C91421 /* FlatPageInfo.m */; };
 		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
 		2E9E08B11A16B9A100C6D332 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E08B01A16B9A100C6D332 /* AboutViewController.m */; };
-		2EAFD7FA1A19A537006042A7 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD7F91A19A537006042A7 /* VoteViewController.m */; };
-		2EAFD7FC1A19D7A4006042A7 /* Test_VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD7FB1A19D7A4006042A7 /* Test_VoteViewController.m */; };
 		2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */; };
 		2EC2F63A19F90CEB0068EB86 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63919F90CEB0068EB86 /* js */; };
 		2EC2F63C19F90D890068EB86 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2F63B19F90D890068EB86 /* css */; };
@@ -43,6 +41,8 @@
 		2FB9DE5619E9F176004876CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3219E9F176004876CF /* Foundation.framework */; };
 		2FB9DE5719E9F176004876CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB9DE3619E9F176004876CF /* UIKit.framework */; };
 		2FB9DE5F19E9F176004876CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9DE5D19E9F176004876CF /* InfoPlist.strings */; };
+		2FB9DE6119E9F176004876CF /* Xmas_app_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DE6019E9F176004876CF /* Xmas_app_iOSTests.m */; };
+		2FCFE7921A0189A7003EFDAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCFE7911A0189A7003EFDAB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +88,6 @@
 		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2E9E08AF1A16B9A100C6D332 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2E9E08B01A16B9A100C6D332 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		2EAFD7F81A19A537006042A7 /* VoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
-		2EAFD7F91A19A537006042A7 /* VoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
-		2EAFD7FB1A19D7A4006042A7 /* Test_VoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_VoteViewController.m; sourceTree = "<group>"; };
 		2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialWebViewController.h; sourceTree = "<group>"; };
 		2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialWebViewController.m; sourceTree = "<group>"; };
 		2EC2F63919F90CEB0068EB86 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
@@ -117,6 +114,8 @@
 		2FB9DE5419E9F176004876CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2FB9DE5C19E9F176004876CF /* Xmas-app-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xmas-app-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		2FB9DE5E19E9F176004876CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FB9DE6019E9F176004876CF /* Xmas_app_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xmas_app_iOSTests.m; sourceTree = "<group>"; };
+		2FCFE7911A0189A7003EFDAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +123,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD:Xmas-app-iOS.xcodeproj/project.pbxproj
 				2EF337C61A0604C000DCE831 /* QuartzCore.framework in Frameworks */,
+=======
+				2FCFE7921A0189A7003EFDAB /* QuartzCore.framework in Frameworks */,
+>>>>>>> origin/Sreenidhi-Xmas-app-iOS:Xmas-app-iOS/Xmas-app-iOS.xcodeproj/project.pbxproj
 				2FB9DE3519E9F176004876CF /* CoreGraphics.framework in Frameworks */,
 				2FB9DE3719E9F176004876CF /* UIKit.framework in Frameworks */,
 				2FB9DE3319E9F176004876CF /* Foundation.framework in Frameworks */,
@@ -192,7 +195,11 @@
 		2FB9DE3119E9F176004876CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD:Xmas-app-iOS.xcodeproj/project.pbxproj
 				2EF337C51A0604C000DCE831 /* QuartzCore.framework */,
+=======
+				2FCFE7911A0189A7003EFDAB /* QuartzCore.framework */,
+>>>>>>> origin/Sreenidhi-Xmas-app-iOS:Xmas-app-iOS/Xmas-app-iOS.xcodeproj/project.pbxproj
 				2FB9DE3219E9F176004876CF /* Foundation.framework */,
 				2FB9DE3419E9F176004876CF /* CoreGraphics.framework */,
 				2FB9DE3619E9F176004876CF /* UIKit.framework */,
@@ -236,8 +243,6 @@
 				2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */,
 				2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */,
 				2E2BA3541A0F432900C91421 /* BackgroundPattern.m */,
-				2EAFD7F81A19A537006042A7 /* VoteViewController.h */,
-				2EAFD7F91A19A537006042A7 /* VoteViewController.m */,
 			);
 			path = "Xmas-app-iOS";
 			sourceTree = "<group>";
@@ -260,8 +265,8 @@
 		2FB9DE5A19E9F176004876CF /* Xmas-app-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				2FB9DE6019E9F176004876CF /* Xmas_app_iOSTests.m */,
 				2FB9DE5B19E9F176004876CF /* Supporting Files */,
-				2EAFD7FB1A19D7A4006042A7 /* Test_VoteViewController.m */,
 			);
 			path = "Xmas-app-iOSTests";
 			sourceTree = "<group>";
@@ -322,6 +327,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MZ;
 				TargetAttributes = {
+					2FB9DE2E19E9F176004876CF = {
+						DevelopmentTeam = YWH6X7RKCE;
+					};
 					2FB9DE5219E9F176004876CF = {
 						TestTargetID = 2FB9DE2E19E9F176004876CF;
 					};
@@ -392,7 +400,6 @@
 				2E9E08B11A16B9A100C6D332 /* AboutViewController.m in Sources */,
 				2EB5D9451A04605D008739C8 /* SpecialWebViewController.m in Sources */,
 				2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */,
-				2EAFD7FA1A19A537006042A7 /* VoteViewController.m in Sources */,
 				2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */,
 				2E2BA3681A102AE900C91421 /* FlatPageInfo.m in Sources */,
 				2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */,
@@ -403,7 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EAFD7FC1A19D7A4006042A7 /* Test_VoteViewController.m in Sources */,
+				2FB9DE6119E9F176004876CF /* Xmas_app_iOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,10 +521,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,10 +537,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
