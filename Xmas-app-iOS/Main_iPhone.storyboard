@@ -125,7 +125,7 @@ Schedule</string>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Sponsors"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="URLString" value="http://christmasinthepark.com/sponsors.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/sponsors.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="iYb-Vo-Mto"/>
@@ -229,7 +229,7 @@ Involved</string>
                     <tabBarItem key="tabBarItem" title="About" image="Icon Tab Bar About" id="cfg-eS-pId"/>
                     <navigationItem key="navigationItem" id="TpD-AY-v9D"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/about.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocation" value="/html/about.html"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="NO"/>
                     </userDefinedRuntimeAttributes>
@@ -273,8 +273,8 @@ Involved</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for QR code..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-VW-t1t">
-                                <rect key="frame" x="75" y="455" width="170" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning QR code..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-VW-t1t">
+                                <rect key="frame" x="81" y="455" width="159" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -290,7 +290,7 @@ Involved</string>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="XQv-dr-Zeb"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="allowedDomains" value="christmasinthepark.com"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="AllowedHosts" value="christmasinthepark.com"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="viewPreview" destination="V8x-xR-UO0" id="BCq-mW-aOv"/>
@@ -312,7 +312,7 @@ Involved</string>
                     </webView>
                     <navigationItem key="navigationItem" title="Event Schedule" id="t1H-oa-puz"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/event-schedule.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocation" value="/html/event-schedule.html"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -357,7 +357,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/stores.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/stores.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="C" id="XI6-Zz-GPF"/>
@@ -380,7 +380,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/faq.html#table-of-contents"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/faq.html#table-of-contents"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="A" id="UBZ-4n-fqN"/>
@@ -403,7 +403,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/eats-treats.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/eats-treats.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="LH5-2N-pIp"/>
@@ -426,7 +426,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/partners.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/partners.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="e5R-fY-ZIo"/>
@@ -449,7 +449,7 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Path" value="/html/parking_directions.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/parking_directions.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="B" id="drg-Rm-LXH"/>
@@ -494,7 +494,7 @@ Involved</string>
                     </webView>
                     <navigationItem key="navigationItem" title="Park Map" id="a5d-BX-EXR"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocalPath" value="/html/park-map.html"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocation" value="/html/park-map.html"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>

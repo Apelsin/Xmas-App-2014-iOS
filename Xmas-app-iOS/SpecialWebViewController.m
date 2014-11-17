@@ -10,14 +10,14 @@
 
 @interface SpecialWebViewController ()
 @property NSString *_TargetAnchor;
-
+@property NSURL *_LastRequestURL;
 @end
 
 @implementation SpecialWebViewController
 
 @synthesize webView;
-@synthesize InitialLocalPath;
-@synthesize InitialURLString;
+@synthesize InitialLocation;
+@synthesize InitialReferrer;
 @synthesize BackgroundPatternName;
 @synthesize AutoTitle;
 
@@ -35,10 +35,8 @@
     [super viewDidLoad];
     webView.delegate = self;
     @try {
-        if(self.InitialLocalPath)
-            [self visitLocal:self.InitialLocalPath];
-        else if(self.InitialURLString)
-            [self visit:self.InitialURLString];
+        if(self.InitialLocation)
+            [self visit:self.InitialLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent]];
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);
@@ -48,34 +46,44 @@
         [BackgroundPattern setViewBackgroundPatternFromNamedPattern:self.view withPatternName:self.BackgroundPatternName];
 }
 
-- (void)visit:(NSString *)urlString
+- (void)visit:(NSString *)uriString
 {
-    NSArray *components = [urlString componentsSeparatedByString:@"#"];
-    urlString = components[0];
-    NSString *anchor = nil;
-    if(components.count > 1)
-        anchor = components[1];
-    if([urlString hasPrefix:@"file:///"])
-        [self asyncVisitURL:[NSURL fileURLWithPath:[urlString substringFromIndex:7]] withAnchor:anchor];
-    else
-        [self asyncVisitURL:[NSURL URLWithString:urlString]];
+    [self visit:uriString relativeTo:nil];
 }
 
-- (void)visitLocal:(NSString *)localPath
+- (void)visit:(NSString *)uriString relativeTo:(NSString *)relativePath
 {
-    NSArray *components = [localPath componentsSeparatedByString:@"#"];
-    localPath = components[0];
+    NSArray *components = [uriString componentsSeparatedByString:@"#"];
+    uriString = components[0];
     NSString *anchor = nil;
     if(components.count > 1)
         anchor = components[1];
-    // TO-DO: get anchor to work
     
-    NSString *dirname = [localPath stringByDeletingLastPathComponent];
-    NSString *basename = [localPath lastPathComponent];
-    NSString *title = [basename stringByDeletingPathExtension];
-    NSString *extension = [basename pathExtension];
-    NSString *url_string = [[NSBundle mainBundle] pathForResource:title ofType:extension inDirectory:dirname];
-    [self asyncVisitURL:[NSURL fileURLWithPath:url_string] withAnchor:anchor];
+    if([uriString hasPrefix:@"file:///"])
+        uriString = [uriString substringFromIndex:7];
+    
+    if([uriString rangeOfString:@"://"].location == NSNotFound)
+    {
+        
+        if([uriString hasPrefix:@"/"]) // Local Path
+        {
+            NSString *dirname = [uriString stringByDeletingLastPathComponent];
+            NSString *basename = [uriString lastPathComponent];
+            NSString *name = [basename stringByDeletingPathExtension];
+            NSString *extension = [basename pathExtension];
+            NSString *url_string = [[NSBundle mainBundle] pathForResource:name ofType:extension inDirectory:dirname];
+            [self asyncVisitURL:[NSURL fileURLWithPath:url_string] withAnchor:anchor];
+        }
+        else // Relative Path
+        {
+            NSString *url_string = [relativePath stringByAppendingPathComponent:uriString];
+            [self asyncVisitURL:[NSURL URLWithString:url_string] withAnchor:anchor];
+        }
+    }
+    else // Non-local Path
+    {
+        [self asyncVisitURL:[NSURL URLWithString:uriString] withAnchor:anchor];
+    }
 }
 
 - (void)asyncVisitURL:(NSURL *) url
@@ -93,6 +101,7 @@
                                {
                                    [self.webView loadRequest:request];
                                    self._TargetAnchor = anchor; // Hack
+                                   self._LastRequestURL = request.URL; // Hack
                                }
                                else if(error != nil)
                                    NSLog(@"Error: %@", error);

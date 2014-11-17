@@ -15,34 +15,41 @@ App = {
     {
         // Tells the app to push a Flat Page to the navigation controller
         // Expects jQuery click event object as first argument
-        function self(e, local, href)
+        function self(e, href)
         {
             arguments = {};
-            if(!href) // Allow override href
-                href = e.currentTarget.href;
-            if(local) // Set path to link without protocol (the path)
-                arguments.Path = href.replace(new RegExp('/.*?:\/\//g'), "");
-            else // Set URLString to href attribute
-                arguments.URLString = href;
+            if(!href) // If there's no override href, get it from the tag
+                href = e.currentTarget.getAttribute('href'); // Verbatim href attribute
+            
+            if(href[0] == '#')
+            {
+                p = window.location.pathname;
+                var filename = p.substring(p.lastIndexOf('/') + 1);
+                href = filename + href;
+            }
+            
+            arguments.Location = href;
+            
             arg_str = JSON.stringify(arguments);
             // Tell the app to seque to the next view controller (i.e. navigate the app)
             App.Execute('app://nav/push:' + arg_str);
             // Don't navigate in the webView
             return false;
         }
-        local = !!arguments.local;
         href = arguments.href;
-        return function(e) { return self(e, local, href); };
+        return function(e) { return self(e, href); };
     },
     EachApplyClickNavPush: function(arguments)
     {
         _arguments = arguments;
         function self(index, element)
         {
-            if(is_local_url(element.href))
+            if(App.IsLocalUrl(element.href))
+            {
                 $(element).click(App.ClickNavPush(_arguments));
+            }
         }
-        return self();
+        return self;
     },
     RemoveDataDetectors: function(selection)
     {
