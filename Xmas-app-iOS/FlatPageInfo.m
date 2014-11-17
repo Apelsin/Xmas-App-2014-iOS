@@ -10,6 +10,6 @@
 
 @implementation FlatPageInfo
 @synthesize Title;
-@synthesize Path;
-@synthesize URLString;
+@synthesize Location;
+@synthesize Referrer;
 @end

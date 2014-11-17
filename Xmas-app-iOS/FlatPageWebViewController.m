@@ -52,8 +52,8 @@
             NSDictionary *arg_dict = [NSDictionary dictionaryWithJSONString:remainder error:&arg_parse_error];
             FlatPageInfo *info = [FlatPageInfo new];
             info.Title = [arg_dict valueForKey:@"Title"];
-            info.Path = [arg_dict valueForKey:@"Path"];
-            info.URLString = [arg_dict valueForKey:@"URLString"];
+            info.Location = [arg_dict valueForKey:@"Location"];
+            info.Referrer = self.webView.request.URL.absoluteString;
             [self performSegueWithIdentifier:@"FlatPage_SubPage" sender:info];
         }
         return NO;
@@ -81,8 +81,8 @@
     @try {
         id<FlatPageDelegate> info = (id<FlatPageDelegate>)sender;
         self.title = info.Title;
-        self.InitialLocalPath = info.Path;
-        self.InitialURLString = info.URLString;
+        self.InitialLocation = info.Location;
+        self.InitialReferrer = info.Referrer;
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);

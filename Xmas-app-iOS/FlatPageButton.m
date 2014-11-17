@@ -11,8 +11,8 @@
 @implementation FlatPageButton
 
 @synthesize Title;
-@synthesize Path;
-@synthesize URLString;
+@synthesize Location;
+@synthesize Referrer;
 
 - (id)initWithFrame:(CGRect)frame
 {

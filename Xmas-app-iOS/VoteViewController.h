@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *viewPreview;
 @property (strong, nonatomic) IBOutlet UIView *bbItemScan;
-@property NSString *allowedHosts;
+@property NSString *AllowedHosts;
 - (IBAction)scanAction:(id)sender;
 - (void)handleScannedQRCodeMessage:(NSString *)stringValue;
 
