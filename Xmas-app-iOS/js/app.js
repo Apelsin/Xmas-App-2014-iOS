@@ -97,6 +97,49 @@ Array.prototype.last = function() {
     return this[this.length-1];
 }
 
+function NoClickDelay(el) {
+    this.element = el;
+    if( window.Touch )
+        this.element.addEventListener('touchstart', this, false);
+}
+
+NoClickDelay.prototype = {
+    handleEvent: function(e) {
+        switch(e.type) {
+            case 'touchstart': this.onTouchStart(e); break;
+            case 'touchmove': this.onTouchMove(e); break;
+            case 'touchend': this.onTouchEnd(e); break;
+        }
+    },
+        
+    onTouchStart: function(e) {
+        e.preventDefault();
+        this.moved = false;
+        
+        this.element.addEventListener('touchmove', this, false);
+        this.element.addEventListener('touchend', this, false);
+    },
+        
+    onTouchMove: function(e) {
+        this.moved = true;
+    },
+        
+    onTouchEnd: function(e) {
+        this.element.removeEventListener('touchmove', this, false);
+        this.element.removeEventListener('touchend', this, false);
+        
+        if( !this.moved ) {
+            // Place your code here or use the click simulation below
+            var theTarget = document.elementFromPoint(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+            if(theTarget.nodeType == 3) theTarget = theTarget.parentNode;
+            
+            var theEvent = document.createEvent('MouseEvents');
+            theEvent.initEvent('click', true, true);
+            theTarget.dispatchEvent(theEvent);
+        }
+    }
+};
+
 //// JQuery functions ////
 $.fn.fixBackground = function()
 {
@@ -106,4 +149,50 @@ $.fn.fixBackground = function()
         value = (-j_pos.left) + "px " + (-j_pos.top) + "px";
         j.css('background-position', value);
     });
+}
+
+$.fn.scrollHint = function()
+{
+    base = this;
+    this.wrapInner('<div class="contents">');
+    
+    this.append('<div class="indicator up">&#x2C4;</div>');
+    this.append('<div class="indicator down">&#x2C5;</div>');
+    
+    this.wrapInner('<div class="scroll-hint">');
+    
+    contents = $('.contents', this);
+    
+    function scrolled(from, to)
+    {
+        scroll = contents[0].scrollHeight > contents[0].clientHeight;
+        if(scroll)
+        {
+            last_zero = from == 0;
+            at_zero = to == 0;
+            if(at_zero)
+            {
+                $('.scroll-hint .indicator.down', base).fadeIn();
+                $('.scroll-hint .indicator.up', base).fadeOut();
+            }
+            else if(last_zero)
+            {
+                $('.scroll-hint .indicator.down', base).fadeOut();
+                $('.scroll-hint .indicator.up', base).fadeIn();
+            }
+        }
+        else
+        {
+            $('.scroll-hint .indicator', base).fadeOut();
+        }
+    }
+    function scroll_handler()
+    {
+        scroll = contents.scrollTop();
+        last_scroll = contents[0].getAttribute('lastScroll') || 0;
+        scrolled(last_scroll, scroll);
+        contents[0].setAttribute('last-scroll', scroll);
+    }
+    scrolled(0,0);
+    contents.scroll(scroll_handler);
 }

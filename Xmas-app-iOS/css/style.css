@@ -134,3 +134,47 @@ a:visited
     left: auto;
     right: -1px;
 }
+
+.scroll-hint
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-hint .contents
+{
+    position: relative;
+    padding: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.scroll-hint .indicator.up,
+.scroll-hint .indicator.down
+{
+    display: block;
+    left: 0;
+    right: 0;
+    margin: -1.25em auto -1.25em auto;
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    transform:scale(5,1);
+    -webkit-transform:scale(5,1);
+    opacity: 0.5;
+    display: none;
+}
+
+.scroll-hint .indicator.down
+{
+    bottom: 1em;
+}
+
+.scroll-hint .indicator.up
+{
+    top: 1em;
+}

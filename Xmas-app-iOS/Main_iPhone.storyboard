@@ -637,10 +637,14 @@ Involved</string>
         <scene sceneID="9Yi-wq-f0B">
             <objects>
                 <viewController id="px3-E6-IgJ" userLabel="Parking &amp; Directions" customClass="SpecialWebViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="o6g-76-DDX">
+                    <webView key="view" contentMode="scaleToFill" id="o6g-76-DDX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="scrollView.scrollEnabled" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="scrollView.delaysContentTouches" value="NO"/>
+                        </userDefinedRuntimeAttributes>
                     </webView>
                     <navigationItem key="navigationItem" title="Parking &amp; Directions" id="nWb-2n-2Bv"/>
                     <userDefinedRuntimeAttributes>
