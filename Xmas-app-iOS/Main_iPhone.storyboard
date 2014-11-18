@@ -180,7 +180,7 @@ Involved</string>
                                     <constraint firstAttribute="width" constant="96" id="eqb-Jc-elh"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="polaroid-pictures">
+                                <state key="normal" image="Photos">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Photos">
                                             <attributes>
@@ -593,7 +593,7 @@ Involved</string>
             <objects>
                 <viewController title="Flat Page View" id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="wDq-Hl-6cP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -616,7 +616,7 @@ Involved</string>
             <objects>
                 <viewController title="Flat Page Sub Page View" id="3rp-OQ-Bng" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="GI5-JL-xQT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -668,8 +668,8 @@ Involved</string>
         <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
+        <image name="Photos" width="142" height="188"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
-        <image name="polaroid-pictures" width="122" height="150"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -677,7 +677,7 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="e5R-fY-ZIo"/>
+        <segue reference="iYb-Vo-Mto"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
