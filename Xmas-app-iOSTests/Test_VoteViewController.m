@@ -35,4 +35,18 @@
     XCTAssertThrows([_controller handleScannedQRCodeMessage:@"https://payeepal.com/foobar"], @"Should throw exception");
 }
 
+- (void)testParseURLFromString
+{
+    NSString *desired, *input, *output;
+    desired = input = @"http://christmasinthepark.com/vote.php?id=1234";
+    output = [[_controller parseURLFromString:@"http://christmasinthepark.com/vote.php?id=1234"] absoluteString];
+    XCTAssertEqual(output, desired);
+    input = @"//christmasinthepark.com/vote.php?id=1234";
+    output = [[_controller parseURLFromString:@"http://christmasinthepark.com/vote.php?id=1234"] absoluteString];
+    XCTAssertEqual(output, desired);
+    input = @"christmasinthepark.com/vote.php?id=1234";
+    output = [[_controller parseURLFromString:@"http://christmasinthepark.com/vote.php?id=1234"] absoluteString];
+    XCTAssertEqual(output, desired);
+}
+
 @end

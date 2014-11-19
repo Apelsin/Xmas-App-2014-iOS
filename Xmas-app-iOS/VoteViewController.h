@@ -16,6 +16,6 @@
 @property NSString *AllowedHosts;
 -(void)handleScannedQRCodeMessage:(NSString *)stringValue;
 -(void)handleScannedQRCodeMessage:(NSString *)stringValue allowAllHosts:(BOOL)allowAllHosts;
-
+-(NSURL *)parseURLFromString:(NSString *)urlString;
 
 @end

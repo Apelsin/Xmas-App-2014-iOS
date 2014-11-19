@@ -58,7 +58,7 @@
 
 -(NSURL *)parseURLFromString:(NSString *)urlString
 {
-    NSURL *url = [NSURL fileURLWithPath:urlString];
+    NSURL *url = [NSURL URLWithString:urlString];
     // Fix schemeless URLs:
     //NSLog(@"Resource Specifier: %@", [url resourceSpecifier]);
     if(![[url resourceSpecifier] hasPrefix:@"//"])
