@@ -156,7 +156,7 @@ Involved</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
                                 <rect key="frame" x="208" y="64" width="112" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="BaA-v4-XOj"/>
@@ -173,7 +173,7 @@ Involved</string>
                                     <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-gk-II1" customClass="FlatPageButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-gk-II1" customClass="FlatPageButton">
                                 <rect key="frame" x="0.0" y="64" width="96" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="YJL-5q-ncC"/>
@@ -202,13 +202,13 @@ Involved</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" id="2zT-32-sM0"/>
                             <constraint firstAttribute="trailing" secondItem="5jn-sW-FsU" secondAttribute="trailing" id="3rg-DZ-tyP"/>
-                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" id="687-jA-CF3"/>
                             <constraint firstAttribute="trailing" secondItem="cAx-wo-KAD" secondAttribute="trailing" id="C1u-S6-yl6"/>
                             <constraint firstItem="cAx-wo-KAD" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="K3S-BT-e0j"/>
                             <constraint firstItem="5jn-sW-FsU" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="PS6-2h-H6W"/>
                             <constraint firstItem="cAx-wo-KAD" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="Qvc-xU-1Hg"/>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="b0e-Z1-yAD"/>
+                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="hq7-kO-LIR"/>
                             <constraint firstItem="0Hu-gk-II1" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="kbE-tC-Pt6"/>
                             <constraint firstAttribute="centerY" secondItem="L1x-Qm-Yql" secondAttribute="centerY" id="rfj-ga-oMu"/>
                             <constraint firstItem="0Hu-gk-II1" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="uMd-uv-7OE"/>

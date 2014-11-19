@@ -322,6 +322,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MZ;
 				TargetAttributes = {
+					2FB9DE2E19E9F176004876CF = {
+						DevelopmentTeam = YWH6X7RKCE;
+					};
 					2FB9DE5219E9F176004876CF = {
 						TestTargetID = 2FB9DE2E19E9F176004876CF;
 					};
@@ -514,10 +517,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,10 +533,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
