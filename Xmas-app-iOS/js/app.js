@@ -4,8 +4,8 @@ App = {
     Execute: function(url)
     {
         //alert(url);
-        iframe = document.createElement("iframe");
-        iframe.setAttribute("src", url);
+        iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'app://' + url);
         document.documentElement.appendChild(iframe);
         iframe.parentNode.removeChild(iframe);
         iframe = null;
@@ -32,7 +32,7 @@ App = {
             
             arg_str = JSON.stringify(arguments);
             // Tell the app to seque to the next view controller (i.e. navigate the app)
-            App.Execute('app://nav/push:' + arg_str);
+            App.Execute('nav/push:' + arg_str);
             // Don't navigate in the webView
             return false;
         }
@@ -86,9 +86,16 @@ App = {
             return true;
         return false;
     },
-    FragmentChanged: function()
+    Paddy: function(n, p, c)
     {
-        // Stub
+        var pad_char = typeof c !== 'undefined' ? c : '0';
+        var pad = new Array(1 + p).join(pad_char);
+        return (pad + n).slice(-pad.length);
+    },
+    Log: function(message)
+    {
+        console.log(message);
+        App.Execute('log:' + message);
     }
 };
 

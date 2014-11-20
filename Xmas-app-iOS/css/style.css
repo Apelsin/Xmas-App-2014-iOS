@@ -178,3 +178,8 @@ a:visited
 {
     top: 1em;
 }
+
+.hidden
+{
+    display: none;
+}

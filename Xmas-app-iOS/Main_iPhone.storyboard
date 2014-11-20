@@ -50,12 +50,12 @@ Schedule</string>
                                             <segue destination="QuS-8L-vhc" kind="push" id="4iG-D9-SLd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
-                                        <rect key="frame" x="60" y="124" width="96" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
+                                        <rect key="frame" x="112" y="243" width="96" height="120"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Vote">
+                                                <fragment content="Visitor Info">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="28" name="SavoyeLetPlain"/>
@@ -66,7 +66,7 @@ Schedule</string>
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="jHf-SD-R2I" kind="push" id="Kik-dA-iVQ"/>
+                                            <segue destination="u86-mN-2sZ" kind="push" id="0BK-uU-aB8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
@@ -88,12 +88,12 @@ Schedule</string>
                                             <segue destination="Yxq-pY-gpo" kind="push" id="K0I-zS-o2J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
-                                        <rect key="frame" x="112" y="243" width="96" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
+                                        <rect key="frame" x="60" y="144" width="96" height="120"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Visitor Info">
+                                                <fragment content="Vote">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="28" name="SavoyeLetPlain"/>
@@ -104,11 +104,33 @@ Schedule</string>
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="u86-mN-2sZ" kind="push" id="0BK-uU-aB8"/>
+                                            <segue destination="jHf-SD-R2I" kind="push" id="Kik-dA-iVQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq" customClass="FlatPageButton">
+                                        <rect key="frame" x="164" y="144" width="96" height="120"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sponsors">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/sponsors.html"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="iYb-Vo-Mto"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q" customClass="FlatPageButton">
-                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
+                                        <rect key="frame" x="112" y="45" width="96" height="120"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
@@ -131,78 +153,90 @@ Involved</string>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="6G8-NE-ZeC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq" customClass="FlatPageButton">
-                                        <rect key="frame" x="164" y="124" width="96" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
+                                        <rect key="frame" x="208" y="56" width="112" height="96"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Red">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Sponsors">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <state key="normal" image="Christmas_Bell_Transparent_PNG_Clipart_Med">
+                                            <attributedString key="attributedTitle"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/sponsors.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/donations.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" id="iYb-Vo-Mto"/>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
-                                <rect key="frame" x="208" y="64" width="112" height="96"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5S-U0-Fmp" userLabel="Social">
+                                <rect key="frame" x="40" y="68" width="240" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRl-cU-5wc" customClass="ExternalPageButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <state key="normal" title="Facebook" image="facebook-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://www.facebook.com/ChristmasintheParkSJ"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="dD9-Qd-QsX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-jG-r3j" customClass="ExternalPageButton">
+                                        <rect key="frame" x="64" y="0.0" width="48" height="48"/>
+                                        <state key="normal" title="Twitter" image="twitter-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://twitter.com/BlinkyLima"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="URQ-7V-aqG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-CJ-9I3" customClass="ExternalPageButton">
+                                        <rect key="frame" x="128" y="0.0" width="48" height="48"/>
+                                        <state key="normal" title="Pinterest" image="pinterest-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://pinterest.com/CITPSJ/"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="a7S-eb-vpR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlW-rU-P7L" customClass="ExternalPageButton">
+                                        <rect key="frame" x="192" y="0.0" width="48" height="48"/>
+                                        <state key="normal" title="YouTube" image="youtube-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="https://www.youtube.com/user/xmasinthepark"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="i0t-Nw-uJ4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="BaA-v4-XOj"/>
-                                    <constraint firstAttribute="width" constant="112" id="Nvv-77-w2u"/>
+                                    <constraint firstAttribute="height" constant="48" id="Rxz-6b-hqd"/>
                                 </constraints>
-                                <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="Christmas_Bell_Transparent_PNG_Clipart_Med">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/donations.html"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-gk-II1" customClass="ExternalPageButton">
-                                <rect key="frame" x="0.0" y="64" width="96" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="YJL-5q-ncC"/>
-                                    <constraint firstAttribute="width" constant="96" id="eqb-Jc-elh"/>
-                                </constraints>
-                                <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="Pinterest Icon">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://www.pinterest.com/CITPSJ/"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="5hy-f7-IeX"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" id="2zT-32-sM0"/>
-                            <constraint firstAttribute="trailing" secondItem="5jn-sW-FsU" secondAttribute="trailing" id="3rg-DZ-tyP"/>
                             <constraint firstAttribute="trailing" secondItem="cAx-wo-KAD" secondAttribute="trailing" id="C1u-S6-yl6"/>
                             <constraint firstItem="cAx-wo-KAD" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="K3S-BT-e0j"/>
-                            <constraint firstItem="5jn-sW-FsU" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="PS6-2h-H6W"/>
+                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="NTL-lR-ird"/>
                             <constraint firstItem="cAx-wo-KAD" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="Qvc-xU-1Hg"/>
                             <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="hq7-kO-LIR"/>
-                            <constraint firstItem="0Hu-gk-II1" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="kbE-tC-Pt6"/>
                             <constraint firstAttribute="centerY" secondItem="L1x-Qm-Yql" secondAttribute="centerY" id="rfj-ga-oMu"/>
-                            <constraint firstItem="0Hu-gk-II1" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="uMd-uv-7OE"/>
+                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" constant="4" id="vVU-zH-wA5"/>
                             <constraint firstAttribute="centerX" secondItem="L1x-Qm-Yql" secondAttribute="centerX" id="wLr-38-jl7"/>
                         </constraints>
                     </view>
@@ -659,8 +693,11 @@ Involved</string>
         <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
-        <image name="Pinterest Icon" width="256" height="256"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
+        <image name="facebook-round" width="128" height="128"/>
+        <image name="pinterest-round" width="128" height="128"/>
+        <image name="twitter-round" width="128" height="128"/>
+        <image name="youtube-round" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -111,18 +111,28 @@
                     return;
                 NSString *title = [arg_dict valueForKey:@"title"];
                 NSString *where = [arg_dict valueForKey:@"where"];
-                NSString *when = [arg_dict valueForKey:@"when"];
-                NSDate *date = [self.ISO8601DateFormatter dateFromString:when];
+                NSString *begin = [arg_dict valueForKey:@"begin"];
+                NSString *end = [arg_dict valueForKey:@"end"];
+                NSDate *date_begin = [self.ISO8601DateFormatter dateFromString:begin];
+                NSDate *date_end = [self.ISO8601DateFormatter dateFromString:end];
                 
                 self.selectedEvent = [EKEvent eventWithEventStore:store];
                 self.selectedEvent.calendar = store.defaultCalendarForNewEvents;
                 self.selectedEvent.title = title;
                 self.selectedEvent.location = where;
-                self.selectedEvent.startDate = date;
-                self.selectedEvent.endDate = date;
+                self.selectedEvent.startDate = date_begin;
+                self.selectedEvent.endDate = date_end;
                 
                 [self presentEventEditViewControllerWithEventStore:store];
             }];
+        }
+        else if([first isEqualToString:@"//log"])
+        {
+            NSRange sub_range = NSMakeRange(2, components.count - 2);
+            NSArray *sub_remainder = [components subarrayWithRange:sub_range];
+            NSString *remainder_encoded = [sub_remainder componentsJoinedByString:@":"];
+            NSString *remainder = [remainder_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            NSLog(@"JS: %@", remainder);
         }
         return NO;
     }

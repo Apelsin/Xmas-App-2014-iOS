@@ -21,7 +21,7 @@ function ready()
     blur_me.fixBackground();
 }
 
-App.FragmentChanged = function()
+window.FragmentChanged = function()
 {
     if(window.location.hash != '#table-of-contents')
     {

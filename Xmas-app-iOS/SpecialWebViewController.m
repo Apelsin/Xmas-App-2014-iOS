@@ -116,7 +116,7 @@
     if(self._TargetAnchor)
     {
         [self.webView stringByEvaluatingJavaScriptFromString:
-         [NSString stringWithFormat:@"window.location.hash = '#%@'; App.FragmentChanged();", self._TargetAnchor]];
+         [NSString stringWithFormat:@"window.location.hash = '#%@'; window.FragmentChanged();", self._TargetAnchor]];
         self._TargetAnchor = nil;
     }
 }

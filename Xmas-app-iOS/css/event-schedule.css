@@ -13,7 +13,7 @@
     color: inherit;
 }
 
-ul#event-list
+ul.event-list
 {
     list-style-type: none;
     padding: 0;
@@ -34,15 +34,17 @@ li.event
 li.event span.line
 {
     position: relative;
-    display: block;
+    display: table;
     z-index: 10;
 }
 
 li.event span.line span.label
 {
     position: relative;
-    display: inline-block;
+    display: table-cell;
     font-weight: bold;
     min-width: 3.5em;
     text-align: right;
+    vertical-align: top;
+    padding-right: 0.5em;
 }
