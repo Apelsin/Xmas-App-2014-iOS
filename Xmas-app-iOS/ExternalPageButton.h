@@ -1,5 +1,5 @@
 //
-//  FlatPageButton.h
+//  ExternalPageButton.h
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageInfo.h"
+#import "ExternalPageButton.h"
 
-@interface FlatPageButton : UIButton <PageDelegate>
+@interface ExternalPageButton : UIButton
+@property NSString *Location;
 @end

@@ -9,4 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HandledSegueViewController : UIViewController
+- (void)asyncVisitURL:(NSURL *) url;
+- (void)visitExternal:(NSURL *) url;
 @end

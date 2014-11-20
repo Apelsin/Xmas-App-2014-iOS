@@ -8,6 +8,7 @@
 
 #import "HandledSegueViewController.h"
 #import "SegueHandlerDelegate.h"
+#import "PageInfo.h"
 
 @interface HandledSegueViewController ()
 
@@ -36,6 +37,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionVisitExternal:(id)sender
+{
+    @try {
+        id<PageDelegate> info = (id<PageDelegate>)sender;
+        [self visitExternal:[NSURL URLWithString:info.Location]];
+    }
+    @catch (NSException *exception) {
+        NSLog( @"Exception: %@", exception.name);
+        NSLog( @"Reason: %@", exception.reason );
+    }
+}
+
+- (void)visitExternal:(NSURL *) url
+{
+    [[UIApplication sharedApplication] openURL:url];
+}
 
 #pragma mark - Navigation
 

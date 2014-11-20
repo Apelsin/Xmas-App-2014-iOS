@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 MZ. All rights reserved.
 //
 
-#include "FlatPageInfo.h"
+#include "PageInfo.h"
 
-@implementation FlatPageInfo
+@implementation PageInfo
 @synthesize Title;
 @synthesize Location;
 @synthesize Referrer;

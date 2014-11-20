@@ -173,30 +173,21 @@ Involved</string>
                                     <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-gk-II1" customClass="FlatPageButton">
-                                <rect key="frame" x="0.0" y="64" width="96" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-gk-II1" customClass="ExternalPageButton">
+                                <rect key="frame" x="0.0" y="64" width="96" height="96"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="YJL-5q-ncC"/>
+                                    <constraint firstAttribute="height" constant="96" id="YJL-5q-ncC"/>
                                     <constraint firstAttribute="width" constant="96" id="eqb-Jc-elh"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="Photos">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Photos">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" image="Pinterest Icon">
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://iconosquare.com/tag/christmasinthepark"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://www.pinterest.com/CITPSJ/"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="jsg-Cu-rPZ" kind="push" id="6WC-X0-wSw"/>
+                                    <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="5hy-f7-IeX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -668,7 +659,7 @@ Involved</string>
         <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
-        <image name="Photos" width="142" height="188"/>
+        <image name="Pinterest Icon" width="256" height="256"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

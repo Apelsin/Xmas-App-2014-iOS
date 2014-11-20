@@ -20,8 +20,9 @@
 		2E2BA3641A0FFD4A00C91421 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */; };
 		2E2BA3651A0FFD4A00C91421 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */; };
 		2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */; };
-		2E2BA3681A102AE900C91421 /* FlatPageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3671A102AE900C91421 /* FlatPageInfo.m */; };
+		2E2BA3681A102AE900C91421 /* PageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BA3671A102AE900C91421 /* PageInfo.m */; };
 		2E6E999A1A06270D00C53B60 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E99991A06270D00C53B60 /* img */; };
+		2E945A071A1D623200C6FD79 /* ExternalPageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E945A061A1D623200C6FD79 /* ExternalPageButton.m */; };
 		2E9E08B11A16B9A100C6D332 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E08B01A16B9A100C6D332 /* AboutViewController.m */; };
 		2EAFD7FA1A19A537006042A7 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD7F91A19A537006042A7 /* VoteViewController.m */; };
 		2EAFD7FC1A19D7A4006042A7 /* Test_VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFD7FB1A19D7A4006042A7 /* Test_VoteViewController.m */; };
@@ -72,7 +73,7 @@
 		2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueHandlerDelegate.h; sourceTree = "<group>"; };
 		2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatPageButton.h; sourceTree = "<group>"; };
 		2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatPageButton.m; sourceTree = "<group>"; };
-		2E2BA34F1A0F320100C91421 /* FlatPageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatPageInfo.h; sourceTree = "<group>"; };
+		2E2BA34F1A0F320100C91421 /* PageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageInfo.h; sourceTree = "<group>"; };
 		2E2BA3501A0F322000C91421 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		2E2BA3511A0F322000C91421 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 		2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundPattern.h; sourceTree = "<group>"; };
@@ -84,8 +85,10 @@
 		2E2BA3611A0FFD4A00C91421 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = CJSON/JSONRepresentation.h; sourceTree = "<group>"; };
 		2E2BA3621A0FFD4A00C91421 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = CJSON/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = CJSON/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
-		2E2BA3671A102AE900C91421 /* FlatPageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatPageInfo.m; sourceTree = "<group>"; };
+		2E2BA3671A102AE900C91421 /* PageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInfo.m; sourceTree = "<group>"; };
 		2E6E99991A06270D00C53B60 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		2E945A051A1D623200C6FD79 /* ExternalPageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalPageButton.h; sourceTree = "<group>"; };
+		2E945A061A1D623200C6FD79 /* ExternalPageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalPageButton.m; sourceTree = "<group>"; };
 		2E9E08AF1A16B9A100C6D332 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2E9E08B01A16B9A100C6D332 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		2EAFD7F81A19A537006042A7 /* VoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
@@ -219,8 +222,10 @@
 				2E9E08B01A16B9A100C6D332 /* AboutViewController.m */,
 				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
 				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
-				2E2BA34F1A0F320100C91421 /* FlatPageInfo.h */,
-				2E2BA3671A102AE900C91421 /* FlatPageInfo.m */,
+				2E945A051A1D623200C6FD79 /* ExternalPageButton.h */,
+				2E945A061A1D623200C6FD79 /* ExternalPageButton.m */,
+				2E2BA34F1A0F320100C91421 /* PageInfo.h */,
+				2E2BA3671A102AE900C91421 /* PageInfo.m */,
 				2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */,
 				2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */,
 				2E2BA33A1A0F167600C91421 /* MenuViewController.h */,
@@ -379,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E945A071A1D623200C6FD79 /* ExternalPageButton.m in Sources */,
 				2E22CE4F19F5084700889F3F /* ParkMapViewController.m in Sources */,
 				2E2BA3521A0F322000C91421 /* CustomNavigationController.m in Sources */,
 				2E2BA33F1A0F177000C91421 /* CustomTabBarController.m in Sources */,
@@ -397,7 +403,7 @@
 				2E2BA3661A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m in Sources */,
 				2EAFD7FA1A19A537006042A7 /* VoteViewController.m in Sources */,
 				2E2BA3451A0F21A300C91421 /* HandledSegueViewController.m in Sources */,
-				2E2BA3681A102AE900C91421 /* FlatPageInfo.m in Sources */,
+				2E2BA3681A102AE900C91421 /* PageInfo.m in Sources */,
 				2E2BA3551A0F432900C91421 /* BackgroundPattern.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

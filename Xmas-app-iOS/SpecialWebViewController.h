@@ -15,6 +15,5 @@
 @property NSString *InitialReferrer;
 @property BOOL AutoTitle;
 - (void)visit:(NSString *)uriString;
-- (void)asyncVisitURL:(NSURL *) url;
 
 @end

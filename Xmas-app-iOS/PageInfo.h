@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FlatPageDelegate
+@protocol PageDelegate
 @property NSString *Title;
 @property NSString *Location;
 @property NSString *Referrer;
 @end
 
-@interface FlatPageInfo: NSObject <FlatPageDelegate>
+@interface PageInfo: NSObject <PageDelegate>
 @end
