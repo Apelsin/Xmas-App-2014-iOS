@@ -33,6 +33,8 @@ try {
         // Edit: iOS fix
         //map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(jQuery('<div id="legend"><div class="shadow"></div><div class="foreground"></div></div>').get(0));
         
+        $('#page-throbber').hide();
+        
     }
     
     var parking_locations = [

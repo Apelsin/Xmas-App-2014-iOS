@@ -104,6 +104,8 @@ function ready()
         $('.event', j_data).each(ea);
         build_list(events);
         
+        $('#page-throbber').hide();
+        
         // Remove iOS Data Detectors for date
         // information and replace with our
         // own special sauce

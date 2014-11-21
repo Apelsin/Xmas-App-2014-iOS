@@ -48,7 +48,6 @@ a:visited
     right: inherit;
     bottom: inherit;
     margin: -1em;
-    -webkit-filter: blur(12px);
 }
 
 .blur-container
@@ -70,6 +69,19 @@ a:visited
     }
 }
 
+.jade,
+.jade :link,
+.jade :visited
+{
+    color: #FF6;
+    text-shadow: 0px 0px 2px #040, 0px 0px 4px #040;
+}
+
+.jade .blur-me
+{
+    background-image: url('../img/nice_snow_blur_green.png');
+}
+
 .candy-cane>:nth-child(even),
 .candy-cane>:nth-child(even) :link,
 .candy-cane>:nth-child(even) :visited
@@ -79,7 +91,7 @@ a:visited
 }
 .candy-cane>:nth-child(even) .blur-me
 {
-    background-image: url('../img/nice_snow_pink.png');
+    background-image: url('../img/nice_snow_blur_pink.png');
 }
 
 .candy-cane>:nth-child(odd),
@@ -92,18 +104,22 @@ a:visited
 }
 .candy-cane>:nth-child(odd) .blur-me
 {
-    background-image: url('../img/nice_snow_gray.png');
+    background-image: url('../img/nice_snow_blur_gray.png');
 }
 
 @media screen and (-webkit-device-pixel-ratio: 2)
 {
+    .jade> .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_green_@2x.png');
+    }
     .candy-cane>:nth-child(even) .blur-me
     {
-        background-image: url('../img/nice_snow_pink_@2x.png');
+        background-image: url('../img/nice_snow_blur_pink_@2x.png');
     }
     .candy-cane>:nth-child(odd) .blur-me
     {
-        background-image: url('../img/nice_snow_gray_@2x.png');
+        background-image: url('../img/nice_snow_blur_gray_@2x.png');
     }
 }
 
@@ -182,4 +198,17 @@ a:visited
 .hidden
 {
     display: none;
+}
+
+.throbber
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/throbber-lights.gif');
 }

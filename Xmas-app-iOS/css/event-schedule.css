@@ -21,8 +21,10 @@ ul.event-list
 
 li.event
 {
+    /*
     color: #FFFF77;
     text-shadow:  0px 0px 7px rgba(0,0,0,0.5), 0px 0px 2px #000, 0px 0px 1px #000;
+    */
     position: relative;
     display: block;
     line-height: 1.5em;

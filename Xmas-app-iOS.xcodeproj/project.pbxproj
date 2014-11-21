@@ -105,7 +105,7 @@
 		2EF337C91A06050F00DCE831 /* ALAlertBanner+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALAlertBanner+Private.h"; path = "ALAlertBanner/ALAlertBanner+Private.h"; sourceTree = "<group>"; };
 		2EF337CA1A06050F00DCE831 /* ALAlertBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAlertBannerManager.h; path = ALAlertBanner/ALAlertBannerManager.h; sourceTree = "<group>"; };
 		2EF337CB1A06050F00DCE831 /* ALAlertBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAlertBannerManager.m; path = ALAlertBanner/ALAlertBannerManager.m; sourceTree = "<group>"; };
-		2FB9DE2F19E9F176004876CF /* Xmas-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xmas-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB9DE2F19E9F176004876CF /* Christmas in the Park 2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christmas in the Park 2014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB9DE3219E9F176004876CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2FB9DE3419E9F176004876CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2FB9DE3619E9F176004876CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -186,7 +186,7 @@
 		2FB9DE3019E9F176004876CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FB9DE2F19E9F176004876CF /* Xmas-app-iOS.app */,
+				2FB9DE2F19E9F176004876CF /* Christmas in the Park 2014.app */,
 				2FB9DE5319E9F176004876CF /* Xmas-app-iOSTests.xctest */,
 			);
 			name = Products;
@@ -297,7 +297,7 @@
 			);
 			name = "Xmas-app-iOS";
 			productName = "Xmas-app-iOS";
-			productReference = 2FB9DE2F19E9F176004876CF /* Xmas-app-iOS.app */;
+			productReference = 2FB9DE2F19E9F176004876CF /* Christmas in the Park 2014.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2FB9DE5219E9F176004876CF /* Xmas-app-iOSTests */ = {
@@ -528,8 +528,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Christmas in the Park 2014";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -544,8 +545,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xmas-app-iOS/Xmas-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Xmas-app-iOS/Xmas-app-iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Christmas in the Park 2014";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

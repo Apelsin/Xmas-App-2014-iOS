@@ -19,6 +19,7 @@ function ready()
     
     blur_me = $('.blur-me', list_elements);
     blur_me.fixBackground();
+    $('#page-throbber').hide();
 }
 
 window.FragmentChanged = function()
