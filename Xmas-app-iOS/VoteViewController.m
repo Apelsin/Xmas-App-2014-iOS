@@ -2,8 +2,8 @@
 //  VoteViewController.m
 //  Xmas-app-iOS
 //
-//  Created by Mozilla on 11/7/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Created by Sreenidhi Pundi Muralidharan on 11/7/14.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import "VoteViewController.h"
@@ -36,6 +36,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    _exiting = NO;
+    _QRCodeAlertController__Presented = NO;
+    
     // Begin reading and await QR code metadata
     // Scanning happens automatically
     [self startReading];
@@ -114,8 +117,6 @@
                 }
                 @catch (NSException *exception)
                 {
-                    //NSLog(@"Error reading QR code message: %@", exception);
-
                     @try
                     {
                         NSURL *url= [self parseURLFromString:metadataObj.stringValue];

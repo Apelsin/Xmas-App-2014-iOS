@@ -3,7 +3,7 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 10/19/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import <EventKit/EventKit.h>
@@ -107,8 +107,9 @@
             
             EKEventStore *store = [[EKEventStore alloc] init];
             [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
-                if(!granted)
-                    return;
+                // Allow the system to alert the user
+                //if(!granted)
+                //    return;
                 NSString *title = [arg_dict valueForKey:@"title"];
                 NSString *where = [arg_dict valueForKey:@"where"];
                 NSString *begin = [arg_dict valueForKey:@"begin"];

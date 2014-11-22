@@ -9,20 +9,21 @@ html, body
 {
     margin: 0;
 }
+.zero-margin-bottom
+{
+    margin-bottom: 0;
+}
 
 a
 {
     text-decoration: inherit;
+    font-weight: bold;
 }
 
-a:link
-{
-    color: #FF5555;
-}
-
+a:link,
 a:visited
 {
-    color: #773333;
+    color: #941b1b;
 }
 
 .fill
@@ -73,8 +74,8 @@ a:visited
 .jade :link,
 .jade :visited
 {
-    color: #FF6;
-    text-shadow: 0px 0px 2px #040, 0px 0px 4px #040;
+    color: #FE7;
+    text-shadow: 0px 0px 1px #040, 0px 0px 2px #040, 0px 0px 4px #040, 0px 0px 8px #040, 0px 0px 16px #040, 0px 0px 32px #040;
 }
 
 .jade .blur-me
@@ -200,6 +201,11 @@ a:visited
     display: none;
 }
 
+.center
+{
+    text-align: center;
+}
+
 .throbber
 {
     position: absolute;
@@ -211,4 +217,42 @@ a:visited
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/throbber-lights.gif');
+}
+
+ul.labeled-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.labeled-list li>*
+{
+    display: block;
+    vertical-align: top;
+}
+
+ul.labeled-list li>:first-child
+{
+    padding-right: 1em;
+}
+
+.no-callout
+{
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.smaller
+{
+    font-size: 0.75em;
+}
+
+.blinky
+{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background-image: url('../img/blinky.png');
+    background-size: 100% 100%;
 }

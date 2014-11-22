@@ -151,11 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				2E2BA35D1A0FFD4A00C91421 /* CJSONDeserializer.h */,
-				2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */,
 				2E2BA35F1A0FFD4A00C91421 /* CJSONSerializer.h */,
-				2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */,
 				2E2BA3611A0FFD4A00C91421 /* JSONRepresentation.h */,
 				2E2BA3621A0FFD4A00C91421 /* NSDictionary_JSONExtensions.h */,
+				2E2BA35E1A0FFD4A00C91421 /* CJSONDeserializer.m */,
+				2E2BA3601A0FFD4A00C91421 /* CJSONSerializer.m */,
 				2E2BA3631A0FFD4A00C91421 /* NSDictionary_JSONExtensions.m */,
 			);
 			name = CJSON;
@@ -165,9 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				2EF337C71A06050F00DCE831 /* ALAlertBanner.h */,
-				2EF337C81A06050F00DCE831 /* ALAlertBanner.m */,
 				2EF337C91A06050F00DCE831 /* ALAlertBanner+Private.h */,
 				2EF337CA1A06050F00DCE831 /* ALAlertBannerManager.h */,
+				2EF337C81A06050F00DCE831 /* ALAlertBanner.m */,
 				2EF337CB1A06050F00DCE831 /* ALAlertBannerManager.m */,
 			);
 			name = ALAlertBanner;
@@ -207,42 +207,42 @@
 		2FB9DE3819E9F176004876CF /* Xmas-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2E2BA35C1A0FFD3B00C91421 /* CJSON */,
-				2E2BA3501A0F322000C91421 /* CustomNavigationController.h */,
-				2E2BA3511A0F322000C91421 /* CustomNavigationController.m */,
-				2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */,
-				2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */,
-				2EF337CE1A06052A00DCE831 /* ALAlertBanner */,
-				2FB9DE4119E9F176004876CF /* AppDelegate.h */,
-				2FB9DE4219E9F176004876CF /* AppDelegate.m */,
-				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
-				2FB9DE3919E9F176004876CF /* Supporting Files */,
-				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
 				2E9E08AF1A16B9A100C6D332 /* AboutViewController.h */,
-				2E9E08B01A16B9A100C6D332 /* AboutViewController.m */,
-				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
-				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
-				2E945A051A1D623200C6FD79 /* ExternalPageButton.h */,
-				2E945A061A1D623200C6FD79 /* ExternalPageButton.m */,
-				2E2BA34F1A0F320100C91421 /* PageInfo.h */,
-				2E2BA3671A102AE900C91421 /* PageInfo.m */,
-				2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */,
-				2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */,
-				2E2BA33A1A0F167600C91421 /* MenuViewController.h */,
-				2E2BA33B1A0F167600C91421 /* MenuViewController.m */,
-				2E22CE4D19F5084700889F3F /* ParkMapViewController.h */,
-				2E22CE4E19F5084700889F3F /* ParkMapViewController.m */,
-				2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */,
-				2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */,
-				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
-				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
-				2E2BA3431A0F21A300C91421 /* HandledSegueViewController.h */,
-				2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */,
-				2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */,
+				2FB9DE4119E9F176004876CF /* AppDelegate.h */,
 				2E2BA3531A0F3F4C00C91421 /* BackgroundPattern.h */,
-				2E2BA3541A0F432900C91421 /* BackgroundPattern.m */,
+				2E2BA3501A0F322000C91421 /* CustomNavigationController.h */,
+				2E2BA33D1A0F177000C91421 /* CustomTabBarController.h */,
+				2E038E2F19F4983100BA5C9E /* EventScheduleViewController.h */,
+				2E945A051A1D623200C6FD79 /* ExternalPageButton.h */,
+				2E2BA34A1A0F29B700C91421 /* FlatPageButton.h */,
+				2E2BA3401A0F1C8B00C91421 /* FlatPageWebViewController.h */,
+				2E2BA3431A0F21A300C91421 /* HandledSegueViewController.h */,
+				2E2BA33A1A0F167600C91421 /* MenuViewController.h */,
+				2E2BA34F1A0F320100C91421 /* PageInfo.h */,
+				2E22CE4D19F5084700889F3F /* ParkMapViewController.h */,
+				2E2BA3461A0F227E00C91421 /* SegueHandlerDelegate.h */,
+				2EB5D9431A04605D008739C8 /* SpecialWebViewController.h */,
 				2EAFD7F81A19A537006042A7 /* VoteViewController.h */,
+				2E9E08B01A16B9A100C6D332 /* AboutViewController.m */,
+				2FB9DE4219E9F176004876CF /* AppDelegate.m */,
+				2E2BA3541A0F432900C91421 /* BackgroundPattern.m */,
+				2E2BA3511A0F322000C91421 /* CustomNavigationController.m */,
+				2E2BA33E1A0F177000C91421 /* CustomTabBarController.m */,
+				2E038E3019F4983100BA5C9E /* EventScheduleViewController.m */,
+				2E945A061A1D623200C6FD79 /* ExternalPageButton.m */,
+				2E2BA34B1A0F29B700C91421 /* FlatPageButton.m */,
+				2E2BA3411A0F1C8B00C91421 /* FlatPageWebViewController.m */,
+				2E2BA3441A0F21A300C91421 /* HandledSegueViewController.m */,
+				2E2BA33B1A0F167600C91421 /* MenuViewController.m */,
+				2E2BA3671A102AE900C91421 /* PageInfo.m */,
+				2E22CE4E19F5084700889F3F /* ParkMapViewController.m */,
+				2EB5D9441A04605D008739C8 /* SpecialWebViewController.m */,
 				2EAFD7F91A19A537006042A7 /* VoteViewController.m */,
+				2E038DE619F4745A00BA5C9E /* Main_iPhone.storyboard */,
+				2FB9DE4D19E9F176004876CF /* Images.xcassets */,
+				2EF337CE1A06052A00DCE831 /* ALAlertBanner */,
+				2E2BA35C1A0FFD3B00C91421 /* CJSON */,
+				2FB9DE3919E9F176004876CF /* Supporting Files */,
 			);
 			path = "Xmas-app-iOS";
 			sourceTree = "<group>";
@@ -250,14 +250,14 @@
 		2FB9DE3919E9F176004876CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E6E99991A06270D00C53B60 /* img */,
-				2EC2F63D19F90DB10068EB86 /* html */,
 				2EC2F63B19F90D890068EB86 /* css */,
+				2EC2F63D19F90DB10068EB86 /* html */,
+				2E6E99991A06270D00C53B60 /* img */,
 				2EC2F63919F90CEB0068EB86 /* js */,
-				2FB9DE3A19E9F176004876CF /* Xmas-app-iOS-Info.plist */,
-				2FB9DE3B19E9F176004876CF /* InfoPlist.strings */,
 				2FB9DE3E19E9F176004876CF /* main.m */,
 				2FB9DE4019E9F176004876CF /* Xmas-app-iOS-Prefix.pch */,
+				2FB9DE3A19E9F176004876CF /* Xmas-app-iOS-Info.plist */,
+				2FB9DE3B19E9F176004876CF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -325,7 +325,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = MZ;
+				ORGANIZATIONNAME = CITP;
 				TargetAttributes = {
 					2FB9DE2E19E9F176004876CF = {
 						DevelopmentTeam = YWH6X7RKCE;

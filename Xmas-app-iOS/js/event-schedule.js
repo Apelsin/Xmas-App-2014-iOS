@@ -133,7 +133,6 @@ function ready()
                     end: end,
                 };
                 json_string = JSON.stringify(arguments);
-                //App.Log(json_string);
                 App.Execute('calendar:' + json_string);
             }
             $(element).click(click);

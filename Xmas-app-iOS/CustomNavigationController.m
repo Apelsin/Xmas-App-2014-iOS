@@ -3,7 +3,7 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import "CustomNavigationController.h"
@@ -48,6 +48,12 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
     return [[self.viewControllers lastObject] preferredInterfaceOrientationForPresentation];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    // Hard-coded because project settings don't seem to cut it...
+    return UIStatusBarStyleLightContent;
 }
 
 /*

@@ -2,8 +2,8 @@
 //  VoteViewController.h
 //  Xmas-app-iOS
 //
-//  Created by Mozilla on 11/7/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Created by Sreenidhi Pundi Muralidharan on 11/7/14.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
