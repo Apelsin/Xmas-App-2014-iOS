@@ -3,11 +3,11 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import "FlatPageWebViewController.h"
-#import "FlatPageInfo.h"
+#import "PageInfo.h"
 #import "CJSON/NSDictionary_JSONExtensions.h"
 
 @interface FlatPageWebViewController ()
@@ -50,7 +50,7 @@
             NSString *remainder = [remainder_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
             NSError *arg_parse_error = NULL;
             NSDictionary *arg_dict = [NSDictionary dictionaryWithJSONString:remainder error:&arg_parse_error];
-            FlatPageInfo *info = [FlatPageInfo new];
+            PageInfo *info = [PageInfo new];
             info.Title = [arg_dict valueForKey:@"Title"];
             info.Location = [arg_dict valueForKey:@"Location"];
             info.Referrer = self.webView.request.URL.absoluteString;
@@ -79,7 +79,7 @@
 - (void) handleSeguePreparation:(UIStoryboardSegue *)segue sender:(id)sender
 {
     @try {
-        id<FlatPageDelegate> info = (id<FlatPageDelegate>)sender;
+        id<PageDelegate> info = (id<PageDelegate>)sender;
         self.title = info.Title;
         self.InitialLocation = info.Location;
         self.InitialReferrer = info.Referrer;
@@ -88,9 +88,6 @@
         NSLog( @"Exception: %@", exception.name);
         NSLog( @"Reason: %@", exception.reason );
     }
-    @finally {
-    }
-    
 }
 
 @end

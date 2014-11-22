@@ -3,13 +3,12 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import "CustomTabBarController.h"
 
 @interface CustomTabBarController ()
-
 @end
 
 @implementation CustomTabBarController
@@ -27,8 +26,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    // TO-DO: read global tint color correctly (not working for some reason?)
-    [self.tabBar setSelectedImageTintColor:[UIColor redColor]];
+
+    // Set title colors
+    for(int i = 0; i < self.tabBar.items.count; i++)
+    {
+        UITabBarItem *item = [self.tabBar.items objectAtIndex:i];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorActive,} forState:UIControlStateHighlighted];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorInactive,} forState:UIControlStateNormal];
+    }
+    
+    // Set the tint color for unselected tabs
+    for (UIView *view in self.tabBar.subviews)
+    {
+      if ([NSStringFromClass(view.class) isEqual:@"UITabBarButton"])
+      {
+          // I really hope it's OK to do this...
+          // I checked the colors in a color-blindness simulator and everything is still clear
+          if([view respondsToSelector:@selector(_setUnselectedTintColor:)])
+              [view performSelector:@selector(_setUnselectedTintColor:) withObject:_ColorInactive];
+      }
+    }
+    [self.tabBar setSelectedImageTintColor:_ColorActive];
+    [self.tabBar setTintColor:_ColorActive];
 }
 
 - (void)didReceiveMemoryWarning

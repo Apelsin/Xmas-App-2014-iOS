@@ -3,7 +3,7 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 10/31/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import "SpecialWebViewController.h"
@@ -116,7 +116,7 @@
     if(self._TargetAnchor)
     {
         [self.webView stringByEvaluatingJavaScriptFromString:
-         [NSString stringWithFormat:@"window.location.hash = '#%@'; App.FragmentChanged();", self._TargetAnchor]];
+         [NSString stringWithFormat:@"window.location.hash = '#%@'; window.FragmentChanged();", self._TargetAnchor]];
         self._TargetAnchor = nil;
     }
 }
@@ -144,7 +144,8 @@
     // Fall-through
     if(navigationType == UIWebViewNavigationTypeLinkClicked)
     {
-        [[UIApplication sharedApplication] openURL:[request URL]];
+        NSURL *url = [request URL];
+        [[UIApplication sharedApplication] openURL:url];
         return NO;
     }
     return YES;

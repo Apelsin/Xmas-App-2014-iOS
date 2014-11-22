@@ -19,9 +19,10 @@ function ready()
     
     blur_me = $('.blur-me', list_elements);
     blur_me.fixBackground();
+    $('#page-throbber').hide();
 }
 
-App.FragmentChanged = function()
+window.FragmentChanged = function()
 {
     if(window.location.hash != '#table-of-contents')
     {

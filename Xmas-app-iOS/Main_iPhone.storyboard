@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
     <dependencies>
         <deployment version="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller - Home-->
+        <!--Home-->
         <scene sceneID="oXk-dX-ttq">
             <objects>
                 <viewController title="Home" id="XSh-oE-w2b" customClass="MenuViewController" sceneMemberID="viewController">
@@ -17,18 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas_Deco_PNG_Clipart_Picture_Top_med" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-wo-KAD">
+                                <rect key="frame" x="0.0" y="64" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="dVn-DL-PXT"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
-                                <rect key="frame" x="0.0" y="76" width="320" height="367"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
+                                <rect key="frame" x="-140" y="-120" width="600" height="808"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
+                                <rect key="frame" x="0.0" y="120" width="320" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-uO-FA2">
-                                        <rect key="frame" x="8" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="8" y="188" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Event Schedule"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -47,50 +51,10 @@ Schedule</string>
                                             <segue destination="QuS-8L-vhc" kind="push" id="4iG-D9-SLd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
-                                        <rect key="frame" x="60" y="124" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Red">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Vote">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <segue destination="jHf-SD-R2I" kind="push" id="Kik-dA-iVQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
-                                        <rect key="frame" x="216" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Red">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Park Map">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Yxq-pY-gpo" kind="push" id="K0I-zS-o2J"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
-                                        <rect key="frame" x="112" y="243" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="112" y="188" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Visitor Info"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Visitor Info">
@@ -107,10 +71,30 @@ Schedule</string>
                                             <segue destination="u86-mN-2sZ" kind="push" id="0BK-uU-aB8"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
+                                        <rect key="frame" x="216" y="188" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Park Map"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Park Map">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Yxq-pY-gpo" kind="push" id="K0I-zS-o2J"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq" customClass="FlatPageButton">
-                                        <rect key="frame" x="164" y="124" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="164" y="94" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Sponsors"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Sponsors">
@@ -124,17 +108,16 @@ Schedule</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Sponsors"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/sponsors.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/sponsors.html#content"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" id="iYb-Vo-Mto"/>
+                                            <segue destination="aBE-8b-eRc" kind="push" id="yua-Mm-uk8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q">
-                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q" customClass="ExternalPageButton">
+                                        <rect key="frame" x="112" y="0.0" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="" label="Get Involved"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -149,24 +132,147 @@ Involved</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/volunteer.html"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="zdu-lg-O8X" kind="push" id="jJI-xz-kwe"/>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="al0-3U-Rzx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
+                                        <rect key="frame" x="208" y="-4" width="112" height="96"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Make a donation to Christmas in the Park" label="Donate"/>
+                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Christmas_Bell_Transparent_PNG_Clipart_Med">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/donations.html"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
+                                        <rect key="frame" x="60" y="94" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Vote"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Red">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Vote">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jHf-SD-R2I" kind="push" id="Kik-dA-iVQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="apF-LM-wpA"/>
+                                    <constraint firstAttribute="width" constant="320" id="bAO-E1-8xJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5S-U0-Fmp" userLabel="Social">
+                                <rect key="frame" x="16" y="68" width="288" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRl-cU-5wc" customClass="ExternalPageButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" hint="" label="Facebook"/>
+                                        <state key="normal" title="Facebook" image="facebook-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://www.facebook.com/ChristmasintheParkSJ"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="dD9-Qd-QsX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-jG-r3j" customClass="ExternalPageButton">
+                                        <rect key="frame" x="60" y="0.0" width="48" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" label="Twitter"/>
+                                        <state key="normal" title="Twitter" image="twitter-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="https://twitter.com/christmaspark"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="URQ-7V-aqG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-CJ-9I3" customClass="ExternalPageButton">
+                                        <rect key="frame" x="180" y="0.0" width="48" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" label="Pinterest"/>
+                                        <state key="normal" title="Pinterest" image="pinterest-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://pinterest.com/CITPSJ/"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="a7S-eb-vpR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlW-rU-P7L" customClass="ExternalPageButton">
+                                        <rect key="frame" x="240" y="0.0" width="48" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" label="YouTube"/>
+                                        <state key="normal" title="YouTube" image="youtube-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="https://www.youtube.com/user/xmasinthepark"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="i0t-Nw-uJ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDo-d2-hU9" userLabel="Blinky" customClass="ExternalPageButton">
+                                        <rect key="frame" x="120" y="0.0" width="48" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Christmas in the Park web site" label="Web"/>
+                                        <state key="normal" title="Twitter" image="blinky-round">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="5Ue-fi-dAo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="7xf-8x-b5i"/>
+                                    <constraint firstAttribute="height" constant="48" id="Rxz-6b-hqd"/>
+                                    <constraint firstAttribute="width" constant="288" id="xwu-gr-zwE"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="m7K-BF-gLQ" secondAttribute="centerY" id="687-jA-CF3"/>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="b0e-Z1-yAD"/>
+                            <constraint firstAttribute="trailing" secondItem="cAx-wo-KAD" secondAttribute="trailing" id="C1u-S6-yl6"/>
+                            <constraint firstItem="cAx-wo-KAD" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="K3S-BT-e0j"/>
+                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="NTL-lR-ird"/>
+                            <constraint firstItem="cAx-wo-KAD" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="Qvc-xU-1Hg"/>
+                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="hq7-kO-LIR"/>
+                            <constraint firstAttribute="centerY" secondItem="L1x-Qm-Yql" secondAttribute="centerY" id="jzo-iG-k0e"/>
+                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" constant="4" id="vVU-zH-wA5"/>
+                            <constraint firstAttribute="centerX" secondItem="L1x-Qm-Yql" secondAttribute="centerX" id="wLr-38-jl7"/>
+                            <constraint firstItem="m7K-BF-gLQ" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" constant="56" id="wQp-Hg-hP1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Icon Tab Bar Home" id="ddb-KJ-8zY"/>
                     <navigationItem key="navigationItem" title="Home" id="rnp-8a-NOp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="320" height="600"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
@@ -174,9 +280,9 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Root View Controller" id="Yd7-OD-80s"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-787"/>
+            <point key="canvasLocation" x="911" y="-787"/>
         </scene>
-        <!--Custom Tab Bar Controller - Christmas in the Park 2014-->
+        <!--Christmas in the Park 2014-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
@@ -186,7 +292,18 @@ Involved</string>
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.9929587245" green="0.76320247009999997" blue="0.04345686176" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.65098041299999998" blue="0.36078432199999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="selectedImageTintColor" red="0.99295872449874878" green="0.76320247013844567" blue="0.043456861758244772" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ColorActive">
+                            <color key="value" red="1" green="0.97413452389999999" blue="0.43261419400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ColorInactive">
+                            <color key="value" red="1" green="0.73125756272248466" blue="0.26346452622278171" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="XSh-oE-w2b" kind="relationship" relationship="viewControllers" id="b4U-Qa-neH"/>
                         <segue destination="up5-pd-fhL" kind="relationship" relationship="viewControllers" id="s9F-fR-N8e"/>
@@ -202,6 +319,10 @@ Involved</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="HL8-Oj-dfP" customClass="CustomNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Cu-fy-6Yl">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6470588235294118" blue="0.36078431372549019" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.97413452389999999" blue="0.43261419400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="l1E-uy-jbg">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -214,9 +335,9 @@ Involved</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7p-05-Q5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="-787"/>
+            <point key="canvasLocation" x="107" y="-787"/>
         </scene>
-        <!--About View Controller - About-->
+        <!--About-->
         <scene sceneID="W7M-H2-10e">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="up5-pd-fhL" customClass="AboutViewController" sceneMemberID="viewController">
@@ -224,6 +345,7 @@ Involved</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                     </webView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="About" image="Icon Tab Bar About" id="cfg-eS-pId"/>
@@ -240,26 +362,7 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqE-X0-I0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-199"/>
-        </scene>
-        <!--View Controller - Get Involved-->
-        <scene sceneID="Nxw-gx-oH8">
-            <objects>
-                <viewController title="Get Involved" id="zdu-lg-O8X" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="32g-uM-PqA"/>
-                        <viewControllerLayoutGuide type="bottom" id="B1h-19-W3J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="I5K-iX-l3c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="m4X-7t-El3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp7-MM-OeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1414" y="-787"/>
+            <point key="canvasLocation" x="477" y="-27"/>
         </scene>
         <!--Vote View Controller-->
         <scene sceneID="V8R-cz-HUF">
@@ -270,21 +373,42 @@ Involved</string>
                         <viewControllerLayoutGuide type="bottom" id="jXV-7m-wX8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8x-xR-UO0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning QR code..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-VW-t1t">
-                                <rect key="frame" x="81" y="455" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZ9-Hg-23Q" userLabel="ScanView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-VW-t1t">
+                                <rect key="frame" x="50" y="425" width="220" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Awaiting QR code...">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                            <font key="NSOriginalFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <shadow key="NSShadow" blurRadius="2.03125">
+                                                <size key="offset" width="-0.0069338138596670637" height="-1.2740651840008637"/>
+                                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.81047952586206895" colorSpace="calibratedRGB"/>
+                                            </shadow>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jXV-7m-wX8" firstAttribute="top" secondItem="LZ9-Hg-23Q" secondAttribute="bottom" id="83F-n2-AXe"/>
+                            <constraint firstItem="LZ9-Hg-23Q" firstAttribute="top" secondItem="Jbb-kS-bbm" secondAttribute="bottom" id="87G-TP-30c"/>
                             <constraint firstAttribute="centerX" secondItem="ob7-VW-t1t" secondAttribute="centerX" id="DlM-Qi-lzN"/>
-                            <constraint firstItem="ob7-VW-t1t" firstAttribute="top" secondItem="jXV-7m-wX8" secondAttribute="bottom" id="EC3-RA-Upa"/>
+                            <constraint firstItem="ob7-VW-t1t" firstAttribute="bottom" secondItem="jXV-7m-wX8" secondAttribute="bottom" id="EC3-RA-Upa"/>
+                            <constraint firstAttribute="trailing" secondItem="LZ9-Hg-23Q" secondAttribute="trailing" id="GXp-Qg-GTp"/>
+                            <constraint firstItem="LZ9-Hg-23Q" firstAttribute="leading" secondItem="V8x-xR-UO0" secondAttribute="leading" id="dar-yX-reu"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -293,14 +417,14 @@ Involved</string>
                         <userDefinedRuntimeAttribute type="string" keyPath="AllowedHosts" value="christmasinthepark.com"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="viewPreview" destination="V8x-xR-UO0" id="BCq-mW-aOv"/>
+                        <outlet property="viewPreview" destination="LZ9-Hg-23Q" id="gqc-gH-U8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6S-ap-QxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="-1477"/>
+            <point key="canvasLocation" x="1351" y="-1095"/>
         </scene>
-        <!--Event Schedule View Controller - Event Schedule-->
+        <!--Event Schedule-->
         <scene sceneID="ldI-E0-owm">
             <objects>
                 <viewController id="QuS-8L-vhc" customClass="EventScheduleViewController" sceneMemberID="viewController">
@@ -322,9 +446,9 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJm-kO-aFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-199"/>
+            <point key="canvasLocation" x="1351" y="-449"/>
         </scene>
-        <!--Menu View Controller - Visitor Info-->
+        <!--Visitor Info-->
         <scene sceneID="eUZ-Nn-tk7">
             <objects>
                 <viewController title="Visitor Info" id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
@@ -333,40 +457,16 @@ Involved</string>
                         <viewControllerLayoutGuide type="bottom" id="C9W-jD-S7Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cch-Xm-ges" customClass="UIScrollView">
-                        <rect key="frame" x="0.0" y="64" width="320" height="887"/>
+                        <rect key="frame" x="0.0" y="64" width="420" height="487"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nu-po-Uku">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="50" y="56" width="320" height="320"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-5m-F1A" customClass="FlatPageButton">
-                                        <rect key="frame" x="216" y="5" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="Ornament Green">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Stores">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
-                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/stores.html"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" identifier="C" id="XI6-Zz-GPF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJ8-ki-UaR" customClass="FlatPageButton">
-                                        <rect key="frame" x="8" y="5" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJ8-ki-UaR" customClass="FlatPageButton">
+                                        <rect key="frame" x="112" y="0.0" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Frequently Asked Questions" label="Frequently Asked Questions"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="FAQs">
@@ -387,9 +487,9 @@ Involved</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-Xa-J4P" customClass="FlatPageButton">
-                                        <rect key="frame" x="164" y="133" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="164" y="93" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Food" label="Eats &amp; Treats"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Eats &amp; Treats">
@@ -403,16 +503,16 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/eats-treats.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/vendors.html#foods"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" id="LH5-2N-pIp"/>
+                                            <segue destination="aBE-8b-eRc" kind="push" id="UbV-YR-0vW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-t2-tup" customClass="FlatPageButton">
-                                        <rect key="frame" x="60" y="133" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="112" y="186" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Partners"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Partners">
@@ -426,16 +526,39 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/partners.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/partners.html#content"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" id="e5R-fY-ZIo"/>
+                                            <segue destination="aBE-8b-eRc" kind="push" id="QYW-I0-fNR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-t0-E1m" customClass="ExternalPageButton">
+                                        <rect key="frame" x="8" y="186" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Christmas in the Park web site" label="Site"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Green">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Site">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionVisitExternal:" destination="u86-mN-2sZ" eventType="touchUpInside" id="eGs-3j-kHR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wo-9b-9pg" customClass="FlatPageButton">
-                                        <rect key="frame" x="112" y="5" width="96" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <rect key="frame" x="216" y="186" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Parking and Directions" label="Parking &amp; Directions"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Parking &amp; Directions">
@@ -449,41 +572,62 @@ Involved</string>
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/parking_directions.html"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="/html/parking-directions.html"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="jsg-Cu-rPZ" kind="push" identifier="B" id="drg-Rm-LXH"/>
+                                            <segue destination="px3-E6-IgJ" kind="push" id="Ezj-as-GL5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-5m-F1A" customClass="FlatPageButton">
+                                        <rect key="frame" x="60" y="93" width="96" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" label="Stores"/>
+                                        <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Ornament Green">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Stores">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="28" name="SavoyeLetPlain"/>
+                                                        <font key="NSOriginalFont" size="28" name="SavoyeLetPlain"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="http://christmasinthepark.com/vendors.html#goodies"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="aBE-8b-eRc" kind="push" id="F0W-nq-UWI"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="0nQ-AL-UFX"/>
-                                    <constraint firstAttribute="height" constant="1000" id="FzY-01-8PB"/>
+                                    <constraint firstAttribute="height" constant="320" id="FzY-01-8PB"/>
+                                    <constraint firstAttribute="width" constant="320" id="Kbx-Y2-PWH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3nu-po-Uku" secondAttribute="trailing" id="7Jf-cM-Lj6"/>
-                            <constraint firstItem="3nu-po-Uku" firstAttribute="top" secondItem="Cch-Xm-ges" secondAttribute="top" id="JhK-SW-JFg"/>
-                            <constraint firstItem="3nu-po-Uku" firstAttribute="leading" secondItem="Cch-Xm-ges" secondAttribute="leading" id="Pml-aq-QWp"/>
-                            <constraint firstAttribute="bottom" secondItem="3nu-po-Uku" secondAttribute="bottom" id="xfU-yJ-hCh"/>
+                            <constraint firstAttribute="centerX" secondItem="3nu-po-Uku" secondAttribute="centerX" id="0V4-yH-5al"/>
+                            <constraint firstItem="3nu-po-Uku" firstAttribute="top" secondItem="Cch-Xm-ges" secondAttribute="top" constant="56" id="JhK-SW-JFg"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Visitor Info" id="MVp-D2-S1x"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1000"/>
+                    <size key="freeformSize" width="420" height="600"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B67-36-DXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-316"/>
+            <point key="canvasLocation" x="1756" y="-787"/>
         </scene>
-        <!--Park Map View Controller - Park Map-->
+        <!--Park Map-->
         <scene sceneID="7lh-lk-Ddc">
             <objects>
                 <viewController id="Yxq-pY-gpo" customClass="ParkMapViewController" sceneMemberID="viewController">
@@ -504,9 +648,9 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFc-3M-BRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="V6G-en-4p2"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-787"/>
+            <point key="canvasLocation" x="1351" y="177"/>
         </scene>
-        <!--Flat Page Web View Controller - Flat Page View-->
+        <!--Flat Page View-->
         <scene sceneID="hAs-eL-UIi">
             <objects>
                 <viewController title="Flat Page View" id="jsg-Cu-rPZ" customClass="FlatPageWebViewController" sceneMemberID="viewController">
@@ -527,9 +671,9 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyY-Sr-fa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2591" y="-316"/>
+            <point key="canvasLocation" x="2225" y="-787"/>
         </scene>
-        <!--Flat Page Web View Controller - Flat Page Sub Page View-->
+        <!--Flat Page Sub Page View-->
         <scene sceneID="MDC-Ya-dLN">
             <objects>
                 <viewController title="Flat Page Sub Page View" id="3rp-OQ-Bng" customClass="FlatPageWebViewController" sceneMemberID="viewController">
@@ -549,23 +693,80 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzu-Lg-8y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2960" y="-316"/>
+            <point key="canvasLocation" x="2698" y="-787"/>
+        </scene>
+        <!--Parking & Directions-->
+        <scene sceneID="9Yi-wq-f0B">
+            <objects>
+                <viewController id="px3-E6-IgJ" userLabel="Parking &amp; Directions" customClass="SpecialWebViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="o6g-76-DDX">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="scrollView.scrollEnabled" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="scrollView.delaysContentTouches" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </webView>
+                    <navigationItem key="navigationItem" title="Parking &amp; Directions" id="nWb-2n-2Bv"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="InitialLocation" value="/html/parking-directions.html"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="webView" destination="o6g-76-DDX" id="znT-gk-217"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bst-Ne-gUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="5v9-dv-vg9"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="-34"/>
+        </scene>
+        <!--Faux Flat Page View-->
+        <scene sceneID="BIf-wm-OoZ">
+            <objects>
+                <viewController title="Faux Flat Page View" id="aBE-8b-eRc" customClass="FlatPageWebViewController" sceneMemberID="viewController">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="zap-i9-pOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="JdF-YH-HsC"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="AutoTitle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="webView" destination="zap-i9-pOZ" id="iI3-8W-PTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s34-Vt-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207" y="-34"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Christmas_Bell_Transparent_PNG_Clipart_Med" width="324" height="280"/>
+        <image name="Christmas_Deco_PNG_Clipart_Picture_Top_med" width="1094" height="293"/>
         <image name="Icon Tab Bar About" width="30" height="30"/>
         <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
         <image name="Tree No Ornaments Large" width="600" height="807"/>
+        <image name="blinky-round" width="128" height="128"/>
+        <image name="facebook-round" width="128" height="128"/>
+        <image name="pinterest-round" width="128" height="128"/>
+        <image name="twitter-round" width="128" height="128"/>
+        <image name="youtube-round" width="128" height="128"/>
     </resources>
-    <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iYb-Vo-Mto"/>
+        <segue reference="MUI-2O-eND"/>
+        <segue reference="yua-Mm-uk8"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.70980393890000004" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
 </document>

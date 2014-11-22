@@ -704,14 +704,14 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
         case ALAlertBannerStyleSuccess:
             fillColor = [UIColor colorWithRed:(77/255.0) green:(175/255.0) blue:(67/255.0) alpha:1.f];
             self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
-            break;;
+            break;
         case ALAlertBannerStyleFailure:
             fillColor = [UIColor colorWithRed:(173/255.0) green:(48/255.0) blue:(48/255.0) alpha:1.f];
             self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
             break;
         case ALAlertBannerStyleNotify:
-            fillColor = [UIColor colorWithRed:1.f green:1.f blue:1.f alpha:1.f];
-            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithRed:1.0f green:0.2f blue:0.2f alpha:0.9f];
+            fillColor = [UIColor colorWithRed:(0/255.0) green:(165/255.0) blue:(92/255.0) alpha:1.f];
+            self.titleLabel.textColor = self.subtitleLabel.textColor = [UIColor colorWithRed:(255/255.0) green:(248/255.0) blue:(110/255.0) alpha:1.f];
             break;
         case ALAlertBannerStyleWarning:
             fillColor = [UIColor colorWithRed:(211/255.0) green:(209/255.0) blue:(100/255.0) alpha:1.f];

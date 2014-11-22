@@ -1,0 +1,6 @@
+.no-callout
+{
+    cursor: pointer; /* Mobile */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}

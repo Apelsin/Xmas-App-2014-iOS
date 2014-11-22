@@ -3,16 +3,16 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol FlatPageDelegate
+@protocol PageDelegate
 @property NSString *Title;
 @property NSString *Location;
 @property NSString *Referrer;
 @end
 
-@interface FlatPageInfo: NSObject <FlatPageDelegate>
+@interface PageInfo: NSObject <PageDelegate>
 @end

@@ -3,7 +3,7 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 10/31/14.
-//  Copyright (c) 2014 MZ. All rights reserved.
+//  Copyright (c) 2014 CITP. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,6 +15,5 @@
 @property NSString *InitialReferrer;
 @property BOOL AutoTitle;
 - (void)visit:(NSString *)uriString;
-- (void)asyncVisitURL:(NSURL *) url;
 
 @end
