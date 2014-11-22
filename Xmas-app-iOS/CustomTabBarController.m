@@ -41,7 +41,7 @@
       if ([NSStringFromClass(view.class) isEqual:@"UITabBarButton"])
       {
           // I really hope it's OK to do this...
-          // I checked the colors in a color-blindness simulator and everything is still clear
+          // I checked the colors in a color-blindness simulator and everything is clearly visible
           if([view respondsToSelector:@selector(_setUnselectedTintColor:)])
               [view performSelector:@selector(_setUnselectedTintColor:) withObject:_ColorInactive];
       }

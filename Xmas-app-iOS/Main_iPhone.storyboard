@@ -282,11 +282,11 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="911" y="-787"/>
         </scene>
-        <!--Christmas in the Park 2014-->
+        <!--Christmas in the Park-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Christmas in the Park 2014" id="oDi-QP-zns"/>
+                    <navigationItem key="navigationItem" title="Christmas in the Park" id="oDi-QP-zns"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
