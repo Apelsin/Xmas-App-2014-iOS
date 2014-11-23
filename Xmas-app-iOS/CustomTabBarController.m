@@ -35,6 +35,9 @@
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorInactive,} forState:UIControlStateNormal];
     }
     
+    // Sigh...
+    // This is why we can't have nice things.
+    /*
     // Set the tint color for unselected tabs
     for (UIView *view in self.tabBar.subviews)
     {
@@ -46,6 +49,8 @@
               [view performSelector:@selector(_setUnselectedTintColor:) withObject:_ColorInactive];
       }
     }
+    */
+    
     [self.tabBar setSelectedImageTintColor:_ColorActive];
     [self.tabBar setTintColor:_ColorActive];
 }
