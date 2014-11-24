@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
-                                <rect key="frame" x="-140" y="-120" width="600" height="808"/>
+                                <rect key="frame" x="-140" y="-119" width="600" height="806"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
                                 <rect key="frame" x="0.0" y="120" width="320" height="320"/>
@@ -282,11 +282,11 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="911" y="-787"/>
         </scene>
-        <!--Christmas in the Park 2014-->
+        <!--Christmas in the Park-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Christmas in the Park 2014" id="oDi-QP-zns"/>
+                    <navigationItem key="navigationItem" title="Christmas in the Park" id="oDi-QP-zns"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -726,7 +726,7 @@ Involved</string>
         <scene sceneID="BIf-wm-OoZ">
             <objects>
                 <viewController title="Faux Flat Page View" id="aBE-8b-eRc" customClass="FlatPageWebViewController" sceneMemberID="viewController">
-                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="zap-i9-pOZ">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="zap-i9-pOZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -746,18 +746,18 @@ Involved</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Christmas_Bell_Transparent_PNG_Clipart_Med" width="324" height="280"/>
-        <image name="Christmas_Deco_PNG_Clipart_Picture_Top_med" width="1094" height="293"/>
+        <image name="Christmas_Bell_Transparent_PNG_Clipart_Med" width="162" height="140"/>
+        <image name="Christmas_Deco_PNG_Clipart_Picture_Top_med" width="547" height="146"/>
         <image name="Icon Tab Bar About" width="30" height="30"/>
         <image name="Icon Tab Bar Home" width="30" height="30"/>
         <image name="Ornament Green" width="96" height="120"/>
         <image name="Ornament Red" width="96" height="120"/>
-        <image name="Tree No Ornaments Large" width="600" height="807"/>
-        <image name="blinky-round" width="128" height="128"/>
-        <image name="facebook-round" width="128" height="128"/>
-        <image name="pinterest-round" width="128" height="128"/>
-        <image name="twitter-round" width="128" height="128"/>
-        <image name="youtube-round" width="128" height="128"/>
+        <image name="Tree No Ornaments Large" width="599" height="806"/>
+        <image name="blinky-round" width="64" height="64"/>
+        <image name="facebook-round" width="64" height="64"/>
+        <image name="pinterest-round" width="64" height="64"/>
+        <image name="twitter-round" width="64" height="64"/>
+        <image name="youtube-round" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

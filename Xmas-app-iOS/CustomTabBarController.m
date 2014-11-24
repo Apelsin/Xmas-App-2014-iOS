@@ -35,17 +35,22 @@
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorInactive,} forState:UIControlStateNormal];
     }
     
+    // Sigh...
+    // This is why we can't have nice things.
+    /*
     // Set the tint color for unselected tabs
     for (UIView *view in self.tabBar.subviews)
     {
       if ([NSStringFromClass(view.class) isEqual:@"UITabBarButton"])
       {
           // I really hope it's OK to do this...
-          // I checked the colors in a color-blindness simulator and everything is still clear
+          // I checked the colors in a color-blindness simulator and everything is clearly visible
           if([view respondsToSelector:@selector(_setUnselectedTintColor:)])
               [view performSelector:@selector(_setUnselectedTintColor:) withObject:_ColorInactive];
       }
     }
+    */
+    
     [self.tabBar setSelectedImageTintColor:_ColorActive];
     [self.tabBar setTintColor:_ColorActive];
 }
