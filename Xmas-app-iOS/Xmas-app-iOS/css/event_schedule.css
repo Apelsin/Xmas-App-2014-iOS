@@ -1,0 +1,48 @@
+.when a
+{
+    text-decoration: inherit;
+}
+
+.when a:link
+{
+    color: inherit;
+}
+
+.when a:visited
+{
+    color: inherit;
+}
+
+ul#event-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+li.event
+{
+    color: #FFFF77;
+    text-shadow:  0px 0px 7px rgba(0,0,0,0.5), 0px 0px 2px #000, 0px 0px 1px #000;
+    position: relative;
+    display: block;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    padding: 1em 0.25em 1em 0.25em;
+    cursor: pointer; /* Mobile */
+}
+
+li.event span.line
+{
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+li.event span.line span.label
+{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    min-width: 3.5em;
+    text-align: right;
+}

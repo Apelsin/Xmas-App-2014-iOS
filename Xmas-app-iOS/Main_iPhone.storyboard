@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HL8-Oj-dfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ERP-pX-hFn">
     <dependencies>
-        <deployment version="1552" identifier="iOS"/>
+        <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
@@ -9,28 +9,25 @@
         <scene sceneID="oXk-dX-ttq">
             <objects>
                 <viewController title="Home" id="XSh-oE-w2b" customClass="MenuViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5bT-K4-TFb"/>
-                        <viewControllerLayoutGuide type="bottom" id="YTH-UM-mbF"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nbP-kT-mVo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas_Deco_PNG_Clipart_Picture_Top_med" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-wo-KAD">
-                                <rect key="frame" x="0.0" y="64" width="320" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="dVn-DL-PXT"/>
-                                </constraints>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas_Deco_PNG_Clipart_Picture_Top_med" id="cAx-wo-KAD">
+                                <rect key="frame" x="0.0" y="64" width="480" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree No Ornaments Large" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-Qm-Yql">
-                                <rect key="frame" x="-140" y="-119" width="600" height="806"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree No Ornaments Large" id="L1x-Qm-Yql">
+                                <rect key="frame" x="-60" y="-83" width="600" height="806"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-BF-gLQ">
-                                <rect key="frame" x="0.0" y="120" width="320" height="320"/>
+                            <view contentMode="scaleToFill" id="m7K-BF-gLQ">
+                                <rect key="frame" x="80" y="120" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-uO-FA2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="NGi-uO-FA2">
                                         <rect key="frame" x="8" y="188" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Event Schedule"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -51,8 +48,9 @@ Schedule</string>
                                             <segue destination="QuS-8L-vhc" kind="push" id="4iG-D9-SLd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Wr-9wC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="w3A-Wr-9wC">
                                         <rect key="frame" x="112" y="188" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Visitor Info"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -71,8 +69,9 @@ Schedule</string>
                                             <segue destination="u86-mN-2sZ" kind="push" id="0BK-uU-aB8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-FK-QHa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="OMV-FK-QHa">
                                         <rect key="frame" x="216" y="188" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Park Map"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -91,8 +90,9 @@ Schedule</string>
                                             <segue destination="Yxq-pY-gpo" kind="push" id="K0I-zS-o2J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uo2-ur-1pq" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="Uo2-ur-1pq" customClass="FlatPageButton">
                                         <rect key="frame" x="164" y="94" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Sponsors"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -114,8 +114,9 @@ Schedule</string>
                                             <segue destination="aBE-8b-eRc" kind="push" id="yua-Mm-uk8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-J5-l9Q" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="M0i-J5-l9Q" customClass="ExternalPageButton">
                                         <rect key="frame" x="112" y="0.0" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="" label="Get Involved"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -139,8 +140,9 @@ Involved</string>
                                             <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="al0-3U-Rzx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="clip" hasAttributedTitle="YES" id="5jn-sW-FsU" userLabel="Donate" customClass="FlatPageButton">
                                         <rect key="frame" x="208" y="-4" width="112" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Make a donation to Christmas in the Park" label="Donate"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Christmas_Bell_Transparent_PNG_Clipart_Med">
@@ -153,8 +155,9 @@ Involved</string>
                                             <segue destination="jsg-Cu-rPZ" kind="push" id="MUI-2O-eND"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-L7-KcK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="y6c-L7-KcK">
                                         <rect key="frame" x="60" y="94" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Vote"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Red">
@@ -175,16 +178,14 @@ Involved</string>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="apF-LM-wpA"/>
-                                    <constraint firstAttribute="width" constant="320" id="bAO-E1-8xJ"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5S-U0-Fmp" userLabel="Social">
-                                <rect key="frame" x="16" y="68" width="288" height="48"/>
+                            <view contentMode="scaleToFill" id="J5S-U0-Fmp" userLabel="Social">
+                                <rect key="frame" x="96" y="68" width="288" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRl-cU-5wc" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yRl-cU-5wc" customClass="ExternalPageButton">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="" label="Facebook"/>
                                         <state key="normal" title="Facebook" image="facebook-round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -196,21 +197,23 @@ Involved</string>
                                             <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="dD9-Qd-QsX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-jG-r3j" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a8G-jG-r3j" customClass="ExternalPageButton">
                                         <rect key="frame" x="60" y="0.0" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Twitter"/>
                                         <state key="normal" title="Twitter" image="twitter-round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="https://twitter.com/christmaspark"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Location" value="https://twitter.com/xmasintheparksj"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="URQ-7V-aqG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-CJ-9I3" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uAV-CJ-9I3" customClass="ExternalPageButton">
                                         <rect key="frame" x="180" y="0.0" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Pinterest"/>
                                         <state key="normal" title="Pinterest" image="pinterest-round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -222,8 +225,9 @@ Involved</string>
                                             <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="a7S-eb-vpR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlW-rU-P7L" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wlW-rU-P7L" customClass="ExternalPageButton">
                                         <rect key="frame" x="240" y="0.0" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="YouTube"/>
                                         <state key="normal" title="YouTube" image="youtube-round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,8 +239,9 @@ Involved</string>
                                             <action selector="actionVisitExternal:" destination="XSh-oE-w2b" eventType="touchUpInside" id="i0t-Nw-uJ4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDo-d2-hU9" userLabel="Blinky" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HDo-d2-hU9" userLabel="Blinky" customClass="ExternalPageButton">
                                         <rect key="frame" x="120" y="0.0" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Christmas in the Park web site" label="Web"/>
                                         <state key="normal" title="Twitter" image="blinky-round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,29 +255,14 @@ Involved</string>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="7xf-8x-b5i"/>
-                                    <constraint firstAttribute="height" constant="48" id="Rxz-6b-hqd"/>
-                                    <constraint firstAttribute="width" constant="288" id="xwu-gr-zwE"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cAx-wo-KAD" secondAttribute="trailing" id="C1u-S6-yl6"/>
-                            <constraint firstItem="cAx-wo-KAD" firstAttribute="leading" secondItem="nbP-kT-mVo" secondAttribute="leading" id="K3S-BT-e0j"/>
-                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="NTL-lR-ird"/>
-                            <constraint firstItem="cAx-wo-KAD" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" id="Qvc-xU-1Hg"/>
-                            <constraint firstAttribute="centerX" secondItem="m7K-BF-gLQ" secondAttribute="centerX" id="hq7-kO-LIR"/>
-                            <constraint firstAttribute="centerY" secondItem="L1x-Qm-Yql" secondAttribute="centerY" id="jzo-iG-k0e"/>
-                            <constraint firstItem="J5S-U0-Fmp" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" constant="4" id="vVU-zH-wA5"/>
-                            <constraint firstAttribute="centerX" secondItem="L1x-Qm-Yql" secondAttribute="centerX" id="wLr-38-jl7"/>
-                            <constraint firstItem="m7K-BF-gLQ" firstAttribute="top" secondItem="5bT-K4-TFb" secondAttribute="bottom" constant="56" id="wQp-Hg-hP1"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Icon Tab Bar Home" id="ddb-KJ-8zY"/>
                     <navigationItem key="navigationItem" title="Home" id="rnp-8a-NOp"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="640"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
@@ -280,13 +270,41 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-1b-Ojt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Root View Controller" id="Yd7-OD-80s"/>
             </objects>
-            <point key="canvasLocation" x="911" y="-787"/>
+            <point key="canvasLocation" x="1261" y="-787"/>
         </scene>
-        <!--Christmas in the Park-->
+        <!--Custom Navigation Controller-->
+        <scene sceneID="e68-Nr-r8L">
+            <objects>
+                <navigationController id="ERP-pX-hFn" customClass="CustomNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="7Zq-Ds-5FF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1294117719" green="0.62745100259999997" blue="0.37254902719999999" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.97413452389999999" blue="0.43261419400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ColorTitleHeader">
+                            <color key="value" red="1" green="0.97413452389999999" blue="0.43261419400000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ColorTitleNavigation">
+                            <color key="value" red="1" green="0.73125756269999997" blue="0.26346452619999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="n6e-oN-gAd" kind="relationship" relationship="rootViewController" id="QVx-eO-vMg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwF-VM-TAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="-1457"/>
+        </scene>
+        <!--CHRISTMAS IN THE PARK-->
         <scene sceneID="t7I-WF-hSy">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Christmas in the Park" id="oDi-QP-zns"/>
+                <tabBarController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="n6e-oN-gAd" customClass="CustomTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="CHRISTMAS IN THE PARK" id="oDi-QP-zns"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vqP-w6-JKr">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -313,36 +331,12 @@ Involved</string>
             </objects>
             <point key="canvasLocation" x="477" y="-787"/>
         </scene>
-        <!--Custom Navigation Controller-->
-        <scene sceneID="etl-Nt-Fi2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="HL8-Oj-dfP" customClass="CustomNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Cu-fy-6Yl">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.6470588235294118" blue="0.36078431372549019" alpha="1" colorSpace="deviceRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="0.97413452389999999" blue="0.43261419400000001" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="l1E-uy-jbg">
-                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="n6e-oN-gAd" kind="relationship" relationship="rootViewController" id="EVe-rs-bf8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7p-05-Q5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="107" y="-787"/>
-        </scene>
         <!--About-->
         <scene sceneID="W7M-H2-10e">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="up5-pd-fhL" customClass="AboutViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="Clg-SV-asV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -362,26 +356,23 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqE-X0-I0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="-27"/>
+            <point key="canvasLocation" x="911" y="-1457"/>
         </scene>
         <!--Vote View Controller-->
         <scene sceneID="V8R-cz-HUF">
             <objects>
                 <viewController id="jHf-SD-R2I" customClass="VoteViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jbb-kS-bbm"/>
-                        <viewControllerLayoutGuide type="bottom" id="jXV-7m-wX8"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8x-xR-UO0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="576"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZ9-Hg-23Q" userLabel="ScanView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" id="LZ9-Hg-23Q" userLabel="ScanView">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="527"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-VW-t1t">
-                                <rect key="frame" x="50" y="425" width="220" height="30"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ob7-VW-t1t">
+                                <rect key="frame" x="130" y="497" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Awaiting QR code...">
                                         <attributes>
@@ -401,20 +392,14 @@ Involved</string>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="jXV-7m-wX8" firstAttribute="top" secondItem="LZ9-Hg-23Q" secondAttribute="bottom" id="83F-n2-AXe"/>
-                            <constraint firstItem="LZ9-Hg-23Q" firstAttribute="top" secondItem="Jbb-kS-bbm" secondAttribute="bottom" id="87G-TP-30c"/>
-                            <constraint firstAttribute="centerX" secondItem="ob7-VW-t1t" secondAttribute="centerX" id="DlM-Qi-lzN"/>
-                            <constraint firstItem="ob7-VW-t1t" firstAttribute="bottom" secondItem="jXV-7m-wX8" secondAttribute="bottom" id="EC3-RA-Upa"/>
-                            <constraint firstAttribute="trailing" secondItem="LZ9-Hg-23Q" secondAttribute="trailing" id="GXp-Qg-GTp"/>
-                            <constraint firstItem="LZ9-Hg-23Q" firstAttribute="leading" secondItem="V8x-xR-UO0" secondAttribute="leading" id="dar-yX-reu"/>
-                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="XQv-dr-Zeb"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="640"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="AllowedHosts" value="christmasinthepark.com"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="BackgroundPatternName" value="Nice Snow"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="viewPreview" destination="LZ9-Hg-23Q" id="gqc-gH-U8C"/>
@@ -422,17 +407,16 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6S-ap-QxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="-1095"/>
+            <point key="canvasLocation" x="397" y="3"/>
         </scene>
         <!--Event Schedule-->
         <scene sceneID="ldI-E0-owm">
             <objects>
                 <viewController id="QuS-8L-vhc" customClass="EventScheduleViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="Bq5-Bp-dRe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" calendarEvent="YES"/>
                     </webView>
                     <navigationItem key="navigationItem" title="Event Schedule" id="t1H-oa-puz"/>
                     <userDefinedRuntimeAttributes>
@@ -446,25 +430,23 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJm-kO-aFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="-449"/>
+            <point key="canvasLocation" x="911" y="3"/>
         </scene>
         <!--Visitor Info-->
         <scene sceneID="eUZ-Nn-tk7">
             <objects>
                 <viewController title="Visitor Info" id="u86-mN-2sZ" customClass="MenuViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8pP-gq-NZ9"/>
-                        <viewControllerLayoutGuide type="bottom" id="C9W-jD-S7Z"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cch-Xm-ges" customClass="UIScrollView">
-                        <rect key="frame" x="0.0" y="64" width="420" height="487"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nu-po-Uku">
+                            <view contentMode="scaleToFill" id="3nu-po-Uku">
                                 <rect key="frame" x="50" y="56" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJ8-ki-UaR" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="iJ8-ki-UaR" customClass="FlatPageButton">
                                         <rect key="frame" x="112" y="0.0" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Frequently Asked Questions" label="Frequently Asked Questions"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -486,8 +468,9 @@ Involved</string>
                                             <segue destination="jsg-Cu-rPZ" kind="push" identifier="A" id="UBZ-4n-fqN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-Xa-J4P" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="Jua-Xa-J4P" customClass="FlatPageButton">
                                         <rect key="frame" x="164" y="93" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Food" label="Eats &amp; Treats"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -509,8 +492,9 @@ Involved</string>
                                             <segue destination="aBE-8b-eRc" kind="push" id="UbV-YR-0vW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-t2-tup" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="bcy-t2-tup" customClass="FlatPageButton">
                                         <rect key="frame" x="112" y="186" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Partners"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -532,8 +516,9 @@ Involved</string>
                                             <segue destination="aBE-8b-eRc" kind="push" id="QYW-I0-fNR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-t0-E1m" customClass="ExternalPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="Xl0-t0-E1m" customClass="ExternalPageButton">
                                         <rect key="frame" x="8" y="186" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Christmas in the Park web site" label="Site"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -555,8 +540,9 @@ Involved</string>
                                             <action selector="actionVisitExternal:" destination="u86-mN-2sZ" eventType="touchUpInside" id="eGs-3j-kHR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wo-9b-9pg" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="0wo-9b-9pg" customClass="FlatPageButton">
                                         <rect key="frame" x="216" y="186" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" hint="Parking and Directions" label="Parking &amp; Directions"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
@@ -578,13 +564,14 @@ Involved</string>
                                             <segue destination="px3-E6-IgJ" kind="push" id="Ezj-as-GL5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-5m-F1A" customClass="FlatPageButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="JQC-5m-F1A" customClass="FlatPageButton">
                                         <rect key="frame" x="60" y="93" width="96" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" label="Stores"/>
                                         <inset key="titleEdgeInsets" minX="-96" minY="32" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="Ornament Green">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Stores">
+                                                <fragment content="Novelty">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.88391913190000004" blue="0.5023297686" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="28" name="SavoyeLetPlain"/>
@@ -603,17 +590,9 @@ Involved</string>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="FzY-01-8PB"/>
-                                    <constraint firstAttribute="width" constant="320" id="Kbx-Y2-PWH"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="3nu-po-Uku" secondAttribute="centerX" id="0V4-yH-5al"/>
-                            <constraint firstItem="3nu-po-Uku" firstAttribute="top" secondItem="Cch-Xm-ges" secondAttribute="top" constant="56" id="JhK-SW-JFg"/>
-                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Visitor Info" id="MVp-D2-S1x"/>
@@ -625,14 +604,14 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B67-36-DXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="-787"/>
+            <point key="canvasLocation" x="1928" y="-807"/>
         </scene>
         <!--Park Map-->
         <scene sceneID="7lh-lk-Ddc">
             <objects>
                 <viewController id="Yxq-pY-gpo" customClass="ParkMapViewController" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="ucd-gD-G6C">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -648,7 +627,7 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFc-3M-BRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="V6G-en-4p2"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="177"/>
+            <point key="canvasLocation" x="1409" y="3"/>
         </scene>
         <!--Flat Page View-->
         <scene sceneID="hAs-eL-UIi">
@@ -671,7 +650,7 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyY-Sr-fa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="-787"/>
+            <point key="canvasLocation" x="1815" y="-1457"/>
         </scene>
         <!--Flat Page Sub Page View-->
         <scene sceneID="MDC-Ya-dLN">
@@ -693,14 +672,14 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzu-Lg-8y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698" y="-787"/>
+            <point key="canvasLocation" x="2376" y="-1457"/>
         </scene>
         <!--Parking & Directions-->
         <scene sceneID="9Yi-wq-f0B">
             <objects>
                 <viewController id="px3-E6-IgJ" userLabel="Parking &amp; Directions" customClass="SpecialWebViewController" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="o6g-76-DDX">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="420" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
@@ -720,14 +699,14 @@ Involved</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bst-Ne-gUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="5v9-dv-vg9"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="-34"/>
+            <point key="canvasLocation" x="2376" y="-17"/>
         </scene>
         <!--Faux Flat Page View-->
         <scene sceneID="BIf-wm-OoZ">
             <objects>
                 <viewController title="Faux Flat Page View" id="aBE-8b-eRc" customClass="FlatPageWebViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="zap-i9-pOZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
@@ -742,7 +721,7 @@ Involved</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s34-Vt-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="-34"/>
+            <point key="canvasLocation" x="1928" y="-17"/>
         </scene>
     </scenes>
     <resources>
@@ -765,8 +744,8 @@ Involved</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MUI-2O-eND"/>
         <segue reference="yua-Mm-uk8"/>
+        <segue reference="Gfw-Fp-pPL"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="1" green="0.70980393890000004" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
+    <color key="tintColor" red="1" green="0.73125756269999997" blue="0.26346452619999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

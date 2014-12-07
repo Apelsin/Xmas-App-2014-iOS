@@ -1,0 +1,66 @@
+.when a
+{
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
+.when a:link
+{
+    color: inherit;
+}
+
+.when a:visited
+{
+    color: inherit;
+}
+
+ul.event-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+li.event
+{
+    /*
+    color: #FFFF77;
+    text-shadow:  0px 0px 7px rgba(0,0,0,0.5), 0px 0px 2px #000, 0px 0px 1px #000;
+    */
+    position: relative;
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.25em 0.125em 0.25em 0.125em;
+    cursor: pointer; /* Mobile */
+}
+
+li.event span.line
+{
+    position: relative;
+    display: table;
+    padding: 0.25em 0 0.25em 0;
+    z-index: 10;
+}
+
+li.event span.line span.label
+{
+    position: relative;
+    display: table-cell;
+    font-weight: bold;
+    min-width: 3.5em;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 0.5em;
+}
+
+.jade .oversize .blur-me
+{
+    background-image: url('../img/nice_snow_blur_dark_green.png');
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2)
+{
+    .jade .oversize> .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_dark_green_@2x.png');
+    }
+}

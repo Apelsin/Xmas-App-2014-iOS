@@ -1,0 +1,258 @@
+html, body
+{
+    font-family: sans-serif;
+    color: #222233;
+    line-height: 1.5em;
+}
+
+.zero-margin
+{
+    margin: 0;
+}
+.zero-margin-bottom
+{
+    margin-bottom: 0;
+}
+
+a
+{
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+a:link,
+a:visited
+{
+    color: #941b1b;
+}
+
+.fill
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.blur-me
+{
+    /*
+    -webkit-perspective:1000;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: translateZ(0);
+    */
+
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    margin: -1em;
+}
+
+.blur-container
+{
+    overflow: hidden;
+}
+
+.snowy
+{
+    background-image: url('../img/nice_snow.png');
+    color: #222233;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2)
+{
+    .snowy
+    {
+        background-image: url('../img/nice_snow_@2x.png');
+    }
+}
+
+.jade,
+.jade :link,
+.jade :visited
+{
+    color: #FE7;
+    text-shadow: 0px 0px 1px #040, 0px 0px 2px #040, 0px 0px 4px #040, 0px 0px 8px #040, 0px 0px 16px #040, 0px 0px 32px #040;
+}
+
+.jade .blur-me
+{
+    background-image: url('../img/nice_snow_blur_green.png');
+}
+
+.candy-cane>:nth-child(even),
+.candy-cane>:nth-child(even) :link,
+.candy-cane>:nth-child(even) :visited
+{
+    color: #FFF;
+    text-shadow:  0px 0px 24px rgba(255,0,0,0.5), 0px 0px 6px rgba(128,0,0,0.5), 0px 0px 3px rgba(128,0,0,0.5);
+}
+.candy-cane>:nth-child(even) .blur-me
+{
+    background-image: url('../img/nice_snow_blur_pink.png');
+}
+
+.candy-cane>:nth-child(odd),
+.candy-cane>:nth-child(odd) :link,
+.candy-cane>:nth-child(odd) :visited
+{
+    color: #F66;
+    text-shadow:  0px 0px 24px #FFF, 0px 0px 12px #FFF, 0px 0px 6px #FFF, 0px 0px 3px #FFF, 0px 0px 3px #FFF;
+
+}
+.candy-cane>:nth-child(odd) .blur-me
+{
+    background-image: url('../img/nice_snow_blur_gray.png');
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2)
+{
+    .jade> .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_green_@2x.png');
+    }
+    .candy-cane>:nth-child(even) .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_pink_@2x.png');
+    }
+    .candy-cane>:nth-child(odd) .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_gray_@2x.png');
+    }
+}
+
+.gloss
+{
+    border: 1 solid #fff;
+    border-bottom-color: #999;
+}
+
+.gloss:before,
+.gloss:after
+{
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: 1px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#999));
+    background-image: -webkit-linear-gradient(#fff, #999);
+    background-image: -moz-linear-gradient(#fff, #999);
+    background-image: -o-linear-gradient(#fff, #999);
+    background-image: linear-gradient(#fff, #999);
+}
+
+.gloss:after
+{
+    left: auto;
+    right: -1px;
+}
+
+.scroll-hint
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-hint .contents
+{
+    position: relative;
+    padding: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.scroll-hint .indicator.up,
+.scroll-hint .indicator.down
+{
+    display: block;
+    left: 0;
+    right: 0;
+    margin: -1.25em auto -1.25em auto;
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    transform:scale(5,1);
+    -webkit-transform:scale(5,1);
+    opacity: 0.5;
+    display: none;
+}
+
+.scroll-hint .indicator.down
+{
+    bottom: 1em;
+}
+
+.scroll-hint .indicator.up
+{
+    top: 1em;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.throbber
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/throbber-lights.gif');
+}
+
+ul.labeled-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.labeled-list li>*
+{
+    display: block;
+    vertical-align: top;
+}
+
+ul.labeled-list li>:first-child
+{
+    padding-right: 1em;
+}
+
+.no-callout
+{
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.smaller
+{
+    font-size: 0.75em;
+}
+
+.blinky
+{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background-image: url('../img/blinky.png');
+    background-size: 100% 100%;
+}

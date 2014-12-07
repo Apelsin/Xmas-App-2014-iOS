@@ -31,7 +31,7 @@ try {
         setPrivateLocations(map, private_locations);
         
         // Edit: iOS fix
-        //map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(jQuery('<div id="legend"><div class="shadow"></div><div class="foreground"></div></div>').get(0));
+        //map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push($('<div id="legend"><div class="shadow"></div><div class="foreground"></div></div>').get(0));
         
         $('#page-throbber').hide();
         
@@ -112,7 +112,7 @@ try {
         {
             $(info[0]).scrollHint();
             info.prepend('<div class="close"><a href="#">X</a></div>');
-            jQuery('.close', info).click(function() { info.fadeOut(); return false; });
+            $('.close', info).on('tap', function(event) { info.fadeOut(); return false; });
         }
         info.fadeIn('fast', complete);
     }
@@ -156,8 +156,8 @@ try {
             var infowindow = new google.maps.InfoWindow();
             google.maps.event.addListener(polyShape, 'click', (function(polyShape, content, infowindow) {
                                                                return function() {
-                                                               map.controls[google.maps.ControlPosition.RIGHT_TOP].push(jQuery('<div id="lot_info"></div>').get(0));
-                                                               prepareLotInfo(jQuery('#lot_info'), content)
+                                                               map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('<div id="lot_info"></div>').get(0));
+                                                               prepareLotInfo($('#lot_info'), content)
                                                                };
                                                                })(polyShape, content, infowindow));
             
@@ -207,15 +207,15 @@ try {
                 var infowindow = new google.maps.InfoWindow();
                 google.maps.event.addListener(polyShape, 'click', (function(polyShape, content, infowindow) {
                                                                    return function() {
-                                                                   map.controls[google.maps.ControlPosition.RIGHT_TOP].push(jQuery('<div id="lot_info"></div>').get(0));
-                                                                   prepareLotInfo(jQuery('#lot_info'), content)
+                                                                   map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('<div id="lot_info"></div>').get(0));
+                                                                   prepareLotInfo($('#lot_info'), content)
                                                                    };
                                                                    })(polyShape, content, infowindow));
                 
                 google.maps.event.addListener(marker, 'click', (function(marker, content, infowindow) {
                                                                 return function() {
-                                                                map.controls[google.maps.ControlPosition.RIGHT_TOP].push(jQuery('<div id="lot_info"></div>').get(0));
-                                                                prepareLotInfo(jQuery('#lot_info'), content)
+                                                                map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('<div id="lot_info"></div>').get(0));
+                                                                prepareLotInfo($('#lot_info'), content)
                                                                 };
                                                                 })(marker, content, infowindow));
                 
@@ -237,8 +237,8 @@ try {
                 var infowindow = new google.maps.InfoWindow();
                 google.maps.event.addListener(marker, 'click', (function(marker, content, infowindow) {
                                                                 return function() {
-                                                                map.controls[google.maps.ControlPosition.RIGHT_TOP].push(jQuery('<div id="lot_info"></div>').get(0));
-                                                                prepareLotInfo(jQuery('#lot_info'), content)
+                                                                map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('<div id="lot_info"></div>').get(0));
+                                                                prepareLotInfo($('#lot_info'), content)
                                                                 };
                                                                 })(marker, content, infowindow));
                 

@@ -3,7 +3,7 @@
 //  Xmas-app-iOS
 //
 //  Created by Vincent Brubaker-Gianakos on 11/8/14.
-//  Copyright (c) 2014 CITP. All rights reserved.
+//  Copyright (c) 2014 MZ. All rights reserved.
 //
 
 #import "CustomNavigationController.h"
@@ -27,6 +27,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSDictionary *attributes;
+    attributes = @{
+                   NSForegroundColorAttributeName: _ColorTitleHeader,
+                   NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:20.0f],
+                   };
+    [[UINavigationBar appearance] setTitleTextAttributes: attributes];
+    attributes = @{
+                   NSForegroundColorAttributeName: _ColorTitleNavigation,
+                   NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:20.0f],
+                   };
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:attributes forState:UIControlStateNormal];
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    //if([viewController isKindOfClass:[UITableViewController class]])
+    //{
+    //}
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,12 +66,6 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
     return [[self.viewControllers lastObject] preferredInterfaceOrientationForPresentation];
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    // Hard-coded because project settings don't seem to cut it...
-    return UIStatusBarStyleLightContent;
 }
 
 /*

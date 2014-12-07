@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 CITP. All rights reserved.
 //
 
-#import <EventKit/EventKit.h>
 #import "AppDelegate.h"
 #import "ALAlertBanner/ALAlertBanner.h"
 #import "CJSON/NSDictionary_JSONExtensions.h"
@@ -52,15 +51,20 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.infoBanner hide];
+    //[self.infoBanner hide];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [ALAlertBanner forceHideAllAlertBannersInView:appDelegate.window];
 }
 
-- (void)presentEventEditViewControllerWithEventStore:(EKEventStore*)eventStore {
+- (void)presentEventEditViewControllerWithEventStore:(EKEventStore*)eventStore
+{
     EKEventEditViewController *eventEditVC = [[EKEventEditViewController alloc] init];
+    eventEditVC.delegate = (id<UINavigationControllerDelegate>)self.navigationController;
     eventEditVC.editViewDelegate = self;
     eventEditVC.eventStore = eventStore;
     eventEditVC.event = self.selectedEvent;
-    // Extend the current navigation controller with the first controller inside the EKEditEventViewController
+    [eventEditVC.navigationBar setBarTintColor:self.navigationController.navigationBar.barTintColor];
+    // Extend the current navigation controller with the first controller inside the EKEventEditViewController
     //[self.eventEditVC setValue:self forKeyPath:@"_parentViewController"];
     [self presentViewController:eventEditVC animated:YES completion:nil];
 }
@@ -95,7 +99,7 @@
     if ([(NSString *)[components objectAtIndex:0] isEqualToString:@"app"])
     {
         NSString *first = (NSString *)[components objectAtIndex:1];
-        
+        // TO-DO: make these handlers their own class
         if([first isEqualToString:@"//calendar"])
         {
             NSRange sub_range = NSMakeRange(2, components.count - 2);
@@ -123,8 +127,9 @@
                 self.selectedEvent.location = where;
                 self.selectedEvent.startDate = date_begin;
                 self.selectedEvent.endDate = date_end;
-                
-                [self presentEventEditViewControllerWithEventStore:store];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self presentEventEditViewControllerWithEventStore:store];
+                });
             }];
         }
         else if([first isEqualToString:@"//log"])
@@ -134,6 +139,32 @@
             NSString *remainder_encoded = [sub_remainder componentsJoinedByString:@":"];
             NSString *remainder = [remainder_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
             NSLog(@"JS: %@", remainder);
+        }
+        else if([first isEqualToString:@"//alert"])
+        {
+            NSRange sub_range = NSMakeRange(2, components.count - 2);
+            NSArray *sub_remainder = [components subarrayWithRange:sub_range];
+            NSString *remainder_encoded = [sub_remainder componentsJoinedByString:@":"];
+            NSString *remainder = [remainder_encoded stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+            NSError *arg_parse_error = NULL;
+            NSDictionary *arg_dict = [NSDictionary dictionaryWithJSONString:remainder error:&arg_parse_error];
+            NSString *message = [arg_dict valueForKey:@"message"];
+            NSString *detail = [arg_dict valueForKey:@"detail"];
+            NSString *alert_type = [arg_dict valueForKey:@"alert-type"];
+            
+            ALAlertBannerStyle alert_style = ALAlertBannerStyleNotify;
+            
+            if([alert_type hasPrefix:@"warn"])
+                alert_style = ALAlertBannerStyleWarning;
+            else if([alert_type hasPrefix:@"err"])
+                alert_style = ALAlertBannerStyleFailure;
+            else if([alert_type hasPrefix:@"success"])
+                alert_style = ALAlertBannerStyleSuccess;
+            
+            AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+            //[ALAlertBanner forceHideAllAlertBannersInView:appDelegate.window];
+            ALAlertBanner *banner = [ALAlertBanner alertBannerForView:appDelegate.window style:alert_style position:ALAlertBannerPositionUnderNavBar title:message subtitle:detail];
+            [banner show];
         }
         return NO;
     }

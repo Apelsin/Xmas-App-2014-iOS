@@ -11,10 +11,10 @@ App = {
         iframe = null;
     },
     // Returns a curried event handler
-    ClickNavPush: function(arguments)
+    TapNavPush: function(arguments)
     {
         // Tells the app to push a Flat Page to the navigation controller
-        // Expects jQuery click event object as first argument
+        // Expects jQuery click/tap event object as first argument
         function self(e, href)
         {
             arguments = {};
@@ -39,14 +39,14 @@ App = {
         href = arguments.href;
         return function(e) { return self(e, href); };
     },
-    EachApplyClickNavPush: function(arguments)
+    EachApplyTapNavPush: function(arguments)
     {
         _arguments = arguments;
         function self(index, element)
         {
             if(App.IsLocalUrl(element.href))
             {
-                $(element).click(App.ClickNavPush(_arguments));
+                $(element).on('tap', App.TapNavPush(_arguments));
             }
         }
         return self;
@@ -96,6 +96,40 @@ App = {
     {
         console.log(message);
         App.Execute('log:' + message);
+    },
+    AlertInfo: function(message)
+    {
+        message['alert-type'] = 'info';
+        App.Execute('alert:' + JSON.stringify(message));
+    },
+    AlertWarn: function(message)
+    {
+        message['alert-type'] = 'warn';
+        App.Execute('alert:' + JSON.stringify(message));
+    },
+    IsMobile: {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (App.IsMobile.Android() ||
+                    App.IsMobile.BlackBerry() ||
+                    App.IsMobile.iOS() ||
+                    App.IsMobile.Opera() ||
+                    App.IsMobile.Windows());
+        }
     }
 };
 
@@ -103,49 +137,6 @@ App = {
 Array.prototype.last = function() {
     return this[this.length-1];
 }
-
-function NoClickDelay(el) {
-    this.element = el;
-    if( window.Touch )
-        this.element.addEventListener('touchstart', this, false);
-}
-
-NoClickDelay.prototype = {
-    handleEvent: function(e) {
-        switch(e.type) {
-            case 'touchstart': this.onTouchStart(e); break;
-            case 'touchmove': this.onTouchMove(e); break;
-            case 'touchend': this.onTouchEnd(e); break;
-        }
-    },
-        
-    onTouchStart: function(e) {
-        e.preventDefault();
-        this.moved = false;
-        
-        this.element.addEventListener('touchmove', this, false);
-        this.element.addEventListener('touchend', this, false);
-    },
-        
-    onTouchMove: function(e) {
-        this.moved = true;
-    },
-        
-    onTouchEnd: function(e) {
-        this.element.removeEventListener('touchmove', this, false);
-        this.element.removeEventListener('touchend', this, false);
-        
-        if( !this.moved ) {
-            // Place your code here or use the click simulation below
-            var theTarget = document.elementFromPoint(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
-            if(theTarget.nodeType == 3) theTarget = theTarget.parentNode;
-            
-            var theEvent = document.createEvent('MouseEvents');
-            theEvent.initEvent('click', true, true);
-            theTarget.dispatchEvent(theEvent);
-        }
-    }
-};
 
 //// JQuery functions ////
 $.fn.fixBackground = function()
@@ -203,3 +194,13 @@ $.fn.scrollHint = function()
     scrolled(0,0);
     contents.scroll(scroll_handler);
 }
+
+function ready()
+{
+    hidden_stuff = $('.hidden-for-mobile');
+    if(App.IsMobile.any())
+        hidden_stuff.addClass('hidden');
+    hidden_stuff.removeClass('hidden-for-mobile');
+}
+
+$(ready);

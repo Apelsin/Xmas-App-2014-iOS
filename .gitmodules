@@ -1,0 +1,3 @@
+[submodule "Xmas-app-iOS"]
+	path = Xmas-app-iOS
+	url = git@github.com:sreenidhipm/Xmas-app-iOS.git

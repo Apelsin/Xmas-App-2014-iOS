@@ -1,0 +1,51 @@
+p
+{
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#contents
+{
+    /*background-color: rgba(0,0,0,0.5);*/
+    margin: 0.5em;
+}
+
+img#faq-footer
+{
+    width: 100%;
+    max-width: 423px;
+}
+
+ol#table-of-contents
+{
+    display: block;
+    padding: 0;
+    font-size: 1.375em;
+    line-height: 1.375em;
+}
+
+ol#table-of-contents li
+{
+    position: relative;
+    display: block;
+    height: 5em;
+    margin-top: 1em;
+}
+
+ol#table-of-contents li>a
+{
+    position: relative;
+    width: 100%;
+    height: inherit;
+    display: table;
+    z-index: 10;
+}
+
+ol#table-of-contents li>a a
+{
+    position: relative;
+    display: table-cell;
+    padding: 0.125em;
+    text-align: center;
+    vertical-align: middle;
+}

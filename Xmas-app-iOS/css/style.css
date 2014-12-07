@@ -1,8 +1,8 @@
 html, body
 {
-    font-family: sans-serif;
+    font-family: Cochin, serif;
     color: #222233;
-    line-height: 1.5em;
+    line-height: 1.25em;
 }
 
 .zero-margin
@@ -37,12 +37,6 @@ a:visited
 
 .blur-me
 {
-    /*
-    -webkit-perspective:1000;
-    -webkit-backface-visibility:hidden;
-    -webkit-transform: translateZ(0);
-    */
-
     position: inherit;
     top: inherit;
     left: inherit;
@@ -62,6 +56,11 @@ a:visited
     color: #222233;
 }
 
+.transparent
+{
+    background: transparent;
+}
+
 @media screen and (-webkit-device-pixel-ratio: 2)
 {
     .snowy
@@ -75,7 +74,7 @@ a:visited
 .jade :visited
 {
     color: #FE7;
-    text-shadow: 0px 0px 1px #040, 0px 0px 2px #040, 0px 0px 4px #040, 0px 0px 8px #040, 0px 0px 16px #040, 0px 0px 32px #040;
+    text-shadow: 0px 0px 4px #000, 0px 0px 8px #000;
 }
 
 .jade .blur-me
@@ -198,7 +197,12 @@ a:visited
 
 .hidden
 {
-    display: none;
+    display: none !important;
+}
+
+.hidden-for-mobile
+{
+    display: none !important;
 }
 
 .center
@@ -238,7 +242,6 @@ ul.labeled-list li>:first-child
 
 .no-callout
 {
-    
     -webkit-touch-callout: none;
     -webkit-user-select: none; /* Disable selection/copy in UIWebView */
 }

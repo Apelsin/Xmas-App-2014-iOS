@@ -8,7 +8,7 @@ function ready()
     {
         // jQuery of element
         j = $(element);
-        j.on('click', App.ClickNavPush({ local: true }));
+        j.on('click', App.TapNavPush({ local: true }));
         // Insert blur underlay and clip container
         $('<div class="fill blur-container"><div class="blur-me"></div></div>').insertAfter(j);
         // Wrap the contents of the a tag in another a tag for vertical-align property to work
@@ -19,20 +19,13 @@ function ready()
     
     blur_me = $('.blur-me', list_elements);
     blur_me.fixBackground();
-    $('#page-throbber').hide();
+    
 }
 
 window.FragmentChanged = function()
 {
-    if(window.location.hash != '#table-of-contents')
-    {
-        $('#table-of-contents, #contents>:not(' + window.location.hash + ')').hide();
-        window.scrollTo(0, 0); // Scroll to top
-    }
-    else
-    {
-        $('#table-of-contents').siblings().hide(); // Table of Contents view
-    }
+    $('#page-throbber').hide();
+    $(window.location.hash).removeClass('hidden');
 }
 
 $(window).load(ready);

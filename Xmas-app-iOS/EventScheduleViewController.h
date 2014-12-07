@@ -11,4 +11,5 @@
 #import "SpecialWebViewController.h"
 
 @interface EventScheduleViewController : SpecialWebViewController <UIWebViewDelegate, EKEventEditViewDelegate>
+@property UIColor *ColorBackground;
 @end

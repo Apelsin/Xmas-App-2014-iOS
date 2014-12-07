@@ -31,6 +31,7 @@ li.event
     margin-bottom: 1em;
     padding: 0.25em 0.125em 0.25em 0.125em;
     cursor: pointer; /* Mobile */
+    font-size: 1.25em;
 }
 
 li.event span.line
@@ -50,4 +51,17 @@ li.event span.line span.label
     text-align: right;
     vertical-align: top;
     padding-right: 0.5em;
+}
+
+.jade .oversize .blur-me
+{
+    background-image: url('../img/nice_snow_blur_dark_green.png');
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2)
+{
+    .jade .oversize> .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_dark_green_@2x.png');
+    }
 }

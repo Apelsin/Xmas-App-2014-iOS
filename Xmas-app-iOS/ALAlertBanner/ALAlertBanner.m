@@ -52,7 +52,8 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
 
 //macros referenced from MBProgressHUD. cheers to @matej
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
-    #define AL_SINGLELINE_TEXT_HEIGHT(text, font) [text length] > 0 ? [text sizeWithAttributes:nil].height : 0.f;
+    #define AL_SINGLELINE_TEXT_HEIGHT_EXTRA_HACK 5
+    #define AL_SINGLELINE_TEXT_HEIGHT(text, font) [text length] > 0 ? [text sizeWithAttributes:nil].height + AL_SINGLELINE_TEXT_HEIGHT_EXTRA_HACK: 0.f;
     #define AL_MULTILINE_TEXT_HEIGHT(text, font, maxSize, mode) [text length] > 0 ? [text boundingRectWithSize:maxSize \
                                                                                                        options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) \
                                                                                                     attributes:nil \
@@ -172,7 +173,7 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     
     _titleLabel = [[UILabel alloc] init];
     _titleLabel.backgroundColor = [UIColor clearColor];
-    _titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f];
+    _titleLabel.font = [UIFont fontWithName:@"Cochin" size:16.f];
     _titleLabel.textColor = [UIColor colorWithWhite:1.f alpha:0.9f];
     _titleLabel.textAlignment = NSTextAlignmentLeft;
     _titleLabel.numberOfLines = 1;
@@ -185,7 +186,7 @@ static CGFloat const kForceHideAnimationDuration = 0.1f;
     
     _subtitleLabel = [[UILabel alloc] init];
     _subtitleLabel.backgroundColor = [UIColor clearColor];
-    _subtitleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10.f];
+    _subtitleLabel.font = [UIFont fontWithName:@"Cochin" size:12.f];
     _subtitleLabel.textColor = [UIColor colorWithWhite:1.f alpha:0.9f];
     _subtitleLabel.textAlignment = NSTextAlignmentLeft;
     _subtitleLabel.numberOfLines = 0;

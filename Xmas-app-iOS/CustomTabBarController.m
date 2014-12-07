@@ -26,34 +26,30 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
     // Set title colors
+    [self.tabBar setSelectedImageTintColor:_ColorActive];
+    [self.tabBar setTintColor:_ColorActive];
     for(int i = 0; i < self.tabBar.items.count; i++)
     {
         UITabBarItem *item = [self.tabBar.items objectAtIndex:i];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorActive,} forState:UIControlStateHighlighted];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : _ColorInactive,} forState:UIControlStateNormal];
+        UIImage *image_selected = [item.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [item setSelectedImage:image_selected];
+        UIImage *image = [item.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [item setImage:image];
+        [item setTitleTextAttributes:@{
+                                       NSForegroundColorAttributeName : _ColorActive,
+                                       NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:12.f],
+                                       }
+                            forState:UIControlStateSelected];
+        [item setTitleTextAttributes:@{
+                                       NSForegroundColorAttributeName : _ColorInactive,
+                                       NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:12.f],
+                                       }
+                            forState:UIControlStateNormal];
     }
-    
-    // Sigh...
-    // This is why we can't have nice things.
-    /*
-    // Set the tint color for unselected tabs
-    for (UIView *view in self.tabBar.subviews)
-    {
-      if ([NSStringFromClass(view.class) isEqual:@"UITabBarButton"])
-      {
-          // I really hope it's OK to do this...
-          // I checked the colors in a color-blindness simulator and everything is clearly visible
-          if([view respondsToSelector:@selector(_setUnselectedTintColor:)])
-              [view performSelector:@selector(_setUnselectedTintColor:) withObject:_ColorInactive];
-      }
-    }
-    */
-    
-    [self.tabBar setSelectedImageTintColor:_ColorActive];
-    [self.tabBar setTintColor:_ColorActive];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
