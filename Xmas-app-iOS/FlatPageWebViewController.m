@@ -53,7 +53,7 @@
             PageInfo *info = [PageInfo new];
             info.Title = [arg_dict valueForKey:@"Title"];
             info.Location = [arg_dict valueForKey:@"Location"];
-            info.Referrer = self.webView.request.URL.absoluteString;
+            info.Referrer = self.webViewMain.request.URL.absoluteString;
             [self performSegueWithIdentifier:@"FlatPage_SubPage" sender:info];
         }
         return NO;

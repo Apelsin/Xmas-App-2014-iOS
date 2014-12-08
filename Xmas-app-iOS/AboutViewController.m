@@ -31,10 +31,11 @@
 
 - (void)viewDidLayoutSubviews
 {
-    // Repair view insets
-    UIEdgeInsets currentInsets = self.webView.scrollView.contentInset;
+    // Repair view insets due navigation bar interference
+    UIEdgeInsets currentInsets = self.webViewMain.scrollView.contentInset;
     currentInsets.top = self.tabBarController.topLayoutGuide.length;
-    self.webView.scrollView.contentInset = currentInsets;
+    currentInsets.bottom = self.bottomLayoutGuide.length;
+    self.webViewMain.scrollView.contentInset = currentInsets;
 }
 
 - (void)updateViewConstraints

@@ -10,9 +10,11 @@
 #import "BackgroundPattern.h"
 
 @interface SpecialWebViewController : UIViewController <UIWebViewDelegate, BackgroundPatternDelegate>
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UIWebView *webViewMain;
+@property (strong, nonatomic) IBOutlet UIWebView *webViewThrobber;
 @property NSString *InitialLocation;
 @property NSString *InitialReferrer;
+@property NSString *ThrobberLocation;
 @property BOOL AutoTitle;
 - (void)visit:(NSString *)uriString;
 

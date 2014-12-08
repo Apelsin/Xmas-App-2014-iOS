@@ -15,9 +15,11 @@
 
 @implementation SpecialWebViewController
 
-@synthesize webView;
+@synthesize webViewMain;
+@synthesize webViewThrobber;
 @synthesize InitialLocation;
 @synthesize InitialReferrer;
+@synthesize ThrobberLocation;
 @synthesize BackgroundPatternName;
 @synthesize AutoTitle;
 
@@ -33,10 +35,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    webView.delegate = self;
+    
+    webViewMain.delegate = self;
+    if(webViewThrobber)
+        webViewThrobber.delegate = self;
+    
     @try {
         if(self.InitialLocation)
             [self visit:self.InitialLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent]];
+    }
+    @catch (NSException *exception) {
+        NSLog( @"Exception: %@", exception.name);
+        NSLog( @"Reason: %@", exception.reason );
+    }
+    @try {
+        if(self.ThrobberLocation)
+            [self visit:self.ThrobberLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent]];
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);
@@ -52,6 +66,11 @@
 }
 
 - (void)visit:(NSString *)uriString relativeTo:(NSString *)relativePath
+{
+    [self visit:uriString relativeTo:relativePath inWebView:webViewMain];
+}
+
+- (void)visit:(NSString *)uriString relativeTo:(NSString *)relativePath inWebView:(UIWebView *)webView
 {
     NSArray *components = [uriString componentsSeparatedByString:@"#"];
     uriString = components[0];
@@ -72,17 +91,17 @@
             NSString *name = [basename stringByDeletingPathExtension];
             NSString *extension = [basename pathExtension];
             NSString *url_string = [[NSBundle mainBundle] pathForResource:name ofType:extension inDirectory:dirname];
-            [self asyncVisitURL:[NSURL fileURLWithPath:url_string] withAnchor:anchor];
+            [self asyncVisitURL:[NSURL fileURLWithPath:url_string] withAnchor:anchor inWebView:webView];
         }
         else // Relative Path
         {
             NSString *url_string = [relativePath stringByAppendingPathComponent:uriString];
-            [self asyncVisitURL:[NSURL URLWithString:url_string] withAnchor:anchor];
+            [self asyncVisitURL:[NSURL URLWithString:url_string] withAnchor:anchor inWebView:webView];
         }
     }
     else // Non-local Path
     {
-        [self asyncVisitURL:[NSURL URLWithString:uriString] withAnchor:anchor];
+        [self asyncVisitURL:[NSURL URLWithString:uriString] withAnchor:anchor inWebView:webView];
     }
 }
 
@@ -93,13 +112,18 @@
 
 - (void)asyncVisitURL:(NSURL *) url withAnchor:(NSString *)anchor
 {
+    [self asyncVisitURL:url withAnchor:anchor inWebView:self.webViewMain];
+}
+
+- (void)asyncVisitURL:(NSURL *) url withAnchor:(NSString *)anchor inWebView:(UIWebView *)webView
+{
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init]; // I don't know what this line does
     [NSURLConnection sendAsynchronousRequest:request queue:queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                if([data length] > 0 && error == nil)
                                {
-                                   [self.webView loadRequest:request];
+                                   [webView loadRequest:request];
                                    self._TargetAnchor = anchor; // Hack
                                    self._LastRequestURL = request.URL; // Hack
                                }
@@ -109,13 +133,13 @@
 }
 
 
-- (void)webViewDidFinishLoad:(UIWebView *)wv
+- (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     if(self.AutoTitle)
-        self.title = [wv stringByEvaluatingJavaScriptFromString:@"document.title"];
+        self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if(self._TargetAnchor)
     {
-        [self.webView stringByEvaluatingJavaScriptFromString:
+        [webView stringByEvaluatingJavaScriptFromString:
          [NSString stringWithFormat:@"window.location.hash = '#%@'; window.FragmentChanged();", self._TargetAnchor]];
         self._TargetAnchor = nil;
     }
