@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTabBarController : UITabBarController
+@interface CustomTabBarController : UITabBarController <UITabBarControllerDelegate>
 @property UIColor *ColorActive;
 @property UIColor *ColorInactive;
 @end

@@ -10,5 +10,4 @@
 #import "FlatPageWebViewController.h"
 
 @interface AboutViewController : FlatPageWebViewController
-
 @end

@@ -19,9 +19,11 @@ function ready()
                 if(element.all_day_event)
                     event.addClass('all-day');
                 if(element.oversize)
-                {
                     event.addClass('oversize');
-                }
+                if(element.expired)
+                    event.addClass('expired');
+                if(typeof element.moment_r_end.toISOString !== 'undefined')
+                    event.attr('moment-r-end', element.moment_r_end.toISOString());
             }
             events.forEach(ea);
         }
@@ -29,6 +31,7 @@ function ready()
         page_content = data.page.content;
         j_data = $(page_content);
         events = [];
+        events_expired = [];
         
         //// Time parsing ////
         
@@ -36,6 +39,7 @@ function ready()
         time_regex = new RegExp('^([0-9]{1,2})(:([0-9]{2}))?\s?(pm)?', 'i')
         moment_parse_format = 'YYYY MMM DD HH:mm';
         moment_readable_format = 'MMM D [from] h:mm A';
+        moment_readable_format_single = 'MMM D [at] h:mm A';
         moment_readable_format_all_day = 'MMM D';
         moment_readable_format_brief = 'h:mm A';
         function parse_time(time)
@@ -89,7 +93,8 @@ function ready()
             catch(e)
             {
                 all_day_event = true;
-                time_begin = time_end = "00:00";
+                // Use noon to avoid undue midnight reminders
+                time_begin = time_end = "12:00";
             }
             
             // Apparently this is correct
@@ -103,6 +108,7 @@ function ready()
             date_end_element = $('.end-date', j_element);
             
             delete moment_end;
+            delete moment_r_end;
             if(date_end_element[0] !== undefined)
             {
                 date_end = get_parseable_date(date_end_element);
@@ -110,25 +116,67 @@ function ready()
                 {
                     datetime_end_str = date_end + " " + time_end;
                     moment_end = moment(datetime_end_str, moment_parse_format);
+                    if(moment_end - moment_begin < 0)
+                        moment_end.add(1, 'day');
                     hours_difference = moment.duration(moment_end - moment_begin).asHours();
                     oversize = hours_difference >= 24;
+                    if(oversize)
+                    {
+                        // End on the same day; recurrence will be handled
+                        moment_r_end = moment_end;
+                        moment_end = moment(date_begin + ' ' + time_end, moment_parse_format);
+                        if(moment_end - moment_begin < 0)
+                            moment_end.add(1, 'day');
                         
-                    format_a = all_day_event ? moment_readable_format_all_day : moment_readable_format;
-                    format_b = format_a;
-                    joiner = all_day_event ? " thru " : " to ";
-                    
-                    when = moment_begin.format(format_a) + joiner + moment_end.format(format_b);
+                        time_end_formatted = moment_r_end.format(moment_readable_format_brief);
+                        if(time_end_formatted == '12:00 AM')
+                            time_end_formatted = 'Midnight';
+                        when = moment_begin.format(moment_readable_format_all_day) + ' thru ' + moment_r_end.format(moment_readable_format_all_day) + ' from ' + moment_begin.format(moment_readable_format_brief) + ' to ' + time_end_formatted;
+                        
+                    }
+                    else
+                    {
+                        time_end_formatted = moment_end.format(moment_readable_format_brief);
+                        if(time_end_formatted == '12:00 AM')
+                            time_end_formatted = 'Midnight';
+                        when = moment_begin.format(moment_readable_format) + ' to ' + time_end_formatted;
+                    }
                 }
             }
             if(typeof moment_end === 'undefined')
             {
                 datetime_end_str = date_begin + " " + time_end;
                 moment_end = moment(datetime_end_str, moment_parse_format);
+                if(moment_end - moment_begin < 0)
+                    moment_end.add(1, 'day');
                 if(all_day_event)
                     when = moment_begin.format(moment_readable_format_all_day);
                 else
-                    when = moment_begin.format(moment_readable_format) + " to " + moment_end.format(moment_readable_format_brief);
+                {
+                    if(time_begin == time_end)
+                        when = moment_begin.format(moment_readable_format_single);
+                    else
+                    {
+                        // So much for DRY...
+                        time_end_formatted = moment_end.format(moment_readable_format_brief);
+                        if(time_end_formatted == '12:00 AM')
+                            time_end_formatted = 'Midnight';
+                        when = moment_begin.format(moment_readable_format) + ' to ' + time_end_formatted;
+                    }
+                }
             }
+            if(typeof moment_r_end === 'undefined')
+            {
+                moment_r_end = 'none';
+            }
+            expired = false;
+            if(oversize)
+            {
+                expired = moment_r_end < moment();
+            }
+            else
+                expired = moment_end < moment();
+            
             //////////////////////
             
             event_info = {
@@ -139,15 +187,20 @@ function ready()
                 moment_end: moment_end,
                 all_day: all_day_event,
                 oversize: oversize,
+                moment_r_end: moment_r_end,
+                expired: expired,
             };
-            events.push(event_info);
+            if(expired)
+                events_expired.push(event_info);
+            else
+                events.push(event_info);
         }
         
         // Hide the throbber at this point
         $('#page-throbber').hide();
         
         $('.event', j_data).each(ea);
-        build_list(events);
+        build_list(events.concat(events_expired));
         
         // Enable this if you need to remove data detectors (fault tolerance)
         // App.RemoveDataDetectors($('ul.event-list li.event span.line'));
@@ -160,26 +213,23 @@ function ready()
             function click(e)
             {
                 j_currentTarget = $(e.currentTarget);
-                if(j_currentTarget.hasClass('oversize'))
-                {
-                    App.AlertWarn({message: "Event duration too long for calendar.", detail: ""});
-                }
-                else
-                {
-                    title = $('.title .text', e.currentTarget).text();
-                    where = $('.where .text', e.currentTarget).text();
-                    begin = j_currentTarget.attr('moment-begin');
-                    end = j_currentTarget.attr('moment-end');
-                    
-                    arguments = {
-                        title: title,
-                        where: where,
-                        begin: begin,
-                        end: end,
-                    };
-                    json_string = JSON.stringify(arguments);
-                    App.Execute('calendar:' + json_string);
-                }
+                title = $('.title .text', e.currentTarget).text();
+                where = $('.where .text', e.currentTarget).text();
+                begin = j_currentTarget.attr('moment-begin');
+                end = j_currentTarget.attr('moment-end');
+                oversize = j_currentTarget.hasClass('oversize');
+                recurrence_end = j_currentTarget.attr('moment-r-end');
+                
+                arguments = {
+                    title: title,
+                    where: where,
+                    begin: begin,
+                    end: end,
+                    recurring: oversize ? "daily" : "no",
+                    recurrence_end: recurrence_end,
+                };
+                json_string = JSON.stringify(arguments);
+                App.Execute('calendar:' + json_string);
             }
             $(element).on("tap", click);
         }

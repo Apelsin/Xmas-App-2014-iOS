@@ -5,6 +5,12 @@ html, body
     line-height: 1.25em;
 }
 
+.justified
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .zero-margin
 {
     margin: 0;

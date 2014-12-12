@@ -1,7 +1,17 @@
+html, body
+{
+    text-align: justify;
+}
+
 p
 {
-    line-height: 1.5em;
-    margin-bottom: 1.5em;
+    /*line-height: 1.5em;*/
+    /*margin-bottom: 1.5em;*/
+}
+
+h1, h2, h3
+{
+    text-align: center;
 }
 
 #contents

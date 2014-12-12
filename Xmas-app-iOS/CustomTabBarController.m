@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.delegate = self;
     // Do any additional setup after loading the view.
     // Set title colors
     [self.tabBar setSelectedImageTintColor:_ColorActive];
@@ -49,7 +50,13 @@
     }
 }
 
-
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    //if([viewController respondsToSelector:@selector(adjustSubviews)])
+    //{
+    //    [viewController performSelector:@selector(adjustSubviews) withObject:nil];
+    //}
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -64,12 +71,12 @@
 
 -(NSUInteger)supportedInterfaceOrientations
 {
-    return [self.selectedViewController supportedInterfaceOrientations];
+    return UIInterfaceOrientationMaskPortrait;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
+    return UIInterfaceOrientationPortrait;
 }
 
 /*

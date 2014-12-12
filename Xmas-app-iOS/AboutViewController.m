@@ -9,7 +9,7 @@
 #import "AboutViewController.h"
 
 @interface AboutViewController ()
-
+@property BOOL adjustedSubviews;
 @end
 
 @implementation AboutViewController
@@ -31,11 +31,22 @@
 
 - (void)viewDidLayoutSubviews
 {
+    [self adjustSubviews];
+}
+
+- (void)adjustSubviews
+{
     // Repair view insets due navigation bar interference
-    UIEdgeInsets currentInsets = self.webViewMain.scrollView.contentInset;
-    currentInsets.top = self.tabBarController.topLayoutGuide.length;
-    currentInsets.bottom = self.bottomLayoutGuide.length;
-    self.webViewMain.scrollView.contentInset = currentInsets;
+    // Only update when bottom layout guide is valid for a UITabBarController
+    // wtf crapple
+    if(self.bottomLayoutGuide.length > 0 && [self.parentViewController isKindOfClass:[UITabBarController class]])
+    {
+        UIEdgeInsets currentInsets = self.webViewMain.scrollView.contentInset;
+        currentInsets.top = self.tabBarController.topLayoutGuide.length;
+        currentInsets.bottom = self.bottomLayoutGuide.length;
+        //NSLog(@"%f", currentInsets.bottom);
+        self.webViewMain.scrollView.contentInset = currentInsets;
+    }
 }
 
 - (void)updateViewConstraints

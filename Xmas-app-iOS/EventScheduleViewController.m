@@ -15,6 +15,7 @@
 @property ALAlertBanner *infoBanner;
 @property EKEvent *selectedEvent;
 @property NSDateFormatter *ISO8601DateFormatter;
+@property NSArray *weekdaysOfOperation;
 @end
 
 @implementation EventScheduleViewController
@@ -33,6 +34,16 @@
 {
     self.ISO8601DateFormatter = [NSDateFormatter new];
     [self.ISO8601DateFormatter setDateFormat:@"yyyy-MM-d'T'HH:mm:ss.SSSZ"];
+    // Apple, why?
+    // Seriously, what the !@#$% is this?
+    self.weekdaysOfOperation = [NSArray arrayWithObjects:
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKMonday],
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKTuesday],
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKWednesday],
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKThursday],
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKFriday],
+                                [EKRecurrenceDayOfWeek dayOfWeek:EKSaturday],
+                                nil];
 }
 
 - (void)viewDidLoad
@@ -118,8 +129,12 @@
                 NSString *where = [arg_dict valueForKey:@"where"];
                 NSString *begin = [arg_dict valueForKey:@"begin"];
                 NSString *end = [arg_dict valueForKey:@"end"];
+                NSString *recurring = [arg_dict valueForKey:@"recurring"];
+                NSString *recurrence_end = [arg_dict valueForKey:@"recurrence_end"];
                 NSDate *date_begin = [self.ISO8601DateFormatter dateFromString:begin];
                 NSDate *date_end = [self.ISO8601DateFormatter dateFromString:end];
+                NSDate *date_r_end = [self.ISO8601DateFormatter dateFromString:recurrence_end];
+                
                 
                 self.selectedEvent = [EKEvent eventWithEventStore:store];
                 self.selectedEvent.calendar = store.defaultCalendarForNewEvents;
@@ -127,6 +142,20 @@
                 self.selectedEvent.location = where;
                 self.selectedEvent.startDate = date_begin;
                 self.selectedEvent.endDate = date_end;
+                
+                if ([recurring isEqualToString:@"daily"]) {
+                    @try
+                    {
+                        EKRecurrenceRule *rule = [[EKRecurrenceRule alloc] initRecurrenceWithFrequency:EKRecurrenceFrequencyDaily interval:1 daysOfTheWeek:self.weekdaysOfOperation daysOfTheMonth:nil monthsOfTheYear:nil weeksOfTheYear:nil daysOfTheYear:nil setPositions:nil end:[EKRecurrenceEnd recurrenceEndWithEndDate:date_r_end]];
+                        self.selectedEvent.recurrenceRules = [NSArray arrayWithObject:rule];
+                    }
+                    @catch(NSException *exception)
+                    {
+                        NSLog( @"Exception: %@", exception.name);
+                        NSLog( @"Reason: %@", exception.reason );
+                    }
+                }
+                
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self presentEventEditViewControllerWithEventStore:store];
                 });

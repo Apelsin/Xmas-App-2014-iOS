@@ -55,13 +55,28 @@ li.event span.line span.label
 
 .jade .oversize .blur-me
 {
-    background-image: url('../img/nice_snow_blur_dark_green.png');
+    /*background-image: url('../img/nice_snow_blur_dark_green.png');*/
+}
+
+.jade .expired
+{
+    color: #CCC;
+}
+
+.jade .expired .blur-me
+{
+    background-image: url('../img/nice_snow_blur_gray.png');
 }
 
 @media screen and (-webkit-device-pixel-ratio: 2)
 {
+    /* Not sure why > is needed for iPhone... */
     .jade .oversize> .blur-me
     {
-        background-image: url('../img/nice_snow_blur_dark_green_@2x.png');
+        /*background-image: url('../img/nice_snow_blur_dark_green_@2x.png');*/
+    }
+    .jade .expired> .blur-me
+    {
+        background-image: url('../img/nice_snow_blur_gray_@2x.png');
     }
 }

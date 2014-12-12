@@ -42,7 +42,7 @@
     
     @try {
         if(self.InitialLocation)
-            [self visit:self.InitialLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent]];
+            [self visit:self.InitialLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent] inWebView:webViewMain];
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);
@@ -50,7 +50,7 @@
     }
     @try {
         if(self.ThrobberLocation)
-            [self visit:self.ThrobberLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent]];
+            [self visit:self.ThrobberLocation relativeTo:[self.InitialReferrer stringByDeletingLastPathComponent] inWebView:webViewThrobber];
     }
     @catch (NSException *exception) {
         NSLog( @"Exception: %@", exception.name);
